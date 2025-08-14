@@ -4,3 +4,28 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
+.darkmode {
+
+  background-color: #0A0A0A;
+}
+
+.darkmodetext {
+
+  color: #FF2E2E;
+}
+
+.maincontainer {
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.childcontainer {
+
+  width: 1300px;
+  padding: 20px;
+}
+
