@@ -4,7 +4,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.headermaincontainer {
+
+   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 .header a {
@@ -29,10 +33,142 @@
 
   display: flex;
   gap: 20px;
+  width: 580px;
+  justify-content: space-between;
 }
 
 .navlinks a {
 
   color: #FF2E2E;
+  font-size: 20px;
+  position: relative;
+  transition: all .7s;
+}
+
+.navlinks a::after {
+
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #CC2A2A;
+  left: 0px;
+  bottom: -3px;
+} 
+
+.navlinks a:hover {
+
+  color: #CC2A2A;
+}
+
+.navlinks a:hover::after {
+
+  width: 100%;
+  transition: width 0.7s ease-in-out;
+}
+
+.togglebutton {
+
+  width: 70px;
+  height: 30px;
+  border-radius: 20px;
+  border: 1px solid #FF2E2E;
+  border-color: #FF2E2E;
+  position: relative;
+  cursor: pointer;
+}
+
+.toggleround {
+
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FF2E2E;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+
+.star {
+
+  background-color: white;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  position: absolute;
+  opacity: 0;
+  transition: 1s;
+}
+
+.star1 {
+
+  opacity: 1;
+  width: 8px;
+  height: 8px;
+  top: 15px;
+  left: 13px;
+}
+
+.star2 {
+
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+  top: 5px;
+  left: 25px;
+}
+
+.star3 {
+
+  opacity: 1;
+  width: 6px;
+  height: 6px;
+  bottom: 4px;
+  right: 28px;
+}
+
+.star4 {
+
+  opacity: 1;
+  width: 6px;
+  height: 6px;
+  top: 8px;
+  left: 4px;
+}
+
+
+@media screen and (max-width: 1199px) {
+
+  .navlinks {
+
+      width: 480px;
+  }
   
+  .imglogomain {
+
+    width: 127px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  
+  .navlinks {
+
+   display: none;   
+  }
+
+  .header {
+
+    height: 80px;
+  }
 }
