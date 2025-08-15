@@ -94,9 +94,11 @@
   right: 4px;
 }
 
+
+
 .star {
 
-  background-color: white;
+  background-color: yellow;
   clip-path: polygon(
     50% 0%,
     61% 35%,
@@ -116,47 +118,55 @@
 
 .star3 {
 
-  opacity: 1;
   width: 8px;
   height: 8px;
   top: 16px;
   left: 18px;
+  animation: twinkle 2s infinite;
+  animation-delay: .4s;
 }
 
 .star2 {
 
-  opacity: 1;
   width: 9px;
   height: 9px;
   top: 4px;
   left: 24px;
+  animation: twinkle 2s infinite;
+  animation-delay: .2s;
 }
 
 .star1 {
 
-  opacity: 1;
   width: 10px;
   height: 10px;
   bottom: 3px;
   right: 26px;
+  animation: twinkle 2s infinite;
+  animation-delay: 0s;
 }
 
 .star4 {
 
-  opacity: 1;
   width: 7px;
   height: 7px;
   top: 6px;
   left: 10px;
+  animation: twinkle 2s infinite;
+  animation-delay: .6s;
+
 }
 
 .star5 {
 
-  opacity: 1;
   width: 6px;
   height: 6px;
   bottom: 5px;
   left: 7px;
+  animation: twinkle 2s infinite;
+  animation-delay: 1s;
+  animation-delay: .8s;
+
 }
 
 .sidebaroverlay,.sidebardiv {
@@ -446,4 +456,33 @@
     padding: 10px;
   }
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ANIMATIONS */
+
+
+@keyframes twinkle {
+
+  0%,
+  100%
+  {
+
+    opacity: 1;
+  }
+
+  50% {
+
+    opacity: 0.5;
+  }
 }
