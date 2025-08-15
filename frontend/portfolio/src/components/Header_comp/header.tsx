@@ -16,16 +16,34 @@ const HeaderComponent = () => {
     return(
 
         <>
-            <div className="maincontainer headermaincontainer darkmode">
+            <div className={`maincontainer headermaincontainer ${darkMode ? "darkmode" : "lightmode"}`}>
                 <div className="childcontainer header">
                     <div className="headerdirstdiv">
                         <i className={`fa-solid fa-align-left ${activesidebar ? 'left-color-dark-hover' : 'left-color-dark'}`} onClick={() => {handleSidebar();}}></i>
                         <a href="#" className="imglogosecond">
-                            <img src="../public/assets/images/logo/bvm_logo_dark_small.png" alt="Logo Image" />
+                            {darkMode ? (
+                                <>
+                                    <img src="../public/assets/images/logo/bvm_logo_dark_small.png" alt="Logo Image" />
+                                </>
+                            ): (
+                                <>
+                                    <img src="../public/assets/images/logo/bvm_logo_light_small.png" alt="Logo Image" />
+                                </>
+                            )
+                            }
+                            
                         </a>
                     </div>
                     <a href="#" className="imglogomain">
-                        <img src="../public/assets/images/logo/bvm_logo_dark_large.png" alt="Logo Image" />
+                        {darkMode ? (
+                            <>
+                                <img src="../public/assets/images/logo/bvm_logo_dark_large.png" alt="Logo Image" />
+                            </>
+                        ) : (
+                            <>
+                               <img src="../public/assets/images/logo/bvm_logo_light_large.png" alt="Logo Image" />
+                            </>
+                        )}
                     </a>
                     <div className="navlinks">
                         <a href="#">Home</a>

@@ -302,7 +302,7 @@
     position: fixed;
     width: 80px;
     height: 100%;
-    border: 2px solid black;
+    border: 2px solid #0A0A0A;
     top: 84px;
     left: 0px;
     padding: 20px 10px;
@@ -355,13 +355,13 @@
   .sidebaratag:hover {
 
     background-color: #FF2E2E;
-    color: black;
+    color: #0A0A0A;
   }
 
   .sidebaractivedark {
 
     background-color: #FF2E2E ;
-    color: black;
+    color: #0A0A0A;
   }
 
   .left-color-dark {

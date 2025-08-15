@@ -10,6 +10,17 @@
   background-color: #0A0A0A;
 }
 
+.lightmode {
+
+  background-color: whitesmoke;
+}
+
+
+.lightmodetext {
+
+  color: #0A0A0A;
+}
+
 .darkmodetext {
 
   color: #FF2E2E;
