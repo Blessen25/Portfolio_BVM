@@ -8,8 +8,14 @@ const HeaderComponent = () => {
         <>
             <div className="maincontainer headermaincontainer darkmode">
                 <div className="childcontainer header">
+                    <div className="headerdirstdiv">
+                        <i className="fa-solid fa-align-left"></i>
+                        <a href="#" className="imglogosecond">
+                            <img src="../public/assets/images/logo/bvm_logo_dark_small.png" alt="Logo Image" />
+                        </a>
+                    </div>
                     <a href="#" className="imglogomain">
-                        <img src="../public/assets/images/logo/bvm_logo_dark_large.png" alt="" />
+                        <img src="../public/assets/images/logo/bvm_logo_dark_large.png" alt="Logo Image" />
                     </a>
                     <div className="navlinks">
                         <a href="#">Home</a>
@@ -25,7 +31,6 @@ const HeaderComponent = () => {
                         <div className="star star3"></div>
                         <div className="star star4"></div>
                         <div className="star star5"></div>
-
                     </div>
                 </div>
             </div>
