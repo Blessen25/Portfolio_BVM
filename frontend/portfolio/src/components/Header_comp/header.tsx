@@ -9,7 +9,7 @@ const HeaderComponent = () => {
             <div className="maincontainer headermaincontainer darkmode">
                 <div className="childcontainer header">
                     <div className="headerdirstdiv">
-                        <i className="fa-solid fa-align-left"></i>
+                        <i className="fa-solid fa-align-left" ></i>
                         <a href="#" className="imglogosecond">
                             <img src="../public/assets/images/logo/bvm_logo_dark_small.png" alt="Logo Image" />
                         </a>
