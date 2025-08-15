@@ -81,6 +81,8 @@
   border-color: #FF2E2E;
   position: relative;
   cursor: pointer;
+  transition: all .7s ease-in-out;
+
 }
 
 .toggleround {
@@ -92,9 +94,35 @@
   position: absolute;
   top: 4px;
   right: 4px;
+  transition: all .7s ease-in-out;
 }
 
+.togglebuttondark {
 
+  border: 1px solid #FF2E2E;
+  border-color: #FF2E2E;
+}
+
+.togglebuttonlight {
+
+  border: 1px solid white;
+  border-color: white;
+  
+}
+
+.togglerounddark {
+
+  background-color: #FF2E2E;
+  transition: all .7s ease-in-out;
+  animation: fadeinright 1s ease-in-out;
+}
+
+.toggleroundlight {
+
+  background-color: white;
+  left: 4px;
+  animation: fadeinleft 1s ease-in-out;
+}
 
 .star {
 
@@ -164,7 +192,6 @@
   bottom: 5px;
   left: 7px;
   animation: twinkle 2s infinite;
-  animation-delay: 1s;
   animation-delay: .8s;
 
 }
@@ -173,6 +200,8 @@
 
   display: none;
 }
+
+
 
 @media screen and (max-width: 1399px) {
 
@@ -456,6 +485,20 @@
     padding: 10px;
   }
 
+  .toggleroundlight {
+
+    left: 2px;
+  }
+
+  .togglerounddark {
+
+    animation: fadeinrightresp 1s ease-in-out;
+  }
+
+  .toggleroundlight {
+
+    animation: fadeinlightresp 1s ease-in-out;
+  }
 }
 
 
@@ -484,5 +527,57 @@
   50% {
 
     opacity: 0.5;
+  }
+}
+
+@keyframes fadeinleft {
+
+  0% {
+
+    transform: translateX(-3px);
+  }
+
+  100% {
+
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeinright {
+
+   0% {
+
+    transform: translateX(3px);
+  }
+
+  100% {
+
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeinleftresp {
+
+  0% {
+
+    transform: translateX(-2px);
+  }
+
+  100% {
+
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeinleftresp {
+
+   0% {
+
+    transform: translateX(2px);
+  }
+
+  100% {
+
+    transform: translateX(0px);
   }
 }
