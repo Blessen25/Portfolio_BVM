@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import './header.css';
 
 const HeaderComponent = () => {
 
+    const [activesidebar, setActivceSidebar] = useState(false);
+    const handleSidebar = () => {
+
+        setActivceSidebar(!activesidebar);
+    }
     return(
 
         <>
             <div className="maincontainer headermaincontainer darkmode">
                 <div className="childcontainer header">
                     <div className="headerdirstdiv">
-                        <i className="fa-solid fa-align-left" ></i>
+                        <i className={`fa-solid fa-align-left ${activesidebar ? 'left-color-dark-hover' : 'left-color-dark'}`} onClick={() => {handleSidebar();}}></i>
                         <a href="#" className="imglogosecond">
                             <img src="../public/assets/images/logo/bvm_logo_dark_small.png" alt="Logo Image" />
                         </a>
@@ -34,6 +39,34 @@ const HeaderComponent = () => {
                     </div>
                 </div>
             </div>
+        {activesidebar && (
+            <>
+
+                <div className="sidebaroverlay"></div>
+                <div className="sidebardiv darkmode">
+                    <a href="#" className="sidebaratag sidebaractivedark">
+                        <i className="fa-regular fa-house sidebaricon"></i>
+                        <span className="sidebartext">Home</span>
+                    </a>
+                    <a href="#" className="sidebaratag">
+                        <i className="fa-regular fa-user sidebaricon"></i>
+                        <span className="sidebartext">About</span>
+                    </a>
+                    <a href="#" className="sidebaratag">
+                        <i className="fa-regular fa-id-badge sidebaricon"></i>
+                        <span className="sidebartext">Experience</span>
+                    </a>
+                    <a href="#" className="sidebaratag">
+                        <i className="fa-regular fa-folder-open sidebaricon"></i>
+                        <span className="sidebartext">Projects</span>
+                    </a>
+                    <a href="#" className="sidebaratag">
+                        <i className="fa-regular fa-envelope sidebaricon"></i>
+                        <span className="sidebartext">Contact</span>
+                    </a>
+                </div>
+            </>
+        )}
         </>
     )
 }

@@ -159,6 +159,11 @@
   left: 7px;
 }
 
+.sidebaroverlay,.sidebardiv {
+
+  display: none;
+}
+
 @media screen and (max-width: 1399px) {
 
   .navlinks a {
@@ -234,16 +239,102 @@
   .fa-align-left {
 
     font-size: 30px;
-    color: #FF2E2E;
     cursor: pointer;
     font-size: 30px;
     transition: all .7s ease-in-out;
   }
 
-  .fa-align-left:hover {
+  .sidebaroverlay,.sidebardiv {
+
+    display: block;
+  }
+
+  .sidebaroverlay {
+
+    position: fixed;
+    top: 80px;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+  }
+
+  .sidebardiv {
+
+    position: fixed;
+    width: 80px;
+    height: 100%;
+    border: 2px solid black;
+    top: 84px;
+    left: 0px;
+    padding: 20px 10px;
+    transition: all .7s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* width: 300px; */
+  }
+
+  .sidebardiv:hover {
+
+    width: 300px;
+    padding: 20px 10px;
+  }
+
+  .sidebartext {
+
+    display: none;
+    opacity: 1;
+    transition: all .7s ease-in-out;
+    font-size: 16px;
+  }
+
+  .sidebaricon {
+
+    font-size: 24px;
+    z-index: 99;
+  }
+
+  .sidebaratag {
+
+    text-decoration: none;
+    z-index: 9;
+    padding: 13px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    gap: 20px;
+    overflow: hidden;
+    color: #FF2E2E;
+    transition: all .7s ease-in-out;
+  }
+
+  .sidebardiv:hover .sidebartext{
+
+    display: block;
+  }
+
+  .sidebaratag:hover {
+
+    background-color: #FF2E2E;
+    color: black;
+  }
+
+  .sidebaractivedark {
+
+    background-color: #FF2E2E ;
+    color: black;
+  }
+
+  .left-color-dark {
+
+    color: #FF2E2E;
+  }
+
+  .left-color-dark-hover {
 
     color: #CC2A2A;
   }
+
 }
 
 
@@ -329,4 +420,30 @@
 
     display: none;
   }
+
+  .sidebardiv:hover {
+
+    width: 230px;
+  }
+
+  .sidebartext {
+
+    font-size: 12px;
+  }
+
+  .sidebaricon {
+
+    font-size: 20px;
+  }
+
+  .sidebardiv {
+
+    padding: 10px;
+  }
+
+  .sidebardiv:hover {
+
+    padding: 10px;
+  }
+
 }
