@@ -54,11 +54,22 @@ const HeaderComponent = () => {
                     </div>
                     <div className={`${darkMode ? 'togglebuttondark' : 'togglebuttonlight'} togglebutton`} onClick={() => {handletogglebutton();}}>
                         <div className={`${darkMode ? 'togglerounddark' : 'toggleroundlight'} toggleround`}></div>
-                        <div className={`${darkMode ? 'star star1' : ''}`}></div>
-                        <div className={`${darkMode ? 'star star2' : ''}`}></div>
-                        <div className={`${darkMode ? 'star star3' : ''}`}></div>
-                        <div className={`${darkMode ? 'star star4' : ''}`}></div>
-                        <div className={`${darkMode ? 'star star5' : ''}`}></div>
+                        {darkMode ? (
+                            <>
+                                <div className="star star1"></div>
+                                <div className="star star2"></div>
+                                <div className="star star3"></div>
+                                <div className="star star4"></div>
+                                <div className="star star5"></div>
+                            </>
+                        ) : (
+                            <>
+                                <div className="cloud cloud1"></div>
+                                <div className="cloud cloud2"></div>
+
+                            </>
+                        )
+                        }
                     </div>
                 </div>
             </div>

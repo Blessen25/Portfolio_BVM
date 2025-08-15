@@ -105,8 +105,8 @@
 
 .togglebuttonlight {
 
-  border: 1px solid white;
-  border-color: white;
+  border: 1px solid #0A0A0A;
+  border-color: #0A0A0A;
   
 }
 
@@ -119,7 +119,7 @@
 
 .toggleroundlight {
 
-  background-color: white;
+  background: radial-gradient(circle, #ffd700 30%, #ffa500 70%);
   left: 4px;
   animation: fadeinleft 1s ease-in-out;
 }
@@ -199,6 +199,67 @@
 .sidebaroverlay,.sidebardiv {
 
   display: none;
+}
+
+.cloud {
+
+  border-radius: 50px;
+  position: absolute;
+  transition: all .7s ease-in-out;
+  background-color: #64aae5;
+}
+
+.cloud::before,
+.cloud::after {
+
+  content: "";
+  position: absolute;
+  background-color: #64aae5;
+  border-radius: 50%;
+}
+
+.cloud1 {
+
+  width: 18px;
+  height: 8px;
+  top: 8px;
+  left: 34px;
+}
+
+.cloud1::before {
+  width: 10px;
+  height: 10px;
+  top: -5px;
+  left: 1px;
+}
+
+.cloud1::after {
+  width: 8px;
+  height: 8px;
+  top: -6px;
+  right: 0px;
+}
+
+.cloud2 {
+
+  width: 12px;
+  height: 6px;
+  top: 20px;
+  left: 46px;
+}
+
+.cloud2::before {
+  width: 4px;
+  height: 4px;
+  top: -2px;
+  left: 1px;
+}
+
+.cloud2::after {
+  width: 8px;
+  height: 8px;
+  top: -4px;
+  right: 0px;
 }
 
 
@@ -498,6 +559,17 @@
   .toggleroundlight {
 
     animation: fadeinlightresp 1s ease-in-out;
+  }
+
+  .cloud1 {
+
+    left: 23px;
+  }
+
+  .cloud2 {
+
+    left: 42px;
+    top: 14px;
   }
 }
 
