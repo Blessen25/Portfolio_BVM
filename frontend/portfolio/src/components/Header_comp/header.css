@@ -440,8 +440,17 @@
     border-radius: 5px;
     gap: 20px;
     overflow: hidden;
-    color: #FF2E2E;
     transition: all .7s ease-in-out;
+  }
+
+  .sidebaratagdark {
+
+    color: #FF2E2E;
+  }
+
+  .sidebarataglight {
+
+    color: #0A0A0A;
   }
 
   .sidebardiv:hover .sidebartext{
@@ -449,7 +458,13 @@
     display: block;
   }
 
-  .sidebaratag:hover {
+  .sidebarataglight:hover {
+
+    background-color: #0A0A0A;
+    color: whitesmoke;
+  }
+
+  .sidebaratagdark:hover {
 
     background-color: #FF2E2E;
     color: #0A0A0A;
@@ -459,6 +474,12 @@
 
     background-color: #FF2E2E ;
     color: #0A0A0A;
+  }
+
+  .sidebaractivelight {
+
+    background-color: #0A0A0A;
+    color: whitesmoke;
   }
 
   .left-color-dark {

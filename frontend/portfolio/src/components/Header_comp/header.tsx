@@ -79,23 +79,23 @@ const HeaderComponent = () => {
 
                 <div className="sidebaroverlay"></div>
                 <div className={`sidebardiv ${darkMode ? 'darkmode' : 'lightmode'}`}>
-                    <a href="#" className="sidebaratag sidebaractivedark">
+                    <a href="#" className={`sidebaratag ${darkMode ? 'sidebaratagdark sidebaractivedark' : 'sidebarataglight sidebaractivelight'} `}>
                         <i className="fa-regular fa-house sidebaricon"></i>
                         <span className="sidebartext">Home</span>
                     </a>
-                    <a href="#" className="sidebaratag">
+                    <a href="#" className={`sidebaratag ${darkMode ? 'sidebaratagdark' : 'sidebarataglight'} `}>
                         <i className="fa-regular fa-user sidebaricon"></i>
                         <span className="sidebartext">About</span>
                     </a>
-                    <a href="#" className="sidebaratag">
+                    <a href="#" className={`sidebaratag ${darkMode ? 'sidebaratagdark' : 'sidebarataglight'} `}>
                         <i className="fa-regular fa-id-badge sidebaricon"></i>
                         <span className="sidebartext">Experience</span>
                     </a>
-                    <a href="#" className="sidebaratag">
+                    <a href="#" className={`sidebaratag ${darkMode ? 'sidebaratagdark' : 'sidebarataglight'} `}>
                         <i className="fa-regular fa-folder-open sidebaricon"></i>
                         <span className="sidebartext">Projects</span>
                     </a>
-                    <a href="#" className="sidebaratag">
+                    <a href="#" className={`sidebaratag ${darkMode ? 'sidebaratagdark' : 'sidebarataglight'} `}>
                         <i className="fa-regular fa-envelope sidebaricon"></i>
                         <span className="sidebartext">Contact</span>
                     </a>
