@@ -1,6 +1,7 @@
 import React from "react";
 import "./home.css";
 import type { HeaderProps } from "../../interface";
+import { AutoType } from "../extras";
 
 
 const HomeComponent:React.FC<HeaderProps> = ({darkMode , setDarkMode}) => {
@@ -17,6 +18,7 @@ const HomeComponent:React.FC<HeaderProps> = ({darkMode , setDarkMode}) => {
                 <div className="homemaindetails">
                     <p className={`${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>Hello I'm</p>
                     <h1 className={`${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>Blessen Vinoy Mathew</h1>
+                    <p className={`role-line ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>I’m a <AutoType /></p>
                 </div>
             </div>
         </>

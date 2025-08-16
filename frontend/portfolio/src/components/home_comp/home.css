@@ -86,6 +86,7 @@
     height: 400px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     border: 2px solid #FF2E2E;
     padding: 20px;
