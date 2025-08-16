@@ -78,7 +78,7 @@ const HeaderComponent = () => {
             <>
 
                 <div className="sidebaroverlay"></div>
-                <div className="sidebardiv darkmode">
+                <div className={`sidebardiv ${darkMode ? 'darkmode' : 'lightmode'}`}>
                     <a href="#" className="sidebaratag sidebaractivedark">
                         <i className="fa-regular fa-house sidebaricon"></i>
                         <span className="sidebartext">Home</span>
