@@ -16,6 +16,7 @@
 }
 
 
+
 .lightmodetext {
 
   color: #0A0A0A;
@@ -38,6 +39,9 @@
 
   width: 1300px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 @media screen and (max-width: 1399px) {
@@ -62,6 +66,16 @@
 
       width: 100%;
       padding: 20px;
+  }
+  
+}
+
+@media screen and (max-width: 575px) {
+
+  .childcontainer {
+
+      padding: 15px;
+      gap: 15px;
   }
   
 }

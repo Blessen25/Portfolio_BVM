@@ -1,11 +1,12 @@
 import React from "react";
 import { HomeComponent } from "../components/home_comp/home";
+import type { HeaderProps } from "../interface";
 
-const Home = () => {
+const Home:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
 
     return(
         <>
-            <HomeComponent/>
+            <HomeComponent darkMode = {darkMode} setDarkMode={setDarkMode}/>
         </>
     )
 }

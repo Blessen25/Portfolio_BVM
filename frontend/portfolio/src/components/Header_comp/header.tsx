@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import './header.css';
+import type { HeaderProps } from "../../interface";
 
-const HeaderComponent = () => {
+
+const HeaderComponent:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
 
     const [activesidebar, setActivceSidebar] = useState(false);
-    const [darkMode, setDarkMode] = useState(true);
     const handletogglebutton = () => {
 
         setDarkMode(!darkMode);
@@ -24,11 +25,11 @@ const HeaderComponent = () => {
                         <a href="#" className="imglogosecond">
                             {darkMode ? (
                                 <>
-                                    <img src="../public/assets/images/logo/bvm_logo_dark_small.png" alt="Logo Image" />
+                                    <img src="../assets/images/logo/bvm_logo_dark_small.png" alt="Logo Image" />
                                 </>
                             ): (
                                 <>
-                                    <img src="../public/assets/images/logo/bvm_logo_light_small.png" alt="Logo Image" />
+                                    <img src="../assets/images/logo/bvm_logo_light_small.png" alt="Logo Image" />
                                 </>
                             )
                             }
@@ -38,11 +39,11 @@ const HeaderComponent = () => {
                     <a href="#" className="imglogomain">
                         {darkMode ? (
                             <>
-                                <img src="../public/assets/images/logo/bvm_logo_dark_large.png" alt="Logo Image" />
+                                <img src="../assets/images/logo/bvm_logo_dark_large.png" alt="Logo Image" />
                             </>
                         ) : (
                             <>
-                               <img src="../public/assets/images/logo/bvm_logo_light_large.png" alt="Logo Image" />
+                               <img src="../assets/images/logo/bvm_logo_light_large.png" alt="Logo Image" />
                             </>
                         )}
                     </a>

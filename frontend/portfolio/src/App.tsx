@@ -8,7 +8,12 @@ const App = () => {
   const [darkmode, setdarkmode] = useState(true);
   return (
     <>
-      <Header />
+      <Header darkMode = {darkmode} setDarkMode={setdarkmode}/>
+      <div className={`maincontainer ${darkmode ? 'darkmode' : 'lightmode'}`}>
+      <div className={`childcontainer`}>
+        <Home darkMode={darkmode} setDarkMode={setdarkmode}/>
+      </div>
+      </div>
     </>
   )
 }

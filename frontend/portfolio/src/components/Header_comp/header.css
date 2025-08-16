@@ -2,6 +2,7 @@
 
   height: 100px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -644,6 +645,11 @@
   .sidebaratag {
 
     padding: 18px;
+  }
+
+  .headerdirstdiv {
+
+    gap: 15px;
   }
 }
 
