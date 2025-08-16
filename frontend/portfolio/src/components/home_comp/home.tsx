@@ -1,7 +1,7 @@
 import React from "react";
 import "./home.css";
 import type { HeaderProps } from "../../interface";
-import { AutoType } from "../extras";
+import { AutoType, ButtonComp } from "../extras";
 
 
 const HomeComponent:React.FC<HeaderProps> = ({darkMode , setDarkMode}) => {
@@ -16,9 +16,24 @@ const HomeComponent:React.FC<HeaderProps> = ({darkMode , setDarkMode}) => {
                     </div>
                     </div>
                 <div className="homemaindetails">
-                    <p className={`${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>Hello I'm</p>
-                    <h1 className={`${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>Blessen Vinoy Mathew</h1>
-                    <p className={`role-line ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>I’m a <AutoType /></p>
+                    <p className={`ptext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>Hello I'm</p>
+                    <h1 className={`h1text ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>Blessen Vinoy Mathew</h1>
+                    <p className={`role-line ptext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>I’m a <AutoType /></p>
+                    <div className="buttondiv">
+                        <ButtonComp text="Download CV" className={`${darkMode ? 'darkmodebutton' : 'lightmodebutton'}`}/>
+                        <ButtonComp text="Contact Info" className={`${darkMode ? 'darkmodetwobutton' : 'lightmodetwobutton'}`}/>
+                    </div>
+                    <div className="socialdivhome">
+                        <a href="#">
+                            <i className={`fa-brands fa-github socialicons ${darkMode ? 'socialiconsdark' : 'socialiconslight'}`}></i>
+                        </a>
+                        <a href="#">
+                            <i className={`fa-brands fa-linkedin socialicons ${darkMode ? 'socialiconsdark' : 'socialiconslight'}`}></i>
+                        </a>
+                        <a href="#">
+                            <i className={`fa-brands fa-instagram socialicons ${darkMode ? 'socialiconsdark' : 'socialiconslight'}`}></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </>

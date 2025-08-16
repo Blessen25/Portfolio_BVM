@@ -5,4 +5,15 @@ interface HeaderProps {
 
 }
 
-export type { HeaderProps };
+interface buttonProps {
+
+    className ?: string;
+    onClick ?: () => void;
+    text ?: string;
+    disabled ?: boolean;
+    hrefroute ?: string;
+    target ?: string;
+    style ?: React.CSSProperties;
+}
+
+export type { HeaderProps, buttonProps };

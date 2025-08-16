@@ -2,7 +2,6 @@
 
     width: 100%;
     height: 600px;
-    border: 2px solid #FF2E2E;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,8 +46,8 @@
 :root {
   --base: #0A0A0A;
   /* lighter tints of your base */
-  --arc-1: color-mix(in srgb, var(--base) 25%, white); 
-  --arc-2: color-mix(in srgb, var(--base) 40%, white); 
+  --arc-1: color-mix(in srgb, var(--base) 25%, rgb(0, 0, 0)); 
+  --arc-2: color-mix(in srgb, var(--base) 40%, rgb(0, 0, 0)); 
 }
 
 .border-spinlight {
@@ -88,18 +87,109 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid #FF2E2E;
     padding: 20px;
     gap: 20px;
 }
 
+.buttondiv {
 
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.darkmodebutton {
 
+    background-color: #FF2E2E;
+    color: #0A0A0A;
+    transition: all .7s;
+}
 
+.darkmodetwobutton {
 
+    background-color: #0A0A0A;
+    border: 1px solid #FF2E2E;
+    color: #FF2E2E;
+    transition: all .7s;
+}
 
+.darkmodebutton:hover {
 
+    box-shadow: inset 0px 70px 0px 0px #0A0A0A;
+    color: #FF2E2E;
+    border: 1px solid #FF2E2E;
+}
+
+.darkmodetwobutton:hover {
+
+    box-shadow: inset 0px 70px 0px 0px #FF2E2E;
+    color: #0A0A0A;
+    background-color: #FF2E2E;
+}
+
+.lightmodebutton {
+
+    background-color: #0A0A0A;
+    color: whitesmoke;
+    transition: all .7s;
+}
+
+.lightmodetwobutton{
+
+    background-color: whitesmoke;
+    color: #0A0A0A;
+    border: 1px solid #0A0A0A;
+    transition: all .7s;
+}
+
+.lightmodebutton:hover {
+
+    box-shadow: inset 0px 70px 0px 0px whitesmoke;
+    color: #0A0A0A;
+    border: 1px solid #0A0A0A;
+}
+
+.lightmodetwobutton:hover {
+
+    box-shadow: inset 0px 70px 0px 0px #0A0A0A;
+    color: whitesmoke;
+    background-color: #0A0A0A;
+}
+.socialdivhome {
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.socialicons {
+
+    font-size: 24px;
+}
+
+.socialiconsdark {
+
+    color: #FF2E2E;
+    transition: all .7s;
+}
+
+.socialiconsdark:hover {
+
+    color: #CC2A2A;
+}
+
+.socialiconslight:hover {
+
+    opacity: .7;
+}
+
+.socialiconslight {
+
+    color: #0A0A0A;
+    transition: all .7s;
+}
 
 
 
