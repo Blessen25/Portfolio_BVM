@@ -12,8 +12,8 @@
 
     * LIGHT COLOR PALLETE *
     background: whitesmoke or #f5f5f5;
-    text: #0A0A0A
-    texthover: #000000
+    text: #0A0A0A (opacity 1)
+    texthover: #000000 ( opacity 0.7 )
     button: #0A0A0A white 
     hoverbutton: white #0A0A0A #0A0A0A  
 */

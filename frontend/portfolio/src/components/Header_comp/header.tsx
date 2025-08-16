@@ -19,7 +19,8 @@ const HeaderComponent = () => {
             <div className={`maincontainer headermaincontainer ${darkMode ? "darkmode" : "lightmode"}`}>
                 <div className="childcontainer header">
                     <div className="headerdirstdiv">
-                        <i className={`fa-solid fa-align-left ${activesidebar ? 'left-color-dark-hover' : 'left-color-dark'}`} onClick={() => {handleSidebar();}}></i>
+                        <i className={`fa-solid fa-align-left ${darkMode? `${activesidebar ? 'left-color-dark-hover' : 'left-color-dark'}`
+                                : `${activesidebar ? 'left-color-light-hover' : 'left-color-light'}`}`} onClick={() => {handleSidebar();}}></i>
                         <a href="#" className="imglogosecond">
                             {darkMode ? (
                                 <>
@@ -46,11 +47,11 @@ const HeaderComponent = () => {
                         )}
                     </a>
                     <div className="navlinks">
-                        <a href="#">Home</a>
-                        <a href="#">About</a>
-                        <a href="#">Experience</a>
-                        <a href="#">Projects</a>
-                        <a href="#">Contact</a>
+                        <a href="#" className={`${darkMode ? 'darkmodetextatag' : 'lightmodetextatag'}`}>Home</a>
+                        <a href="#" className={`${darkMode ? 'darkmodetextatag' : 'lightmodetextatag'}`}>About</a>
+                        <a href="#" className={`${darkMode ? 'darkmodetextatag' : 'lightmodetextatag'}`}>Experience</a>
+                        <a href="#" className={`${darkMode ? 'darkmodetextatag' : 'lightmodetextatag'}`}>Projects</a>
+                        <a href="#" className={`${darkMode ? 'darkmodetextatag' : 'lightmodetextatag'}`}>Contact</a>
                     </div>
                     <div className={`${darkMode ? 'togglebuttondark' : 'togglebuttonlight'} togglebutton`} onClick={() => {handletogglebutton();}}>
                         <div className={`${darkMode ? 'togglerounddark' : 'toggleroundlight'} toggleround`}></div>
