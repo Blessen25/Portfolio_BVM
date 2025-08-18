@@ -20,7 +20,7 @@ const HeaderComponent:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
             <div className={`maincontainer headermaincontainer ${darkMode ? "darkmode" : "lightmode"}`}>
                 <div className="childcontainer header">
                     <div className="headerdirstdiv">
-                        <i className={`fa-solid fa-align-left ${darkMode? `${activesidebar ? 'left-color-dark-hover' : 'left-color-dark'}`
+                        <i className={`fa-solid fa-align-left iconfont ${darkMode? `${activesidebar ? 'left-color-dark-hover' : 'left-color-dark'}`
                                 : `${activesidebar ? 'left-color-light-hover' : 'left-color-light'}`}`} onClick={() => {handleSidebar();}}></i>
                         <a href="#" className="imglogosecond">
                             {darkMode ? (
@@ -81,23 +81,23 @@ const HeaderComponent:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                 <div className="sidebaroverlay"></div>
                 <div className={`sidebardiv ${darkMode ? 'darkmode' : 'lightmode'}`}>
                     <a href="#" className={`sidebaratag ${darkMode ? 'sidebaratagdark sidebaractivedark' : 'sidebarataglight sidebaractivelight'} `}>
-                        <i className="fa-regular fa-house sidebaricon"></i>
+                        <i className="fa-regular fa-house sidebaricon iconfont"></i>
                         <span className="sidebartext">Home</span>
                     </a>
                     <a href="#" className={`sidebaratag ${darkMode ? 'sidebaratagdark' : 'sidebarataglight'} `}>
-                        <i className="fa-regular fa-user sidebaricon"></i>
+                        <i className="fa-regular fa-user sidebaricon iconfont"></i>
                         <span className="sidebartext">About</span>
                     </a>
                     <a href="#" className={`sidebaratag ${darkMode ? 'sidebaratagdark' : 'sidebarataglight'} `}>
-                        <i className="fa-regular fa-id-badge sidebaricon"></i>
+                        <i className="fa-regular fa-id-badge sidebaricon iconfont"></i>
                         <span className="sidebartext">Experience</span>
                     </a>
                     <a href="#" className={`sidebaratag ${darkMode ? 'sidebaratagdark' : 'sidebarataglight'} `}>
-                        <i className="fa-regular fa-folder-open sidebaricon"></i>
+                        <i className="fa-regular fa-folder-open sidebaricon iconfont"></i>
                         <span className="sidebartext">Projects</span>
                     </a>
                     <a href="#" className={`sidebaratag ${darkMode ? 'sidebaratagdark' : 'sidebarataglight'} `}>
-                        <i className="fa-regular fa-envelope sidebaricon"></i>
+                        <i className="fa-regular fa-envelope sidebaricon iconfont"></i>
                         <span className="sidebartext">Contact</span>
                     </a>
                 </div>

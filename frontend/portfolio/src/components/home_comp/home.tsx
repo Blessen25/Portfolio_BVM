@@ -14,7 +14,7 @@ const HomeComponent:React.FC<HeaderProps> = ({darkMode , setDarkMode}) => {
                     <div className="homemainimage">
                         <img src={`${darkMode ? '../assets/images/logo/imagetwo_dark.jpg' : '../assets/images/logo/imagetwo_light.jpg' }`} alt="Profile Pic" />
                     </div>
-                    </div>
+                </div>
                 <div className="homemaindetails">
                     <p className={`ptext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>Hello I'm</p>
                     <h1 className={`h1text ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>Blessen Vinoy Mathew</h1>
@@ -25,13 +25,13 @@ const HomeComponent:React.FC<HeaderProps> = ({darkMode , setDarkMode}) => {
                     </div>
                     <div className="socialdivhome">
                         <a href="#">
-                            <i className={`fa-brands fa-github socialicons ${darkMode ? 'socialiconsdark' : 'socialiconslight'}`}></i>
+                            <i className={`fa-brands fa-github iconfont ${darkMode ? 'socialiconsdark' : 'socialiconslight'}`}></i>
                         </a>
                         <a href="#">
-                            <i className={`fa-brands fa-linkedin socialicons ${darkMode ? 'socialiconsdark' : 'socialiconslight'}`}></i>
+                            <i className={`fa-brands fa-linkedin iconfont ${darkMode ? 'socialiconsdark' : 'socialiconslight'}`}></i>
                         </a>
                         <a href="#">
-                            <i className={`fa-brands fa-instagram socialicons ${darkMode ? 'socialiconsdark' : 'socialiconslight'}`}></i>
+                            <i className={`fa-brands fa-instagram iconfont ${darkMode ? 'socialiconsdark' : 'socialiconslight'}`}></i>
                         </a>
                     </div>
                 </div>

@@ -6,16 +6,23 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    z-index: 0;
 }
 
 
 .homeimageborder {
-    position: relative;
+    /* position: relative;
     width: 410px;
     height: 410px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    position: relative;
+    width: clamp(180px, 410px, 410px);  
+    aspect-ratio: 1 / 1;              
+    display: grid;
+    place-items: center;
+    min-width: 0;
 }
 
 .border-spin {
@@ -164,11 +171,6 @@
     gap: 20px;
 }
 
-.socialicons {
-
-    font-size: 24px;
-}
-
 .socialiconsdark {
 
     color: #FF2E2E;
@@ -193,9 +195,115 @@
 
 
 
+@media screen and (max-width: 991px) {
+    
+    .homemaindiv {
+
+        height: 380px;
+    }
+
+    .homemainimage {
+    
+        width: 330px;
+        height: 330px;
+    }
+    .homeimageborder {
+
+        width: clamp(180px,340px, 340px);
+    }
+    
+}
+
+
+@media screen and (max-width: 767px) {
+    
+    .homemaindiv {
+
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .homemaindetails {
+
+        height: 100%;
+    }
+
+
+    .homemaindetails {
+
+        width: 100%;
+    }
+
+    .homemaindetails {
+
+        padding: 0px;
+    }
+
+    .buttondiv {
+
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    
+    .homemaindiv {
+
+        gap: 15px;
+    }
+    .homemainimage {
+    
+        width: 270px;
+        height: 270px;
+    }
+
+    .buttondiv {
+
+        width: 210px;
+    }
+
+    .homeimageborder {
+
+        width: clamp(160px,280px, 280px);
+    }
+
+    .homemaindetails {
+
+        gap: 15px;
+    }
+
+    .socialdivhome {
+
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .homemainimage {
+    
+        width: 210px;
+        height: 210px;
+    }
+    
+    .homeimageborder {
+
+        width: clamp(160px,220px, 220px);
+    }
+
+    .border-spin {
+
+        padding: 1px;
+    }
+    
+}
+
+
+
 /* ANIMATIONS HERE */
 
 @keyframes spinBorder {
     from { transform: rotate(0deg); }
     to   { transform: rotate(360deg); }
 }
+

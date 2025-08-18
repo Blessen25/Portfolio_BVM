@@ -55,6 +55,11 @@
   font-size: 30px;
 }
 
+.iconfont {
+
+    font-size: 24px;
+  }
+
 @media screen and (max-width: 1399px) {
   
   .childcontainer {
@@ -81,12 +86,46 @@
   
 }
 
+@media screen and (max-width: 767px) {
+  
+  .ptext {
+
+    font-size: 14px;
+  } 
+
+  .h1text {
+
+    font-size: 26px;
+  }
+
+  .iconfont {
+
+    font-size: 21px !important;
+  }
+
+}
+
 @media screen and (max-width: 575px) {
 
   .childcontainer {
 
       padding: 15px;
       gap: 15px;
+  }
+
+   .ptext {
+
+    font-size: 12px;
+  } 
+
+  .h1text {
+
+    font-size: 22px;
+  }
+
+  .iconfont {
+
+    font-size: 18px !important;
   }
   
 }
