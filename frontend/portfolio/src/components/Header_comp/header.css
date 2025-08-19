@@ -46,7 +46,7 @@
 
 .navlinks a {
 
-  font-size: 20px;
+  font-size: 18px;
   position: relative;
   transition: all .7s;
 }
@@ -306,7 +306,7 @@
 
   .navlinks a {
 
-    font-size: 18px;
+    font-size: 16px;
   }
   
   
@@ -320,10 +320,6 @@
       width: 480px;
   }
 
-  .navlinks a {
-
-    font-size: 16px;
-  }
   
   .imglogomain {
 
