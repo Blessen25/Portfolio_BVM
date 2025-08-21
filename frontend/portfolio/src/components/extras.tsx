@@ -10,8 +10,8 @@ export const AutoType: React.FC = () => {
   const titles = useMemo(
     () => [
       "Software Developer",
-      "Frontend Developer",
-      "Backend Developer",
+      "Front-end Developer",
+      "Back-end Developer",
       "Full-Stack Developer",
     ],
     []

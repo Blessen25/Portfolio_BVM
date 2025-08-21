@@ -13,6 +13,15 @@
     gap: 20px;
 }
 
+@media screen and (max-width: 991px) {
+    
+    .aboutcarddivparent {
+        
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 @media screen and (max-width: 575px) {
     
     .aboutdivtitle {

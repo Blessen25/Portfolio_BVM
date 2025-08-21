@@ -8,7 +8,7 @@
 
 .aboutcarddiv {
 
-    width: 400px;
+    width: 100%;
     border-radius: 5px;
     padding: 20px;
     display: flex;
@@ -17,6 +17,7 @@
     justify-content: center;
     transition: all .7s;
     gap: 20px;
+    text-align: center;
 }
 
 .cardiconround {
@@ -52,12 +53,31 @@
    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
+@media screen and (max-width: 991px) {
+    
+    .aboutcarddiv {
+        
+        width: 450px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     
     .buttonnormal {
 
         padding: 8px 16px;
         font-size: 14px;
+    }
+
+    .aboutcarddiv {
+
+        width: 100%;
+    }
+
+    .cardiconround {
+
+        width: 60px;
+        height: 60px;
     }
 }
 
@@ -67,5 +87,17 @@
 
         padding: 6px 12px;
         font-size: 12px;
+    }
+
+    .cardiconround {
+
+        width: 50px;
+        height: 50px;
+    }
+
+    .aboutcarddiv {
+
+        gap: 15px;
+        padding: 15px;
     }
 }
