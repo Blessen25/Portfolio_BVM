@@ -3,7 +3,9 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .darkmode {
@@ -48,11 +50,13 @@
 .ptext {
 
   font-size: 16px;
+  font-weight: 400;
 }
 
 .h1text {
 
-  font-size: 30px;
+  font-size: 34px;
+  font-weight: 800;
 }
 
 .iconfont {
@@ -83,6 +87,11 @@
       width: 100%;
       padding: 20px;
   }
+
+  .h1text {
+
+    font-size: 30px;
+  }
   
 }
 
@@ -95,7 +104,7 @@
 
   .h1text {
 
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .iconfont {
@@ -120,7 +129,7 @@
 
   .h1text {
 
-    font-size: 22px;
+    font-size: 16px;
   }
 
   .iconfont {
