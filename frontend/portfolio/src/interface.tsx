@@ -21,7 +21,8 @@ interface aboutcardProps {
     darkMode ?: boolean;
     setDarkMode ?: (darkMode: boolean) => void;
     className ?: string;
-    
+    h1text ?: string;
+    ptext ?: string;
 }
 
 export type { HeaderProps, buttonProps, aboutcardProps };

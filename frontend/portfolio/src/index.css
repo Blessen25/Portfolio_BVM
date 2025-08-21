@@ -61,6 +61,13 @@
   transition: all .7s;
 }
 
+.h1smalltext {
+
+  font-size: 20px;
+  font-weight: 600;
+  transition: all .7s;
+}
+
 .iconfont {
 
     font-size: 24px;
@@ -99,6 +106,11 @@
 
     font-size: 14px;
   }
+
+  .h1smalltext {
+
+    font-size: 18px;
+  }
   
 }
 
@@ -107,7 +119,12 @@
   .ptext {
 
     font-size: 12px;
-  } 
+  }
+  
+  .h1smalltext {
+
+    font-size: 16px;
+  }
 
   .h1text {
 
@@ -133,6 +150,11 @@
 
     font-size: 10px;
   } 
+
+  .h1smalltext {
+
+    font-size: 14px;
+  }
 
   .h1text {
 
