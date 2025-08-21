@@ -47,6 +47,47 @@ export const AutoType: React.FC = () => {
   );
 };
 
+export const AutoTypeAbout: React.FC = () => {
+  const el = useRef<HTMLSpanElement | null>(null);
+
+  // Keep strings stable so Typed.js doesn't re-init on every render
+  const titles = useMemo(
+    () => [
+      "ABOUT ME",
+      "WHAT I DO?"
+    ],
+    []
+  );
+
+  useEffect(() => {
+    if (window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) {
+      if (el.current) el.current.textContent = titles[0];
+      return;
+    }
+
+    const typed = new Typed(el.current!, {
+      strings: titles,
+      typeSpeed: 60,
+      backSpeed: 30,
+      backDelay: 4000,
+      startDelay: 100,
+      smartBackspace: true,
+      loop: true,
+      showCursor: true,
+      cursorChar: "|",
+      
+     
+    });
+
+    return () => typed.destroy(); 
+  }, [titles]);
+
+  return (
+    <span className="autotype">
+      <span ref={el} />
+    </span>
+  );
+};
 
 export const ButtonComp: React.FC<buttonProps> = ({
   className = "",
