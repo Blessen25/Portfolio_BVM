@@ -51,12 +51,14 @@
 
   font-size: 16px;
   font-weight: 400;
+  transition: all .7s;
 }
 
 .h1text {
 
   font-size: 34px;
   font-weight: 800;
+  transition: all .7s;
 }
 
 .iconfont {
@@ -92,6 +94,11 @@
 
     font-size: 30px;
   }
+
+  .ptext {
+
+    font-size: 14px;
+  }
   
 }
 
@@ -99,7 +106,7 @@
   
   .ptext {
 
-    font-size: 14px;
+    font-size: 12px;
   } 
 
   .h1text {
@@ -124,7 +131,7 @@
 
    .ptext {
 
-    font-size: 12px;
+    font-size: 10px;
   } 
 
   .h1text {

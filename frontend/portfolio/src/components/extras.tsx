@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useRef } from "react";
 import Typed from "typed.js";
 import "./extras.css";
-import type { buttonProps } from "../interface";
+import type { aboutcardProps, buttonProps } from "../interface";
 
 export const AutoType: React.FC = () => {
   const el = useRef<HTMLSpanElement | null>(null);
@@ -69,7 +69,7 @@ export const AutoTypeAbout: React.FC = () => {
       strings: titles,
       typeSpeed: 60,
       backSpeed: 30,
-      backDelay: 4000,
+      backDelay: 3000,
       startDelay: 100,
       smartBackspace: true,
       loop: true,
@@ -139,4 +139,18 @@ export const ButtonComp: React.FC<buttonProps> = ({
       {text}
     </a>
   );
+};
+
+
+export const AboutcardComponent: React.FC<aboutcardProps> = (Props) => {
+
+  return(
+    <>
+      <div className={`aboutcarddiv ${Props.darkMode ? 'darkmodeaboutcard' : 'lightmodeaboutcard'}`}>
+          <div className={`cardiconround ${Props.darkMode ? 'darkmoderound':'lightmoderound'} `}>
+              
+          </div>
+      </div>
+    </>
+  )
 };

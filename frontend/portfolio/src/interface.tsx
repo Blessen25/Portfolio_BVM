@@ -16,4 +16,11 @@ interface buttonProps {
     style ?: React.CSSProperties;
 }
 
-export type { HeaderProps, buttonProps };
+interface aboutcardProps {
+
+    darkMode ?: boolean;
+    setDarkMode ?: (darkMode: boolean) => void;
+    
+}
+
+export type { HeaderProps, buttonProps, aboutcardProps };

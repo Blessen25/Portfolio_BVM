@@ -6,6 +6,50 @@
     font-size: 16px;
 }
 
+.aboutcarddiv {
+
+    width: 400px;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all .7s;
+
+}
+
+.cardiconround {
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: red;
+    transition: all .7s;
+}
+
+.lightmoderound {
+
+    background-color: #0A0A0A;
+    color: whitesmoke;
+}
+
+.darkmoderound {
+
+    background-color: #FF2E2E;
+    color: #0A0A0A;
+}
+
+.darkmodeaboutcard {
+
+   box-shadow:rgba(255, 46, 46, 0.12) 0px 1px 3px 0px,rgba(255, 46, 46, 1) 0px 0px 0px 1px;
+}
+
+.lightmodeaboutcard {
+
+   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
 @media screen and (max-width: 767px) {
     
     .buttonnormal {
