@@ -148,7 +148,7 @@ export const AboutcardComponent: React.FC<aboutcardProps> = (Props) => {
     <>
       <div className={`aboutcarddiv ${Props.darkMode ? 'darkmodeaboutcard' : 'lightmodeaboutcard'}`}>
           <div className={`cardiconround ${Props.darkMode ? 'darkmoderound':'lightmoderound'} `}>
-              
+              <i className={`${Props.className} iconfont`}></i>
           </div>
       </div>
     </>

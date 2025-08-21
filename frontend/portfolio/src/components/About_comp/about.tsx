@@ -13,9 +13,9 @@ const AboutComp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                 <h1 className={`h1text ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}><AutoTypeAbout/></h1>
                 <p className={`ptext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>I build end-to-end features users love and teams can scale.</p>
                 <div className="aboutcarddivparent">
-                    <AboutcardComponent darkMode={darkMode} setDarkMode={setDarkMode}/>
-                    <AboutcardComponent darkMode={darkMode} setDarkMode={setDarkMode}/>
-                    <AboutcardComponent darkMode={darkMode} setDarkMode={setDarkMode}/>
+                    <AboutcardComponent darkMode={darkMode} setDarkMode={setDarkMode} className="fa-solid fa-laptop-code"/>
+                    <AboutcardComponent darkMode={darkMode} setDarkMode={setDarkMode} className="fa-solid fa-server"/>
+                    <AboutcardComponent darkMode={darkMode} setDarkMode={setDarkMode} className="fa-solid fa-database"/>
 
                 </div>
             </div>

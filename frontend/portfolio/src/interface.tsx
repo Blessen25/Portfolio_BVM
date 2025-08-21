@@ -20,6 +20,7 @@ interface aboutcardProps {
 
     darkMode ?: boolean;
     setDarkMode ?: (darkMode: boolean) => void;
+    className ?: string;
     
 }
 
