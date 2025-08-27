@@ -24,7 +24,7 @@
 
 @media screen and (max-width: 575px) {
     
-    .aboutdivtitle {
+    .aboutdivtitle, .aboutcarddivparent {
 
         gap: 15px;
     }

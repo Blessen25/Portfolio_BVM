@@ -50,7 +50,7 @@ const HeaderComponent:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                     <div className="navlinks">
                         <a href="#" className={`${darkMode ? 'darkmodetextatag' : 'lightmodetextatag'}`}>Home</a>
                         <a href="#" className={`${darkMode ? 'darkmodetextatag' : 'lightmodetextatag'}`}>About</a>
-                        <a href="#" className={`${darkMode ? 'darkmodetextatag' : 'lightmodetextatag'}`}>Experience</a>
+                        <a href="#" className={`${darkMode ? 'darkmodetextatag' : 'lightmodetextatag'}`}>Skills</a>
                         <a href="#" className={`${darkMode ? 'darkmodetextatag' : 'lightmodetextatag'}`}>Projects</a>
                         <a href="#" className={`${darkMode ? 'darkmodetextatag' : 'lightmodetextatag'}`}>Contact</a>
                     </div>
@@ -90,7 +90,7 @@ const HeaderComponent:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                     </a>
                     <a href="#" className={`sidebaratag ${darkMode ? 'sidebaratagdark' : 'sidebarataglight'} `}>
                         <i className="fa-regular fa-id-badge sidebaricon iconfont"></i>
-                        <span className="sidebartext">Experience</span>
+                        <span className="sidebartext">Skills</span>
                     </a>
                     <a href="#" className={`sidebaratag ${darkMode ? 'sidebaratagdark' : 'sidebarataglight'} `}>
                         <i className="fa-regular fa-folder-open sidebaricon iconfont"></i>
