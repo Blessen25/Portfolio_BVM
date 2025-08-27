@@ -15,7 +15,7 @@ const App = () => {
       <div className={`childcontainer`}>
         <Home darkMode={darkmode} setDarkMode={setdarkmode}/>
         <About darkMode= {darkmode} setDarkMode={setdarkmode}/>
-        <Skills />
+        <Skills darkMode={darkmode} setDarkMode={setdarkmode}/>
       </div>
       </div>
     </>
