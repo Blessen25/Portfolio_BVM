@@ -5,3 +5,19 @@
     gap: 20px;
     width: 100%;
 }
+
+.skillchilddiv {
+
+    display: flex;
+    width: 100%;
+    gap: 20px;
+
+}
+
+@media screen and (max-width: 575px) {
+    
+    .skillparentdiv, .skillchilddiv {
+
+        gap: 15px;
+    }
+}

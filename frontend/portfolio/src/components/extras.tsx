@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useRef } from "react";
 import Typed from "typed.js";
 import "./extras.css";
-import type { aboutcardProps, buttonProps } from "../interface";
+import type { aboutcardProps, buttonProps, Skill, skillcardProps } from "../interface";
 
 export const AutoType: React.FC = () => {
   const el = useRef<HTMLSpanElement | null>(null);
@@ -241,3 +241,26 @@ export const AboutcardComponent: React.FC<aboutcardProps> = (Props) => {
     </>
   )
 };
+
+export const SkillscardComponent: React.FC<skillcardProps> = (Props) => {
+  
+ 
+  return(
+
+    <>
+      <div className={`skillcardparent ${Props.darkMode ? 'darkmodeaboutcard' : 'lightmodeaboutcard'}`}>
+            <h1 className={`${Props.darkMode ? 'darkmodetext' : 'lightmodetext'} h1smalltext`}>{Props.h1text}</h1>
+            <div className="skill-gridcard">
+                {Props?.items?.map((s, i)=>(
+                  <>
+                    <div className="skill-itemcard" key={i}>
+                      <p>{s.name}</p>
+                      <p>{s.level}</p>
+                    </div>
+                  </>
+                ))}
+            </div>
+      </div>
+    </>
+  )
+}

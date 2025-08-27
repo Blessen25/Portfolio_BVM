@@ -25,4 +25,19 @@ interface aboutcardProps {
     ptext ?: string;
 }
 
-export type { HeaderProps, buttonProps, aboutcardProps };
+export type SkillLevel = "Beginner" | "Intermediate" | "Advanced";
+export type Skill = {
+    name : string;
+    level : SkillLevel;
+};
+
+interface skillcardProps {
+
+    darkMode ?: boolean;
+    setDarkMode ?: (darkMode: boolean) => void;
+    h1text ?: string;
+    title ?: string;
+    items ?: Skill[];
+}
+
+export type { HeaderProps, buttonProps, aboutcardProps, skillcardProps };

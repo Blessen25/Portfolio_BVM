@@ -1,15 +1,25 @@
 import React from "react";
 import "./skill.css";
-import type { HeaderProps } from "../../interface";
-import { AutoTypeSkills } from "../extras";
+import type { HeaderProps, Skill } from "../../interface";
+import { AutoTypeSkills, SkillscardComponent } from "../extras";
 
 const Skills_Comp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
 
+     const frontEnd: Skill[] = [
+
+    { name: 'HTML' , level: 'Advanced' },
+    { name: 'CSS' , level: 'Advanced' },
+
+  ]
     return(
         <>
             <div className="skillparentdiv">
-                    <h1 className={`h1text ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}><AutoTypeSkills/></h1>
-                    
+                <h1 className={`h1text ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}><AutoTypeSkills/></h1>
+                <p className={`ptext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>The languages, frameworks, and tools behind my work.</p>
+                <div className="skillchilddiv">
+                    <SkillscardComponent darkMode={darkMode} setDarkMode={setDarkMode} h1text="Front-End Development" items={frontEnd}/>
+                    <SkillscardComponent darkMode={darkMode} setDarkMode={setDarkMode} h1text="Back-End Development" />
+                </div>
             </div>
         </>
     )
