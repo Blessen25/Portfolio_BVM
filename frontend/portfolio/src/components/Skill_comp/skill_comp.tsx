@@ -16,6 +16,15 @@ const Skills_Comp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
     { name: 'Bootstrap', level: 'Beginner'}
 
   ]
+
+  const Backend: Skill[] = [
+
+    { name : 'Python', level: 'Advanced'},
+    { name : 'Django', level: 'Intermediate'},
+    { name : 'SQL', level: 'Intermediate'},
+    { name : 'Laravel', level: 'Beginner'},
+
+  ]
     return(
         <>
             <div className="skillparentdiv">
@@ -23,7 +32,7 @@ const Skills_Comp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                 <p className={`ptext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>The languages, frameworks, and tools behind my work.</p>
                 <div className="skillchilddiv">
                     <SkillscardComponent darkMode={darkMode} setDarkMode={setDarkMode} h1text="Front-End Development" items={frontEnd}/>
-                    <SkillscardComponent darkMode={darkMode} setDarkMode={setDarkMode} h1text="Back-End Development" />
+                    <SkillscardComponent darkMode={darkMode} setDarkMode={setDarkMode} h1text="Back-End Development" items={Backend}/>
                 </div>
             </div>
         </>

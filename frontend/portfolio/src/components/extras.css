@@ -103,11 +103,35 @@
     gap: 5px;
 }
 
+@media screen and (max-width: 1199px) {
+    
+    .skillchilddiv {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skillcardparent {
+
+        width: 600px;
+    }
+}
+
 @media screen and (max-width: 991px) {
     
     .aboutcarddiv {
         
         width: 450px;
+    }
+
+    .skillcardparent {
+
+        width: 450px;
+    }
+
+    .skill-gridcard {
+
+        grid-template-columns: repeat(2, minmax(196px,1fr));
     }
 }
 
@@ -128,6 +152,22 @@
 
         width: 60px;
         height: 60px;
+    }
+
+    .skillcardparent {
+
+        width: 100%;
+    }
+
+    .skill-gridcard {
+
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+    }
+    
+    .skill-icon {
+
+        width: 45px;
+        height: 45px;
     }
 }
 
@@ -150,4 +190,21 @@
         gap: 15px;
         padding: 15px;
     }
+
+     .skill-icon {
+
+        width: 35px;
+        height: 35px;
+    }
+
+    .skill-gridcard, .skillcardparent, .skill-itemcard {
+
+        gap: 15px;
+    }
+    
+    .skillcardparent {
+
+        padding: 15px;
+    }
+
 }
