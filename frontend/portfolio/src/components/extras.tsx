@@ -253,9 +253,15 @@ export const SkillscardComponent: React.FC<skillcardProps> = (Props) => {
             <div className="skill-gridcard">
                 {Props?.items?.map((s, i)=>(
                   <>
-                    <div className="skill-itemcard" key={i}>
-                      <p>{s.name}</p>
-                      <p>{s.level}</p>
+                    <div className={`skill-itemcard ${Props.darkMode ? 'darkmodetext' : 'lightmodetext'}`} key={i}>
+                      <div className={`skill-icon ${Props.darkMode ? 'darkmoderound darkmodeaboutcard':'lightmoderound lightmodeaboutcard'}`}>
+                        <i className="fa-solid fa-check iconfont"></i>
+                      </div>
+                      <div className="skilldetails">
+
+                          <p className="h1smalltext">{s.name}</p>
+                          <p className="ptext">{s.level}</p>
+                      </div>
                     </div>
                   </>
                 ))}
