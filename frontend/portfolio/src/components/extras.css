@@ -201,6 +201,12 @@
 
         gap: 15px;
     }
+
+    .skill-itemcard {
+
+        padding: 15px;
+        align-items: center;
+    }
     
     .skillcardparent {
 
@@ -208,7 +214,31 @@
     }
     
     .skill-gridcard{
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(160px, 1fr));
     }
 
+}
+
+@media screen and (max-width: 426px) {
+    .skill-icon {
+
+        width: 20px;
+        height: 20px;
+    }
+
+    .fa-check {
+
+        font-size: 12px !important;
+    }
+
+    .skill-gridcard {
+
+        grid-template-columns: repeat(2, minmax(128px, 1fr));
+        
+    }
+    
+    .skill-itemcard , .skill-gridcard {
+
+        gap: 10px;
+    }
 }
