@@ -206,5 +206,9 @@
 
         padding: 15px;
     }
+    
+    .skill-gridcard{
+        grid-template-columns: 1fr;
+    }
 
 }
