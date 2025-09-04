@@ -17,8 +17,8 @@ const Experience_Comp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                     <div className={`timeline_star ${darkMode ? 'darkmoderound' : 'lightmoderound'}`}>
                         <i className={`fa-solid fa-star iconfont`}></i>
                     </div>
-                    <div className="firstexperiencediv">
-                        
+                    <div className={`firstexperiencediv ${darkMode ? 'darkmodeaboutcard darkmoderound' : 'lightmodeaboutcard lightmoderound'}`}>
+                        <h1 className='h1smalltext'>Full Stack Developer</h1>
                     </div>
                 </div>
             </div>
