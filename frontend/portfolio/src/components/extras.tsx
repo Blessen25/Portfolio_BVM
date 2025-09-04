@@ -95,8 +95,8 @@ export const AutoTypeCareer: React.FC = () => {
   // Keep strings stable so Typed.js doesn't re-init on every render
   const titles = useMemo(
     () => [
-      "CAREER AND ACADEMICS",
-      "EXPERIENCE AND EDUCATION",
+      "PROFESSIONAL EXPERIENCE",
+      "CAREER HIGHLIGHTS",
     ],
     []
   );

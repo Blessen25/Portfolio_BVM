@@ -1,0 +1,14 @@
+.experiencediv {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experienceparent {
+
+    border: 2px solid red;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
