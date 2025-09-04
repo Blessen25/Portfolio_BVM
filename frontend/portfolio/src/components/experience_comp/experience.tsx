@@ -29,7 +29,24 @@ const Experience_Comp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                             <ButtonComp text="Django" className={`${darkMode ? 'darkmodetwobutton' : 'lightmodetwobutton'}`}/>
                             <ButtonComp text="SQL" className={`${darkMode ? 'darkmodetwobutton' : 'lightmodetwobutton'}`}/>
                             <ButtonComp text="Laravel" className={`${darkMode ? 'darkmodetwobutton' : 'lightmodetwobutton'}`}/>
-
+                        </div>
+                    </div>
+                     <div className={`timeline_star2 ${darkMode ? 'darkmoderound' : 'lightmoderound'}`}>
+                        <i className="fa-solid fa-briefcase iconfont"></i>
+                    </div>
+                    <div className={`secondexperiencediv ${darkMode ? 'darkmodeaboutcard darkmodetext' : 'lightmodeaboutcard lightmodetext'}`}>
+                        <h1 className='h1smalltext'>PROGRAMMER TRAINEE</h1>
+                        <div className="yearofexp">
+                            <p className='ptext'>Brahmaa Infotek</p>
+                            <p>March 2023 - March 2024</p>
+                        </div>
+                        <p className='ptext'>Programmer Trainee at Brahmaa Infotek, building responsive React UIs with HTML/CSS and reusable components. I also tested API data (status codes, JSON shape, edge cases in Postman) and integrated responses into the front end, handling loading/error states, data mapping, and UI validation.</p>
+                        <div className="experienceskilldiv">
+                            <ButtonComp text="HTML" className={`${darkMode ? 'darkmodetwobutton' : 'lightmodetwobutton'}`}/>
+                            <ButtonComp text="CSS" className={`${darkMode ? 'darkmodetwobutton' : 'lightmodetwobutton'}`}/>
+                            <ButtonComp text="React js" className={`${darkMode ? 'darkmodetwobutton' : 'lightmodetwobutton'}`}/>
+                            <ButtonComp text="Bootstrap" className={`${darkMode ? 'darkmodetwobutton' : 'lightmodetwobutton'}`}/>
+                            <ButtonComp text="SQL" className={`${darkMode ? 'darkmodetwobutton' : 'lightmodetwobutton'}`}/>
                         </div>
                     </div>
                 </div>

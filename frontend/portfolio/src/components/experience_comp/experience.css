@@ -7,7 +7,7 @@
 
 .experienceparent {
 
-    height: 600px;
+    height: 730px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -38,6 +38,22 @@
     transition: all .7s;
 }
 
+.timeline_star2 {
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: all .7s;
+}
+
 .firstexperiencediv {
 
     width: 580px;
@@ -45,6 +61,22 @@
     position: absolute;
     left: 0px;
     top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    z-index: 1;
+    transition: all .7s;
+}
+
+.secondexperiencediv {
+
+    width: 580px;
+    border-radius: 5px;
+    position: absolute;
+    right: 0px;
+    bottom: 20px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -62,5 +94,13 @@
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+}
+
+.yearofexp {
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     align-items: center;
 }
