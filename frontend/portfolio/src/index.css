@@ -18,7 +18,27 @@
   background-color: whitesmoke;
 }
 
+.background_primary_red {
 
+  background-color: #FF2E2E;
+}
+
+.background_primary_black {
+
+  background-color: #0A0A0A;
+}
+
+.lightmoderound {
+
+    background-color: #0A0A0A;
+    color: whitesmoke;
+}
+
+.darkmoderound {
+
+    background-color: #FF2E2E;
+    color: #0A0A0A;
+}
 
 .lightmodetext {
 

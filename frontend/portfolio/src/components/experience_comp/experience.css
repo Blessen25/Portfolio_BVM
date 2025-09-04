@@ -7,8 +7,33 @@
 
 .experienceparent {
 
-    border: 2px solid red;
     height: 600px;
     display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.vertical_line {
+
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0px;
+    transition: all .7s;
+}
+
+.timeline_star {
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
     align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: all .7s;
 }
