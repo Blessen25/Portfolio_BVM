@@ -76,7 +76,7 @@
     height: 60px;
     border-radius: 50%;
     position: absolute;
-    bottom: 170px;
+    bottom: 180px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -167,4 +167,171 @@
     flex-direction: column;
     gap: 15px;
     align-items: center;
+}
+
+.experiencedotone , .experiencedottwo {
+
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.experiencedotone {
+
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.experiencedottwo {
+
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.firstexperiencediv h1, .secondexperiencediv h1, .thirdexperiencediv h1, .fourthexperiencediv h1 {
+
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1399px) {
+    
+    .firstexperiencediv , .secondexperiencediv , .thirdexperiencediv , .fourthexperiencediv {
+
+        width: 470px;
+    }
+
+    .secondexperiencediv {
+
+        top: 290px;
+    }
+    
+    .timeline_star2 {
+
+            top: 310px;
+    }
+
+    .thirdexperiencediv {
+
+        top: 660px;
+    }
+
+    .timeline_star3 {
+
+        top: 690px;
+    }
+
+    .fourthexperiencediv {
+
+        bottom: 20px;
+    }
+
+    .timeline_star4 {
+
+        bottom: 210px;
+    }
+
+    .experienceparent {
+
+        height: 1350px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    
+    .firstexperiencediv , .secondexperiencediv , .thirdexperiencediv , .fourthexperiencediv {
+    
+        width: 370px;
+    }
+
+    .experienceparent {
+
+        height: 1560px;
+    }
+
+    .firstexperiencediv {
+
+        top: 30px;
+    }
+
+    .timeline_star {
+
+        top: 50px;
+    }
+
+    .secondexperiencediv {
+
+        top: 360px;
+    }
+
+    .timeline_star2 {
+
+        top: 390px;
+    }
+
+    .timeline_star3 {
+
+        top: 840px;
+    }
+
+    .thirdexperiencediv {
+
+        top: 810px;
+    }
+
+    .fourthexperiencediv {
+    
+        bottom: 30px;
+    }
+
+    .timeline_star4 {
+
+        bottom: 250px;
+    }
+    
+}
+
+@media screen and (max-width: 991px) {
+    
+    .vertical_line, .timeline_star, .timeline_star2, .timeline_star3, .timeline_star4,.experiencedotone,.experiencedottwo {
+    
+            display: none;
+    }
+
+    .firstexperiencediv , .secondexperiencediv , .thirdexperiencediv , .fourthexperiencediv {
+
+        width: 100%;
+        position: static;
+    }
+
+    .experienceparent {
+
+        height: 100%;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 575px){
+
+    .experiencediv,.experienceparent,.firstexperiencediv,.secondexperiencediv,.thirdexperiencediv,.fourthexperiencediv {
+
+        gap: 15px;
+    }
+
+    .firstexperiencediv,.secondexperiencediv,.thirdexperiencediv,.fourthexperiencediv {
+
+        padding: 15px;
+    }
+
+    .yearofexp {
+
+        gap: 10px;
+    }
 }

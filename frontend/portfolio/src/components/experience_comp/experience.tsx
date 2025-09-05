@@ -21,6 +21,7 @@ const Experience_Comp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                         <h1 className='h1smalltext'>MASTER OF INFORMATION TECHNOLOGY</h1>
                         <div className="yearofexp">
                             <p className='ptext'>Royal Melbourne Institute of Technology, RMIT</p>
+                            <p className='ptext'>Currently Pursuing</p>
                         </div>
                         <p className='ptext'>Master of Information Technology focusing on software development, data management, and systems design. Covering algorithms, databases, networking, security, cloud, and project management, with hands-on work in modern web stacks. Built capstone projects emphasizing clean architecture, testing, and real-world problem solving.</p>
                     </div>
@@ -64,9 +65,14 @@ const Experience_Comp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                     </div>
                      <div className={`fourthexperiencediv ${darkMode ? 'darkmodeaboutcard darkmodetext' : 'lightmodeaboutcard lightmodetext'}`}>
                         <h1 className='h1smalltext'>BACHELOR OF TECHNOLOGY IN COMPUTER SCIENCE</h1>
-                        <p className='ptext'>Saintgits College of Engineering</p>
+                        <div className="yearofexp">
+                            <p className='ptext'>Saintgits College of Engineering</p>
+                            <p className='ptext'>2019 - 2023</p>
+                        </div>
                         <p className='ptext'>B.Tech in Computer Science with a strong foundation in data structures & algorithms, OOP, databases, operating systems, and computer networks. Built team projects and a capstone using modern web technologies, applying clean architecture, testing, and version control.</p>
                     </div>
+                    <div className={`experiencedotone ${darkMode ? 'darkmoderound' : 'lightmoderound'}`}></div>
+                    <div className={`experiencedottwo ${darkMode ? 'darkmoderound' : 'lightmoderound'}`}></div>
                 </div>
             </div>
         </>
