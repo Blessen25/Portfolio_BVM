@@ -7,7 +7,7 @@
 
 .experienceparent {
 
-    height: 1160px;
+    height: 1170px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -76,7 +76,7 @@
     height: 60px;
     border-radius: 50%;
     position: absolute;
-    bottom: 180px;
+    bottom: 200px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -320,7 +320,7 @@
 
 @media screen and (max-width: 575px){
 
-    .experiencediv,.experienceparent,.firstexperiencediv,.secondexperiencediv,.thirdexperiencediv,.fourthexperiencediv {
+    .experiencediv,.experienceparent,.firstexperiencediv,.secondexperiencediv,.thirdexperiencediv,.fourthexperiencediv,.experienceskilldiv  {
 
         gap: 15px;
     }
