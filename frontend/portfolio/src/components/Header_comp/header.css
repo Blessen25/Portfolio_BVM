@@ -40,7 +40,7 @@
 
   display: flex;
   gap: 20px;
-  width: 580px;
+  width: 650px;
   justify-content: space-between;
 }
 
@@ -308,6 +308,11 @@
 
     font-size: 16px;
   }
+
+  .navlinks {
+
+    width: 620px;
+  }
   
   
 }
@@ -317,7 +322,7 @@
 
   .navlinks {
 
-      width: 480px;
+      width: 500px;
   }
 
   
