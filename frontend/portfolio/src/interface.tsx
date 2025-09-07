@@ -40,17 +40,6 @@ interface skillcardProps {
     items ?: Skill[];
 }
 
-export type CardCarouselProps<T> = {
-
-    items : T[];
-    renderItem : (item : T, index: number) => React.ReactNode;
-    slidesperview ?: number;
-    groupSize ?: number;
-    darkMode ?: boolean;
-    setDarkMode ?: (darkMode: boolean) => void;
-    className ?: string;
-    loop ?: boolean;
-}
 
 export type { HeaderProps, buttonProps, aboutcardProps, skillcardProps };
 
