@@ -35,10 +35,10 @@ return (
                   itemClass="carousel-item-pad"
                   containerClass="carousel-container"
                >
-                <ProjectcardComponent />
-                <ProjectcardComponent />
-                <ProjectcardComponent />
-                <ProjectcardComponent />
+                <ProjectcardComponent darkMode={darkMode} setDarkMode={setDarkMode}/>
+                <ProjectcardComponent darkMode={darkMode} setDarkMode={setDarkMode}/>
+                <ProjectcardComponent darkMode={darkMode} setDarkMode={setDarkMode}/>
+                <ProjectcardComponent darkMode={darkMode} setDarkMode={setDarkMode}/>
                </Carousel>
             </div>
         </>

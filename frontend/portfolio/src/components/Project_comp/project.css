@@ -16,16 +16,17 @@
 }
 
 
-.carousel-item-pad { padding-inline: calc(var(--card-gap) / 2); }
-.carousel-container .react-multi-carousel-list {
-  margin-inline: calc(var(--card-gap) / -2);
+.carousel-item-pad { padding-inline: calc(var(--card-gap) / 2);
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 
+
 .carousel-container .react-multi-carousel-track > .carousel-item-pad:first-child {
-  padding-left: 0;                 /* or a custom value */
+  padding-left: 1px;                 /* or a custom value */
 }
 .carousel-container .react-multi-carousel-track > .carousel-item-pad:last-child {
-  padding-right: 0;                /* or a custom value */
+  padding-right: 2px;                /* or a custom value */
 }
 
 @media screen and (max-width: 575px) {

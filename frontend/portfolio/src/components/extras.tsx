@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useRef } from "react";
 import Typed from "typed.js";
 import "./extras.css";
-import type { aboutcardProps, buttonProps, Skill, skillcardProps } from "../interface";
+import type { aboutcardProps, buttonProps, HeaderProps, Skill, skillcardProps } from "../interface";
 
 export const AutoType: React.FC = () => {
   const el = useRef<HTMLSpanElement | null>(null);
@@ -311,12 +311,12 @@ export const SkillscardComponent: React.FC<skillcardProps> = (Props) => {
   )
 }
 
-export const ProjectcardComponent: React.FC = () => {
+export const ProjectcardComponent: React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
 
   return(
 
     <>
-      <div className="card-div-carousel">
+      <div className={`card-div-carousel ${darkMode ? 'darkmodeaboutcard darkmodetext' : 'lightmodeaboutcard lightmodetext'}`}>
         <h1>asdjksad</h1>
         <p>dasdjlskajd</p>
       </div>

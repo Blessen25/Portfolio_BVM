@@ -113,6 +113,13 @@
     border: 2px solid black;
     border-radius: 5px;
     padding: 20px;
+    height: 400px;
+    transition: all .7s;
+}
+
+.card-div-carousel:hover {
+
+    background-color: rgba(0, 0, 0, .5);
 }
 
 
