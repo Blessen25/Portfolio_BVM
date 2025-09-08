@@ -18,7 +18,7 @@ const HeaderComponent:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
 
         <>
             <div className={`maincontainer headermaincontainer ${darkMode ? "darkmode" : "lightmode"}`}>
-                <div className="childcontainer header">
+                <div className={`childcontainer header`}>
                     <div className="headerdirstdiv">
                         <i className={`fa-solid fa-align-left iconfont ${darkMode? `${activesidebar ? 'left-color-dark-hover' : 'left-color-dark'}`
                                 : `${activesidebar ? 'left-color-light-hover' : 'left-color-light'}`}`} onClick={() => {handleSidebar();}}></i>

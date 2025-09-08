@@ -15,7 +15,8 @@
 
 .headermaincontainer {
 
-   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 .header a {
@@ -302,6 +303,7 @@
 
 
 
+
 @media screen and (max-width: 1399px) {
 
   .navlinks a {
@@ -340,10 +342,7 @@
    display: none;   
   }
 
-  .header {
 
-    height: 80px;
-  }
 
   .imglogomain {
 
@@ -412,6 +411,7 @@
     gap: 5px;
     z-index: 99;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    animation: fadeInLeftsidebar .7s ease-in;
     /* width: 300px; */
   }
 
@@ -507,6 +507,17 @@
 
     color: #0A0A0A;
     opacity: .7;
+  }
+
+  .headermaincontainer {
+
+    position: sticky;
+    top: 0px;
+  }
+
+  .header {
+
+    height: 80px;
   }
 
 }
