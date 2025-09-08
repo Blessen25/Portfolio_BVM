@@ -311,3 +311,15 @@ export const SkillscardComponent: React.FC<skillcardProps> = (Props) => {
   )
 }
 
+export const ProjectcardComponent: React.FC = () => {
+
+  return(
+
+    <>
+      <div className="card-div-carousel">
+        <h1>asdjksad</h1>
+        <p>dasdjlskajd</p>
+      </div>
+    </>
+  )
+}

@@ -1,3 +1,5 @@
+:root { --card-gap: 20px; }
+
 .projectdiv {
     
     display: flex;
@@ -13,10 +15,28 @@
     justify-content: space-between;
 }
 
+
+.carousel-item-pad { padding-inline: calc(var(--card-gap) / 2); }
+.carousel-container .react-multi-carousel-list {
+  margin-inline: calc(var(--card-gap) / -2);
+}
+
+.carousel-container .react-multi-carousel-track > .carousel-item-pad:first-child {
+  padding-left: 0;                 /* or a custom value */
+}
+.carousel-container .react-multi-carousel-track > .carousel-item-pad:last-child {
+  padding-right: 0;                /* or a custom value */
+}
+
 @media screen and (max-width: 575px) {
     
     .projectdiv {
 
         gap: 15px;
     }
+
+    .carousel-item-pad { padding-inline: 0px }
+    
+
+    :root { --card-gap: 15px; }
 }

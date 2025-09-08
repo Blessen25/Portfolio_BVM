@@ -103,6 +103,19 @@
     gap: 5px;
 }
 
+.card-div-carousel {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
 @media screen and (max-width: 1199px) {
     
     .skillchilddiv {
