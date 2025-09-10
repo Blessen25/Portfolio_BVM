@@ -4,6 +4,7 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    text-align: center ;
 }
 
 .aboutcarddiv {
@@ -110,19 +111,87 @@
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    border: 2px solid black;
     border-radius: 5px;
-    padding: 20px;
-    height: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
     transition: all .7s;
 }
 
-.card-div-carousel:hover {
+.card-details {
 
-    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 20px 20px 20px;
+    width: 100%;
+}
+
+.card-details h1 {
+
+    text-align: center;
+}
+
+.card-div-images {
+
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    transition: all .7s;
+    position: relative;
+}
+
+.card-div-images img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 1;
+    transition: opcacity .7s ease, transform .7s ease;
+    will-change: opacity, transform;
 }
 
 
+.card-div-para {
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: all .7s;
+    opacity: 0;
+    transform: translateY(10px);
+    visibility: hidden;
+    transition: opacity .7s ease, transform .7s ease, visibility 0s linear .7s;
+}
+
+.card-div-carousel:hover .card-div-para {
+
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+    pointer-events: auto;
+    transition: opacity .7s ease, transform .7s ease, visibility 0s;
+}
+
+.card-div-carousel:hover .card-div-images img {
+
+    opacity: .3;
+}
+
+.card-div-carousel:hover .card-div-images img {
+
+    opacity: .3;
+    transform: scale(1.1);
+}
 @media screen and (max-width: 1199px) {
     
     .skillchilddiv {
@@ -194,6 +263,11 @@
         width: 45px;
         height: 45px;
     }
+
+    .card-div-carousel {
+
+        height: 400px;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -242,6 +316,22 @@
         grid-template-columns: repeat(2, minmax(160px, 1fr));
     }
 
+    .card-div-carousel {
+
+        height: 350px;
+        gap: 15px;
+    }
+
+    .card-details {
+
+        gap: 15px;
+        padding: 0px 15px 15px 15px;
+    }
+
+    .card-div-images img {
+
+        object-position: top;
+    }
 }
 
 @media screen and (max-width: 426px) {
