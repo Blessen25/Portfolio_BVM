@@ -40,6 +40,18 @@ interface skillcardProps {
     items ?: Skill[];
 }
 
+interface projectcardProps {
 
-export type { HeaderProps, buttonProps, aboutcardProps, skillcardProps };
+    darkMode ?: boolean;
+    setDarkMode ?: (darkMode: boolean) => void;
+    cardarray ?: {
+
+        title ?: string;
+        description ?: string;
+        imageUrl ?: string;
+    }
+}
+
+
+export type { HeaderProps, buttonProps, aboutcardProps, skillcardProps, projectcardProps };
 

@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useRef } from "react";
 import Typed from "typed.js";
 import "./extras.css";
-import type { aboutcardProps, buttonProps, HeaderProps, Skill, skillcardProps } from "../interface";
+import type { aboutcardProps, buttonProps, HeaderProps, projectcardProps, Skill, skillcardProps } from "../interface";
 
 export const AutoType: React.FC = () => {
   const el = useRef<HTMLSpanElement | null>(null);
@@ -311,20 +311,20 @@ export const SkillscardComponent: React.FC<skillcardProps> = (Props) => {
   )
 }
 
-export const ProjectcardComponent: React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
+export const ProjectcardComponent: React.FC<projectcardProps> = ({darkMode, setDarkMode, cardarray}) => {
 
   return(
 
     <>
       <div className={`card-div-carousel ${darkMode ? 'darkmodeaboutcard darkmodetext' : 'lightmodeaboutcard lightmodetext'}`}>
           <div className="card-div-images">
-                <img src="../assets/images/projects/portfolio_image.png" alt="" style={{width:'100%', height:'100%', objectFit:'cover'}}/>
+                <img src={cardarray?.imageUrl} alt="Image" style={{width:'100%', height:'100%', objectFit:'cover'}}/>
               <div className="card-div-para">
-                <p className={`ptext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ab eum, necessitatibus consequuntur vitae, corrupti mollitia facilis ut tenetur labore quasi voluptatum illum, facere quis illo eos impedit velit autem!</p>
+                <p className={`ptext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>{cardarray?.description}</p>
               </div>
           </div>
           <div className="card-details">
-            <h1 className={`h1smalltext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>Old Portfolio</h1>
+            <h1 className={`h1smalltext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>{cardarray?.title}</h1>
             <ButtonComp text="View Project" className={`${darkMode ? 'darkmodebutton' : 'lightmodebutton'}`}/>
           </div>
       </div>

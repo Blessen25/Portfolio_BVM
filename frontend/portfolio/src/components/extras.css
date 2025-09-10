@@ -182,14 +182,10 @@
     transition: opacity .7s ease, transform .7s ease, visibility 0s;
 }
 
-.card-div-carousel:hover .card-div-images img {
-
-    opacity: .3;
-}
 
 .card-div-carousel:hover .card-div-images img {
 
-    opacity: .3;
+    opacity: .1;
     transform: scale(1.1);
 }
 @media screen and (max-width: 1199px) {
