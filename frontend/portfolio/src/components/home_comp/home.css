@@ -100,7 +100,7 @@
 
 .buttondiv {
 
-    width: 300px;
+    width: 320px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -241,7 +241,7 @@
 
     .buttondiv {
 
-        width: 230px;
+        width: 260px;
     }
 }
 
@@ -259,7 +259,7 @@
 
     .buttondiv {
 
-        width: 180px;
+        width: 210px;
     }
 
     .homeimageborder {
