@@ -289,7 +289,7 @@ export const SkillscardComponent: React.FC<skillcardProps> = (Props) => {
 
     <>
       <div className={`skillcardparent ${Props.darkMode ? 'darkmodeaboutcard' : 'lightmodeaboutcard'}`}>
-            <h1 className={`${Props.darkMode ? 'darkmodetext' : 'lightmodetext'} h1text`}>{Props.h1text}</h1>
+            <h1 className={`${Props.darkMode ? 'darkmodetext' : 'lightmodetext'} h1mediumtext`}>{Props.h1text}</h1>
             <div className="skill-gridcard">
                 {Props?.items?.map((s, i)=>(
                   <>
