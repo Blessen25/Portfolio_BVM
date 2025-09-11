@@ -161,7 +161,7 @@
     height: 100%;
     overflow: hidden;
     position: absolute;
-    top: 0px;
+    top: -10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -171,6 +171,7 @@
     transform: translateY(10px);
     visibility: hidden;
     transition: opacity .7s ease, transform .7s ease, visibility 0s linear .7s;
+    line-break: anywhere;
 }
 
 .card-div-carousel:hover .card-div-para {
@@ -327,6 +328,11 @@
     .card-div-images img {
 
         object-position: top;
+    }
+
+    .card-div-para {
+
+        padding: 15px;
     }
 }
 
