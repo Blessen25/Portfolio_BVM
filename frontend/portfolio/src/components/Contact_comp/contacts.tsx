@@ -13,7 +13,7 @@ const ContactComp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                 <p className={`ptext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>Open to roles, collaborations, and consultations.</p>
                 <div className={`contactmaindiv`}>
                     <div className={`whatsappdiv ${darkMode ? 'darkmodeaboutcard' : 'lightmodeaboutcard'} ${iswhatsappOpen && darkMode ? 'whatsappOpendark whatappOpenCommon' : 'whatsappOpenlight whatappOpenCommon'}`} > 
-                        <div className={`whatsappheader ${darkMode ? 'whatsappheaderdark' : 'whatsappheaderlight'}`}>
+                        <div className={`whatsappheader whatsappheaderlight`}>
 
                         </div>
                         <div className="whatsappcontent">
@@ -23,9 +23,7 @@ const ContactComp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                             </div>
                         </div>
                         <div className="whatsappbuttondiv">
-                            <button >
-                                <a href="#" target="_blank" className="whatsappbutton">Chat on Whatsapp</a>
-                            </button>
+                                <a href="#" target="_blank" className={`whatsappbutton buttonnormal whatsappbuttonlight`}><i className="fa-brands fa-whatsapp iconfont "></i>Chat on Whatsapp</a>
                         </div>
                     </div>
                     <div className={`contactusformdiv ${darkMode ? 'darkmodeaboutcard' : 'lightmodeaboutcard'}`}>

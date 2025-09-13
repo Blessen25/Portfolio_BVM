@@ -61,10 +61,6 @@
     align-items: center;
 }
 
-.whatsappheaderdark {
-
-    background-color: black;
-}
 
 .whatsappheaderlight {
 
@@ -81,6 +77,7 @@
 .whatsappptextcontent {
 
     padding: 14px;
+    border-radius: 18px 18px 18px 5px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -93,5 +90,33 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    border: 2px solid black;
+    position: absolute;
+    bottom: 20px;
+    overflow: hidden;
+    padding: 0px 20px;
+}
+
+.whatsappbutton {
+
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all .7s;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.whatsappbuttonlight {
+
+    background-color: #25d467;
+    color: white;
+}
+
+.whatsappbuttonlight:hover {
+
+    box-shadow: inset 0px 70px 0px 0px rgba(0, 130, 106, 1);
 }
