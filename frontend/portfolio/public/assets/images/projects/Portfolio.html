@@ -1,0 +1,2260 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="./Portfolio_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./Portfolio_files/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Portfolio_files/css2" rel="stylesheet">
+  <style type="text/css" data-vite-dev-id="D:/BVM_Projects/React/Portfolio/Portfolio_lightdark/frontend/portfolio/src/index.css">*{
+
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  letter-spacing: 0.7px;
+}
+
+.darkmode {
+
+  background-color: #0A0A0A;
+}
+
+.lightmode {
+
+  background-color: whitesmoke;
+}
+
+.background_primary_red {
+
+  background-color: #FF2E2E;
+}
+
+.background_primary_black {
+
+  background-color: #0A0A0A;
+}
+
+.lightmoderound {
+
+    background-color: #0A0A0A;
+    color: whitesmoke;
+}
+
+.darkmoderound {
+
+    background-color: #FF2E2E;
+    color: #0A0A0A;
+}
+
+.lightmodetext {
+
+  color: #0A0A0A;
+}
+
+.darkmodetext {
+
+  color: #FF2E2E;
+}
+
+.maincontainer {
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.childcontainer {
+
+  width: 1300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ptext {
+
+  font-size: 16px;
+  font-weight: 400;
+  text-align: justify;
+  transition: all .7s;
+  line-break: anywhere;
+}
+
+.h1text {
+
+  font-size: 34px;
+  font-weight: 800;
+  transition: all .7s;
+}
+
+.h1smalltext {
+
+  font-size: 20px;
+  font-weight: 600;
+  transition: all .7s;
+}
+
+.h1mediumtext {
+
+  font-size: 26px;
+  font-weight: 600;
+  transition: all .7s;
+}
+
+.iconfont {
+
+    font-size: 24px;
+  }
+
+@media screen and (max-width: 1399px) {
+  
+  .childcontainer {
+
+      width: 1100px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+
+  .childcontainer {
+
+      width: 900px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+
+  .childcontainer {
+
+      width: 100%;
+      padding: 20px;
+  }
+
+  .h1text {
+
+    font-size: 30px;
+  }
+
+  .ptext {
+
+    font-size: 14px;
+  }
+
+  .h1smalltext {
+
+    font-size: 18px;
+  }
+
+  .h1mediumtext {
+
+    font-size: 22px;
+  }
+  
+}
+
+@media screen and (max-width: 767px) {
+  
+  .ptext {
+
+    font-size: 12px;
+  }
+  
+  .h1smalltext {
+
+    font-size: 16px;
+  }
+
+  .h1mediumtext {
+
+    font-size: 20px;
+  }
+
+  .h1text {
+
+    font-size: 24px;
+  }
+
+  .iconfont {
+
+    font-size: 21px !important;
+  }
+
+}
+
+@media screen and (max-width: 575px) {
+
+  .childcontainer {
+
+      padding: 15px;
+      gap: 15px;
+  }
+
+   .ptext {
+
+    font-size: 10px;
+  } 
+
+  .h1smalltext {
+
+    font-size: 14px;
+  }
+
+  .h1mediumtext {
+
+    font-size: 15px;
+  }
+
+  .h1text {
+
+    font-size: 16px;
+  }
+
+  .iconfont {
+
+    font-size: 18px !important;
+  }
+  
+}
+
+
+
+
+
+@keyframes fadeInLeftsidebar {
+
+  from {
+    opacity: 0;
+    transform: translateX(-16px);
+  }
+
+  to {
+
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}</style><style type="text/css" data-vite-dev-id="D:/BVM_Projects/React/Portfolio/Portfolio_lightdark/frontend/portfolio/src/App.css"></style><style type="text/css" data-vite-dev-id="D:/BVM_Projects/React/Portfolio/Portfolio_lightdark/frontend/portfolio/src/components/home_comp/home.css">.homemaindiv {
+
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    z-index: 0;
+}
+
+
+.homeimageborder {
+    /* position: relative;
+    width: 410px;
+    height: 410px;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    position: relative;
+    width: clamp(180px, 410px, 410px);  
+    aspect-ratio: 1 / 1;              
+    display: grid;
+    place-items: center;
+    min-width: 0;
+}
+
+.border-spin {
+    position: absolute;
+    inset: 0;  
+    border-radius: 50%;
+    padding: 2px; 
+    animation: spinBorder 14s linear infinite;
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude; 
+    z-index: 0;
+}
+
+.border-spindark {
+
+     background: conic-gradient(
+        #FF2E2E 0deg 40deg,
+        transparent 40deg 140deg,
+        #FF8C2E 140deg 180deg,
+        transparent 180deg 320deg,
+        #FF2E2E 320deg 360deg
+    );
+}
+
+:root {
+  --base: #0A0A0A;
+  /* lighter tints of your base */
+  --arc-1: color-mix(in srgb, var(--base) 25%, rgb(0, 0, 0)); 
+  --arc-2: color-mix(in srgb, var(--base) 40%, rgb(0, 0, 0)); 
+}
+
+.border-spinlight {
+
+    background: conic-gradient(
+        var(--arc-1) 0deg 40deg,
+        transparent 40deg 140deg,
+        var(--arc-2) 140deg 180deg,
+        transparent 180deg 320deg,
+        var(--arc-1) 320deg 360deg
+    );
+}
+
+
+.homemainimage {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.homemainimage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.homemaindetails {
+
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.buttondiv {
+
+    width: 320px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.darkmodebutton {
+
+    background-color: #FF2E2E;
+    color: #0A0A0A;
+    transition: all .7s;
+}
+
+.darkmodetwobutton {
+
+    background-color: #0A0A0A;
+    border: 1px solid #FF2E2E;
+    color: #FF2E2E;
+    transition: all .7s;
+}
+
+.darkmodebutton:hover {
+
+    box-shadow: inset 0px 70px 0px 0px #0A0A0A;
+    color: #FF2E2E;
+    border: 1px solid #FF2E2E;
+}
+
+.darkmodetwobutton:hover {
+
+    box-shadow: inset 0px 70px 0px 0px #FF2E2E;
+    color: #0A0A0A;
+    background-color: #FF2E2E;
+}
+
+.lightmodebutton {
+
+    background-color: #0A0A0A;
+    color: whitesmoke;
+    transition: all .7s;
+}
+
+.lightmodetwobutton{
+
+    background-color: whitesmoke;
+    color: #0A0A0A;
+    border: 1px solid #0A0A0A;
+    transition: all .7s;
+}
+
+.lightmodebutton:hover {
+
+    box-shadow: inset 0px 70px 0px 0px whitesmoke;
+    color: #0A0A0A;
+    border: 1px solid #0A0A0A;
+}
+
+.lightmodetwobutton:hover {
+
+    box-shadow: inset 0px 70px 0px 0px #0A0A0A;
+    color: whitesmoke;
+    background-color: #0A0A0A;
+}
+.socialdivhome {
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.socialiconsdark {
+
+    color: #FF2E2E;
+    transition: all .7s;
+}
+
+.socialiconsdark:hover {
+
+    color: #CC2A2A;
+}
+
+.socialiconslight:hover {
+
+    opacity: .7;
+}
+
+.socialiconslight {
+
+    color: #0A0A0A;
+    transition: all .7s;
+}
+
+
+
+@media screen and (max-width: 991px) {
+    
+    .homemaindiv {
+
+        height: 380px;
+    }
+
+    .homemainimage {
+    
+        width: 330px;
+        height: 330px;
+    }
+    .homeimageborder {
+
+        width: clamp(180px,340px, 340px);
+    }
+    
+}
+
+
+@media screen and (max-width: 767px) {
+    
+    .homemaindiv {
+
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .homemaindetails {
+
+        height: 100%;
+    }
+
+
+    .homemaindetails {
+
+        width: 100%;
+    }
+
+    .homemaindetails {
+
+        padding: 0px;
+    }
+
+    .buttondiv {
+
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    
+    .homemaindiv {
+
+        gap: 15px;
+    }
+    .homemainimage {
+    
+        width: 270px;
+        height: 270px;
+    }
+
+    .buttondiv {
+
+        width: 210px;
+    }
+
+    .homeimageborder {
+
+        width: clamp(160px,280px, 280px);
+    }
+
+    .homemaindetails {
+
+        gap: 15px;
+    }
+
+    .socialdivhome {
+
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .homemainimage {
+    
+        width: 210px;
+        height: 210px;
+    }
+    
+    .homeimageborder {
+
+        width: clamp(160px,220px, 220px);
+    }
+
+    .border-spin {
+
+        padding: 1px;
+    }
+    
+}
+
+
+
+/* ANIMATIONS HERE */
+
+@keyframes spinBorder {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+</style><style type="text/css" data-vite-dev-id="D:/BVM_Projects/React/Portfolio/Portfolio_lightdark/frontend/portfolio/src/components/extras.css">.buttonnormal {
+
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center ;
+}
+
+.aboutcarddiv {
+
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all .7s;
+    gap: 20px;
+    text-align: center;
+}
+
+.cardiconround {
+
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: all .7s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightmoderound {
+
+    background-color: #0A0A0A;
+    color: whitesmoke;
+}
+
+.darkmoderound {
+
+    background-color: #FF2E2E;
+    color: #0A0A0A;
+}
+
+.darkmodeaboutcard {
+
+   box-shadow:rgba(255, 46, 46, 0.12) 0px 1px 3px 0px,rgba(255, 46, 46, 1) 0px 0px 0px 1px;
+}
+
+.lightmodeaboutcard {
+
+   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.skillcardparent {
+
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px;
+    transition: all .7s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.skill-gridcard {
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(220px,1fr));
+    gap: 18px 18px;
+    margin-inline: auto;
+    justify-items: start;
+    align-items: center;
+    
+}
+
+.skill-itemcard {
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    transition: all .7s;
+}
+
+.skill-icon {
+
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skilldetails {
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card-div-carousel {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+    transition: all .7s;
+}
+
+.card-details {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 20px 20px 20px;
+    width: 100%;
+}
+
+.card-details h1 {
+
+    text-align: center;
+}
+
+.card-div-images {
+
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    transition: all .7s;
+    position: relative;
+}
+
+.card-div-images img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 1;
+    transition: opcacity .7s ease, transform .7s ease;
+    will-change: opacity, transform;
+}
+
+
+.card-div-para {
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: all .7s;
+    opacity: 0;
+    transform: translateY(10px);
+    visibility: hidden;
+    transition: opacity .7s ease, transform .7s ease, visibility 0s linear .7s;
+    line-break: anywhere;
+}
+
+.card-div-carousel:hover .card-div-para {
+
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+    pointer-events: auto;
+    transition: opacity .7s ease, transform .7s ease, visibility 0s;
+}
+
+
+.card-div-carousel:hover .card-div-images img {
+
+    opacity: .1;
+    transform: scale(1.1);
+}
+@media screen and (max-width: 1199px) {
+    
+    .skillchilddiv {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skillcardparent {
+
+        width: 600px;
+    }
+    
+    .skill-gridcard {
+
+        grid-template-columns: repeat(4, minmax(190px,1fr));
+    }
+}
+
+@media screen and (max-width: 991px) {
+    
+    .aboutcarddiv {
+        
+        width: 100%;
+    }
+
+    .skillcardparent {
+
+        width: 450px;
+    }
+
+    .skill-gridcard {
+
+        grid-template-columns: repeat(3, minmax(196px,1fr));
+    }
+}
+
+@media screen and (max-width: 767px) {
+    
+    .buttonnormal {
+
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    .aboutcarddiv {
+
+        width: 100%;
+    }
+
+    .cardiconround {
+
+        width: 60px;
+        height: 60px;
+    }
+
+    .skillcardparent {
+
+        width: 100%;
+    }
+
+    .skill-gridcard {
+
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+    }
+    
+    .skill-icon {
+
+        width: 45px;
+        height: 45px;
+    }
+
+    .card-div-carousel {
+
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .buttonnormal {
+
+        padding: 6px 12px;
+        font-size: 10px;
+    }
+
+    .cardiconround {
+
+        width: 50px;
+        height: 50px;
+    }
+
+    .aboutcarddiv {
+
+        gap: 15px;
+        padding: 15px;
+    }
+
+     .skill-icon {
+
+        width: 35px;
+        height: 35px;
+    }
+
+    .skill-gridcard, .skillcardparent, .skill-itemcard {
+
+        gap: 15px;
+    }
+
+    .skill-itemcard {
+
+        padding: 15px;
+        align-items: center;
+    }
+    
+    .skillcardparent {
+
+        padding: 15px;
+    }
+    
+    .skill-gridcard{
+        grid-template-columns: repeat(2, minmax(160px, 1fr));
+    }
+
+    .card-div-carousel {
+
+        height: 350px;
+        gap: 15px;
+    }
+
+    .card-details {
+
+        gap: 15px;
+        padding: 0px 15px 15px 15px;
+    }
+
+    .card-div-images img {
+
+        object-position: top;
+    }
+
+    .card-div-para {
+
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .skill-icon {
+
+        width: 20px;
+        height: 20px;
+    }
+
+    .fa-check {
+
+        font-size: 12px !important;
+    }
+
+    .skill-gridcard {
+
+        grid-template-columns: repeat(2, minmax(128px, 1fr));
+        
+    }
+    
+    .skill-itemcard , .skill-gridcard {
+
+        gap: 10px;
+    }
+}</style><style type="text/css" data-vite-dev-id="D:/BVM_Projects/React/Portfolio/Portfolio_lightdark/frontend/portfolio/src/components/Header_comp/header.css">.header {
+
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+.headerdirstdiv {
+
+  display: none;
+}
+
+.headermaincontainer {
+
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.header a {
+
+  text-decoration: none;
+  cursor: pointer;
+}
+.imglogomain {
+
+  width: 168px;
+  height: 80px;
+}
+
+.imglogomain img {
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navlinks {
+
+  display: flex;
+  gap: 20px;
+  width: 600px;
+  justify-content: space-between;
+}
+
+.navlinks a {
+
+  font-size: 18px;
+  position: relative;
+  transition: all .7s;
+}
+
+
+.darkmodetextatag {
+
+  color : #FF2E2E;
+}
+
+.lightmodetextatag {
+
+  color : #0A0A0A;
+  opacity: 1;
+}
+
+.lightmodetextatag::after {
+
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #0A0A0A;
+  left: 0px;
+  bottom: -3px;
+  opacity: .7;
+} 
+
+
+.darkmodetextatag::after {
+
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #CC2A2A;
+  left: 0px;
+  bottom: -3px;
+} 
+
+.darkmodetextatag:hover {
+
+  color: #CC2A2A;
+}
+
+.lightmodetextatag:hover {
+
+  color: #0A0A0A;
+  opacity: 0.7;
+}
+
+.lightmodetextatag:hover::after {
+
+  width: 100%;
+  transition: width 0.7s ease-in-out;
+}
+
+.darkmodetextatag:hover::after {
+
+  width: 100%;
+  transition: width 0.7s ease-in-out;
+}
+
+.togglebutton {
+
+  width: 70px;
+  height: 30px;
+  border-radius: 20px;
+  border: 1px solid #FF2E2E;
+  border-color: #FF2E2E;
+  position: relative;
+  cursor: pointer;
+  transition: all .7s ease-in-out;
+
+}
+
+.toggleround {
+
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FF2E2E;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  transition: all .7s ease-in-out;
+}
+
+.togglebuttondark {
+
+  border: 1px solid #FF2E2E;
+  border-color: #FF2E2E;
+}
+
+.togglebuttonlight {
+
+  border: 1px solid #0A0A0A;
+  border-color: #0A0A0A;
+  
+}
+
+.togglerounddark {
+
+  background-color: #FF2E2E;
+  transition: all .7s ease-in-out;
+  animation: fadeinright 1s ease-in-out;
+}
+
+.toggleroundlight {
+
+  background: radial-gradient(circle, #ffd700 30%, #ffa500 70%);
+  left: 4px;
+  animation: fadeinleft 1s ease-in-out;
+}
+
+.star {
+
+  background-color: yellow;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  position: absolute;
+  opacity: 0;
+  transition: 1s;
+}
+
+.star3 {
+
+  width: 8px;
+  height: 8px;
+  top: 16px;
+  left: 18px;
+  animation: twinkle 2s infinite;
+  animation-delay: 1s;
+}
+
+.star2 {
+
+  width: 9px;
+  height: 9px;
+  top: 4px;
+  left: 24px;
+  animation: twinkle 2s infinite;
+  animation-delay: .8s;
+}
+
+.star1 {
+
+  width: 10px;
+  height: 10px;
+  bottom: 3px;
+  right: 26px;
+  animation: twinkle 2s infinite;
+  animation-delay: .6s;
+}
+
+.star4 {
+
+  width: 7px;
+  height: 7px;
+  top: 6px;
+  left: 10px;
+  animation: twinkle 2s infinite;
+  animation-delay: 1.2s;
+
+}
+
+.star5 {
+
+  width: 6px;
+  height: 6px;
+  bottom: 5px;
+  left: 7px;
+  animation: twinkle 2s infinite;
+  animation-delay: 1.4s;
+
+}
+
+.sidebaroverlay,.sidebardiv {
+
+  display: none;
+}
+
+.cloud {
+
+  border-radius: 50px;
+  position: absolute;
+  transition: all .7s ease-in-out;
+  background-color: #64aae5;
+}
+
+.cloud::before,
+.cloud::after {
+
+  content: "";
+  position: absolute;
+  background-color: #64aae5;
+  border-radius: 50%;
+}
+
+.cloud1 {
+
+  width: 18px;
+  height: 8px;
+  top: 8px;
+  left: 34px;
+}
+
+.cloud1::before {
+  width: 10px;
+  height: 10px;
+  top: -5px;
+  left: 1px;
+}
+
+.cloud1::after {
+  width: 8px;
+  height: 8px;
+  top: -6px;
+  right: 0px;
+}
+
+.cloud2 {
+
+  width: 12px;
+  height: 6px;
+  top: 20px;
+  left: 46px;
+}
+
+.cloud2::before {
+  width: 4px;
+  height: 4px;
+  top: -2px;
+  left: 1px;
+}
+
+.cloud2::after {
+  width: 8px;
+  height: 8px;
+  top: -4px;
+  right: 0px;
+}
+
+
+
+
+@media screen and (max-width: 1399px) {
+
+  .navlinks a {
+
+    font-size: 16px;
+  }
+
+  .navlinks {
+
+    width: 560px;
+  }
+  
+  
+}
+
+
+@media screen and (max-width: 1199px) {
+
+  .navlinks {
+
+      width: 480px;
+  }
+
+  
+  .imglogomain {
+
+    width: 127px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  
+  .navlinks {
+
+   display: none;   
+  }
+
+
+
+  .imglogomain {
+
+    display: none;
+  }
+
+  .headerdirstdiv {
+
+    display: block;
+  }
+
+  .imglogosecond {
+    display: block;
+    width: 120px;
+    height: 60px;
+  }
+
+  .imglogosecond img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .headerdirstdiv {
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .fa-align-left {
+
+    font-size: 30px;
+    cursor: pointer;
+    font-size: 30px;
+    transition: all .7s ease-in-out;
+  }
+
+  .sidebaroverlay,.sidebardiv {
+
+    display: block;
+  }
+
+  .sidebaroverlay {
+
+    position: fixed;
+    top: 80px;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 99;;
+  }
+
+  .sidebardiv {
+
+    position: fixed;
+    width: 80px;
+    height: 100%;
+    top: 84px;
+    left: 0px;
+    padding: 20px 10px;
+    transition: all .7s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 99;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    animation: fadeInLeftsidebar .7s ease-in;
+    /* width: 300px; */
+  }
+
+  .sidebardiv:hover {
+
+    width: 300px;
+    padding: 20px 10px;
+  }
+
+  .sidebartext {
+
+    display: none;
+    opacity: 1;
+    transition: all .7s ease-in-out;
+    font-size: 16px;
+  }
+
+  .sidebaricon {
+
+    font-size: 24px;
+    z-index: 99;
+  }
+
+  .sidebaratag {
+
+    text-decoration: none;
+    z-index: 9;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    gap: 20px;
+    overflow: hidden;
+    transition: all .7s ease-in-out;
+  }
+
+  .sidebaratagdark {
+
+    color: #FF2E2E;
+  }
+
+  .sidebarataglight {
+
+    color: #0A0A0A;
+  }
+
+  .sidebardiv:hover .sidebartext{
+
+    display: block;
+  }
+
+  .sidebarataglight:hover {
+
+    background-color: #0A0A0A;
+    color: whitesmoke;
+  }
+
+  .sidebaratagdark:hover {
+
+    background-color: #FF2E2E;
+    color: #0A0A0A;
+  }
+
+  .sidebaractivedark {
+
+    background-color: #FF2E2E ;
+    color: #0A0A0A;
+  }
+
+  .sidebaractivelight {
+
+    background-color: #0A0A0A;
+    color: whitesmoke;
+  }
+
+  .left-color-dark {
+
+    color: #FF2E2E;
+  }
+
+  .left-color-dark-hover {
+
+    color: #CC2A2A;
+  }
+
+  .left-color-light {
+
+    color: #0A0A0A;
+    opacity: 1;
+  }
+
+  .left-color-light-hover {
+
+    color: #0A0A0A;
+    opacity: .7;
+  }
+
+  .headermaincontainer {
+
+    position: sticky;
+    top: 0px;
+  }
+
+  .header {
+
+    height: 80px;
+  }
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+  .fa-align-left {
+
+    font-size: 26px;
+  }
+
+  .imglogosecond {
+
+    width: 105px;
+    height: 55px;
+  }
+
+  .imglogosecond img {
+
+    object-fit: contain;
+  }
+  
+}
+
+@media screen and (max-width: 575px) {
+
+  .fa-align-left {
+
+    font-size: 20px;
+  }
+
+  .imglogosecond {
+
+    width: 90px;
+    height: 45px;
+  }
+
+  .togglebutton {
+
+    width: 52px;
+    height: 22px;
+  }
+
+  .toggleround {
+
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    right: 2px;
+  }
+
+  .star1 {
+    
+    right: 19px;
+    width: 8px;
+    height: 8px;
+  }
+
+  .star2 {
+
+    width: 7px;
+    height: 7px;  
+    left: 16px;
+  }
+
+  .star3 {
+
+    width: 6px;
+    height: 6px;  
+    left: 12px;  
+    top: 12px;
+  }
+  
+  .star4 {
+
+    width: 5px;
+    height: 5px;  
+    left: 6px;  
+     
+  
+  }
+
+  .star5 {
+
+    display: none;
+  }
+
+  .sidebardiv:hover {
+
+    width: 230px;
+  }
+
+  .sidebartext {
+
+    font-size: 12px;
+  }
+
+  .sidebaricon {
+
+    font-size: 20px;
+  }
+
+  .sidebardiv {
+
+    padding: 10px;
+  }
+
+  .sidebardiv:hover {
+
+    padding: 10px;
+  }
+
+  .toggleroundlight {
+
+    left: 2px;
+  }
+
+  .togglerounddark {
+
+    animation: fadeinrightresp 1s ease-in-out;
+  }
+
+  .toggleroundlight {
+
+    animation: fadeinleftresp 1s ease-in-out;
+  }
+
+  .cloud1 {
+
+    left: 20px;
+    width: 13px;
+    height: 7px;
+  }
+
+  .cloud1::before {
+
+    width: 6px;
+    height: 6px;
+  }
+
+  .cloud1::after {
+
+    right: 0px;
+  }
+
+  .cloud2 {
+
+    left: 34px;
+    top: 13px;
+    width: 10px;
+    height: 5px;
+  }
+
+  .cloud2::before {
+
+    width: 3px;
+    height: 3px;
+  }
+
+  .cloud2::after {
+
+    width: 6px;
+    height: 6px;
+  }
+
+  .sidebaratag {
+
+    padding: 18px;
+  }
+
+  .headerdirstdiv {
+
+    gap: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ANIMATIONS */
+
+
+@keyframes twinkle {
+
+  0%,
+  100%
+  {
+
+    opacity: 1;
+  }
+
+  50% {
+
+    opacity: 0.5;
+  }
+}
+
+@keyframes fadeinleft {
+
+  0% {
+
+    transform: translateX(-3px);
+  }
+
+  100% {
+
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeinright {
+
+   0% {
+
+    transform: translateX(3px);
+  }
+
+  100% {
+
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeinleftresp {
+
+  0% {
+
+    transform: translateX(-2px);
+  }
+
+  100% {
+
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeinrightresp {
+
+   0% {
+
+    transform: translateX(2px);
+  }
+
+  100% {
+
+    transform: translateX(0px);
+  }
+}</style><style type="text/css" data-vite-dev-id="D:/BVM_Projects/React/Portfolio/Portfolio_lightdark/frontend/portfolio/src/components/About_comp/about.css">.aboutdivtitle {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.aboutcarddivparent {
+
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+@media screen and (max-width: 991px) {
+    
+    .aboutcarddivparent {
+        
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    
+    .aboutdivtitle, .aboutcarddivparent {
+
+        gap: 15px;
+    }
+}</style><style type="text/css" data-vite-dev-id="D:/BVM_Projects/React/Portfolio/Portfolio_lightdark/frontend/portfolio/src/components/Skill_comp/skill.css">.skillparentdiv {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.skillchilddiv {
+
+    display: flex;
+    width: 100%;
+    gap: 20px;
+
+}
+
+@media screen and (max-width: 1199px) {
+    
+    .skillcardparent {
+    
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    
+    .skillparentdiv, .skillchilddiv {
+
+        gap: 15px;
+    }
+}</style><style type="text/css" data-vite-dev-id="D:/BVM_Projects/React/Portfolio/Portfolio_lightdark/frontend/portfolio/src/components/Project_comp/project.css">:root { --card-gap: 20px; }
+
+.projectdiv {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-slider {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.carousel-item-pad { padding-inline: calc(var(--card-gap) / 2);
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+
+.carousel-container .react-multi-carousel-track > .carousel-item-pad:first-child {
+  padding-left: 1px;                 /* or a custom value */
+}
+.carousel-container .react-multi-carousel-track > .carousel-item-pad:last-child {
+  padding-right: 2px;                /* or a custom value */
+}
+
+@media screen and (max-width: 575px) {
+    
+    .projectdiv {
+
+        gap: 15px;
+    }
+
+    .carousel-item-pad { padding-inline: 0px }
+    
+
+    :root { --card-gap: 15px; }
+}</style><style type="text/css" data-vite-dev-id="D:/BVM_Projects/React/Portfolio/Portfolio_lightdark/frontend/portfolio/node_modules/react-multi-carousel/lib/styles.css">@font-face{font-family:"revicons";fallback:fallback;src:url("/node_modules/react-multi-carousel/lib/revicons.woff") format('woff'),url("/node_modules/react-multi-carousel/lib/revicons.ttf") format('ttf'),url("/node_modules/react-multi-carousel/lib/revicons.eot") format('ttf')}.react-multi-carousel-list{display:flex;align-items:center;overflow:hidden;position:relative}.react-multi-carousel-track{list-style:none;padding:0;margin:0;display:flex;flex-direction:row;position:relative;transform-style:preserve-3d;backface-visibility:hidden;will-change:transform,transition}.react-multiple-carousel__arrow{position:absolute;outline:0;transition:all .5s;border-radius:35px;z-index:1000;border:0;background:rgba(0,0,0,0.5);min-width:43px;min-height:43px;opacity:1;cursor:pointer}.react-multiple-carousel__arrow:hover{background:rgba(0,0,0,0.8)}.react-multiple-carousel__arrow::before{font-size:20px;color:#fff;display:block;font-family:revicons;text-align:center;z-index:2;position:relative}.react-multiple-carousel__arrow:disabled{cursor:default;background:rgba(0,0,0,0.5)}.react-multiple-carousel__arrow--left{left:calc(4% + 1px)}.react-multiple-carousel__arrow--left::before{content:"\e824"}.react-multiple-carousel__arrow--right{right:calc(4% + 1px)}.react-multiple-carousel__arrow--right::before{content:"\e825"}.react-multi-carousel-dot-list{position:absolute;bottom:0;display:flex;left:0;right:0;justify-content:center;margin:auto;padding:0;margin:0;list-style:none;text-align:center}.react-multi-carousel-dot button{display:inline-block;width:12px;height:12px;border-radius:50%;opacity:1;padding:5px 5px 5px 5px;box-shadow:none;transition:background .5s;border-width:2px;border-style:solid;border-color:grey;padding:0;margin:0;margin-right:6px;outline:0;cursor:pointer}.react-multi-carousel-dot button:hover:active{background:#080808}.react-multi-carousel-dot--active button{background:#080808}.react-multi-carousel-item{transform-style:preserve-3d;backface-visibility:hidden}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.react-multi-carousel-item{flex-shrink:0 !important}.react-multi-carousel-track{overflow:visible !important}}[dir='rtl'].react-multi-carousel-list{direction:rtl}.rtl.react-multiple-carousel__arrow--right{right:auto;left:calc(4% + 1px)}.rtl.react-multiple-carousel__arrow--right::before{content:"\e824"}.rtl.react-multiple-carousel__arrow--left{left:auto;right:calc(4% + 1px)}.rtl.react-multiple-carousel__arrow--left::before{content:"\e825"}</style><style type="text/css" data-vite-dev-id="D:/BVM_Projects/React/Portfolio/Portfolio_lightdark/frontend/portfolio/src/components/experience_comp/experience.css">.experiencediv {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experienceparent {
+
+    height: 1170px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.vertical_line {
+
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0px;
+    transition: all .7s;
+}
+
+.timeline_star {
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: all .7s;
+}
+
+.timeline_star2 {
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 270px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: all .7s;
+}
+
+.timeline_star3 {
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 620px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: all .7s;
+}
+
+.timeline_star4 {
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: all .7s;
+}
+
+.firstexperiencediv {
+
+    width: 580px;
+    border-radius: 5px;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    z-index: 1;
+    transition: all .7s;
+}
+
+.secondexperiencediv {
+
+    width: 580px;
+    border-radius: 5px;
+    position: absolute;
+    left: 0px;
+    top: 260px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    z-index: 1;
+    transition: all .7s;
+}
+
+.thirdexperiencediv {
+
+    width: 580px;
+    border-radius: 5px;
+    position: absolute;
+    right: 0px;
+    top: 610px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    z-index: 1;
+    transition: all .7s;
+}
+
+.fourthexperiencediv {
+
+    width: 580px;
+    border-radius: 5px;
+    position: absolute;
+    left: 0px;
+    bottom: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    z-index: 1;
+    transition: all .7s;
+}
+
+.experienceskilldiv {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.yearofexp {
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.experiencedotone , .experiencedottwo {
+
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.experiencedotone {
+
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.experiencedottwo {
+
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.firstexperiencediv h1, .secondexperiencediv h1, .thirdexperiencediv h1, .fourthexperiencediv h1 {
+
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1399px) {
+    
+    .firstexperiencediv , .secondexperiencediv , .thirdexperiencediv , .fourthexperiencediv {
+
+        width: 470px;
+    }
+
+    .secondexperiencediv {
+
+        top: 290px;
+    }
+    
+    .timeline_star2 {
+
+            top: 310px;
+    }
+
+    .thirdexperiencediv {
+
+        top: 660px;
+    }
+
+    .timeline_star3 {
+
+        top: 690px;
+    }
+
+    .fourthexperiencediv {
+
+        bottom: 20px;
+    }
+
+    .timeline_star4 {
+
+        bottom: 210px;
+    }
+
+    .experienceparent {
+
+        height: 1350px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    
+    .firstexperiencediv , .secondexperiencediv , .thirdexperiencediv , .fourthexperiencediv {
+    
+        width: 370px;
+    }
+
+    .experienceparent {
+
+        height: 1560px;
+    }
+
+    .firstexperiencediv {
+
+        top: 30px;
+    }
+
+    .timeline_star {
+
+        top: 50px;
+    }
+
+    .secondexperiencediv {
+
+        top: 360px;
+    }
+
+    .timeline_star2 {
+
+        top: 390px;
+    }
+
+    .timeline_star3 {
+
+        top: 840px;
+    }
+
+    .thirdexperiencediv {
+
+        top: 810px;
+    }
+
+    .fourthexperiencediv {
+    
+        bottom: 30px;
+    }
+
+    .timeline_star4 {
+
+        bottom: 250px;
+    }
+    
+}
+
+@media screen and (max-width: 991px) {
+    
+    .vertical_line, .timeline_star, .timeline_star2, .timeline_star3, .timeline_star4,.experiencedotone,.experiencedottwo {
+    
+            display: none;
+    }
+
+    .firstexperiencediv , .secondexperiencediv , .thirdexperiencediv , .fourthexperiencediv {
+
+        width: 100%;
+        position: static;
+    }
+
+    .experienceparent {
+
+        height: 100%;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 575px){
+
+    .experiencediv,.experienceparent,.firstexperiencediv,.secondexperiencediv,.thirdexperiencediv,.fourthexperiencediv,.experienceskilldiv  {
+
+        gap: 15px;
+    }
+
+    .firstexperiencediv,.secondexperiencediv,.thirdexperiencediv,.fourthexperiencediv {
+
+        padding: 15px;
+    }
+
+    .yearofexp {
+
+        gap: 10px;
+    }
+}</style><style type="text/css" data-vite-dev-id="D:/BVM_Projects/React/Portfolio/Portfolio_lightdark/frontend/portfolio/src/components/Contact_comp/contact.css">.contactdiv {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contactmaindiv {
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border-radius: 5px;
+    
+}
+
+.whatsappdiv {
+
+    width: 30%;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 500px;
+    position: relative;
+}
+
+.contactusformdiv {
+
+    width: 70%;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.whatsappimg {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.whatsappheaderdiv {
+
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+    gap: 15px;
+}
+
+.whatsappdetails {
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.whatsapptypicaltext {
+
+    font-size: 11px;
+    font-size: 400;
+}
+
+.whatsappprofileround {
+
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.whatsappprofileround img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.whatsappdarkheader {
+
+    background-color: #ff2e2e;
+    color: #0A0A0A;
+}
+
+.whatsapplightheader {
+
+    background-color: #00826a;
+    color: white;
+}
+
+.whatsappheadercontentdiv {
+
+    background-color: #FFFFFF;
+    padding: 10px 14px;
+    position: absolute;
+    top: 140px;
+    left: 20px;
+}</style></head>
+  <body>
+    <div id="root"><div class="maincontainer headermaincontainer lightmode"><div class="childcontainer header"><div class="headerdirstdiv"><i class="fa-solid fa-align-left iconfont left-color-light"></i><a href="http://localhost:5173/#" class="imglogosecond"><img alt="Logo Image" src="./Portfolio_files/bvm_logo_light_small.png"></a></div><a href="http://localhost:5173/#" class="imglogomain"><img alt="Logo Image" src="./Portfolio_files/bvm_logo_light_large.png"></a><div class="navlinks"><a href="http://localhost:5173/#" class="lightmodetextatag">Home</a><a href="http://localhost:5173/#" class="lightmodetextatag">About</a><a href="http://localhost:5173/#" class="lightmodetextatag">Skills</a><a href="http://localhost:5173/#" class="lightmodetextatag">Projects</a><a href="http://localhost:5173/#" class="lightmodetextatag">Contact</a></div><div class="togglebuttonlight togglebutton"><div class="toggleroundlight toggleround"></div><div class="cloud cloud1"></div><div class="cloud cloud2"></div></div></div></div><div class="maincontainer lightmode"><div class="childcontainer"><div class="homemaindiv"><div class="homeimageborder"><div class="border-spin border-spinlight"></div><div class="homemainimage"><img alt="Profile Pic" src="./Portfolio_files/imagetwo_light.jpg"></div></div><div class="homemaindetails"><p class="ptext lightmodetext">Hello I'm</p><h1 class="h1text lightmodetext">Blessen Vinoy Mathew</h1><p class="role-line ptext lightmodetext">I’m a <span class="autotype"><span>Software Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true">|</span></span></p><div class="buttondiv"><a role="button" tabindex="0" class="buttonnormal  lightmodebutton">Download CV</a><a role="button" tabindex="0" class="buttonnormal  lightmodetwobutton">Contact Info</a></div><div class="socialdivhome"><a href="http://localhost:5173/#"><i class="fa-brands fa-github iconfont socialiconslight"></i></a><a href="http://localhost:5173/#"><i class="fa-brands fa-linkedin iconfont socialiconslight"></i></a><a href="http://localhost:5173/#"><i class="fa-brands fa-instagram iconfont socialiconslight"></i></a></div></div></div><div class="aboutdivtitle"><h1 class="h1text lightmodetext"><span class="autotype"><span>ABOUT ME</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true">|</span></span></h1><p class="ptext lightmodetext">I build end-to-end features users love and teams can scale.</p><div class="aboutcarddivparent"><div class="aboutcarddiv lightmodeaboutcard"><div class="cardiconround lightmoderound "><i class="fa-solid fa-laptop-code iconfont"></i></div><h1 class="lightmodetext h1smalltext">Front-End Craft</h1><p class="lightmodetext ptext">Pixel-perfect, fast, and accessible UIs.</p></div><div class="aboutcarddiv lightmodeaboutcard"><div class="cardiconround lightmoderound "><i class="fa-solid fa-server iconfont"></i></div><h1 class="lightmodetext h1smalltext">Back-End &amp; APIs</h1><p class="lightmodetext ptext">Reliable services that are easy to consume.</p></div><div class="aboutcarddiv lightmodeaboutcard"><div class="cardiconround lightmoderound "><i class="fa-solid fa-database iconfont"></i></div><h1 class="lightmodetext h1smalltext">Data &amp; Persistence</h1><p class="lightmodetext ptext">Well-modeled data, clear queries, safe migrations.</p></div></div><p class="ptext lightmodetext">I’m a full-stack developer with a passion for front-end craft. I design and build responsive, accessible interfaces using HTML, CSS, React and Bootstrap, and round them out with reliable back-end services in Django/Python and SQL. I love turning ideas into clean, performant, user-first web experiences.</p></div><div class="skillparentdiv"><h1 class="h1text lightmodetext"><span class="autotype"><span>WHAT I WORK WITH</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true">|</span></span></h1><p class="ptext lightmodetext">The languages, frameworks, and tools behind my work.</p><div class="skillchilddiv"><div class="skillcardparent lightmodeaboutcard"><h1 class="lightmodetext h1mediumtext">Front-End Development</h1><div class="skill-gridcard"><div class="skill-itemcard lightmodetext"><div class="skill-icon lightmoderound lightmodeaboutcard"><i class="fa-solid fa-check iconfont"></i></div><div class="skilldetails"><p class="h1smalltext">HTML</p><p class="ptext">Advanced</p></div></div><div class="skill-itemcard lightmodetext"><div class="skill-icon lightmoderound lightmodeaboutcard"><i class="fa-solid fa-check iconfont"></i></div><div class="skilldetails"><p class="h1smalltext">CSS</p><p class="ptext">Advanced</p></div></div><div class="skill-itemcard lightmodetext"><div class="skill-icon lightmoderound lightmodeaboutcard"><i class="fa-solid fa-check iconfont"></i></div><div class="skilldetails"><p class="h1smalltext">JavaScript</p><p class="ptext">Intermediate</p></div></div><div class="skill-itemcard lightmodetext"><div class="skill-icon lightmoderound lightmodeaboutcard"><i class="fa-solid fa-check iconfont"></i></div><div class="skilldetails"><p class="h1smalltext">TypeScript</p><p class="ptext">Intermediate</p></div></div><div class="skill-itemcard lightmodetext"><div class="skill-icon lightmoderound lightmodeaboutcard"><i class="fa-solid fa-check iconfont"></i></div><div class="skilldetails"><p class="h1smalltext">React</p><p class="ptext">Intermediate</p></div></div><div class="skill-itemcard lightmodetext"><div class="skill-icon lightmoderound lightmodeaboutcard"><i class="fa-solid fa-check iconfont"></i></div><div class="skilldetails"><p class="h1smalltext">SCSS</p><p class="ptext">Beginner</p></div></div><div class="skill-itemcard lightmodetext"><div class="skill-icon lightmoderound lightmodeaboutcard"><i class="fa-solid fa-check iconfont"></i></div><div class="skilldetails"><p class="h1smalltext">Bootstrap</p><p class="ptext">Beginner</p></div></div></div></div><div class="skillcardparent lightmodeaboutcard"><h1 class="lightmodetext h1mediumtext">Back-End Development</h1><div class="skill-gridcard"><div class="skill-itemcard lightmodetext"><div class="skill-icon lightmoderound lightmodeaboutcard"><i class="fa-solid fa-check iconfont"></i></div><div class="skilldetails"><p class="h1smalltext">Python</p><p class="ptext">Advanced</p></div></div><div class="skill-itemcard lightmodetext"><div class="skill-icon lightmoderound lightmodeaboutcard"><i class="fa-solid fa-check iconfont"></i></div><div class="skilldetails"><p class="h1smalltext">Django</p><p class="ptext">Intermediate</p></div></div><div class="skill-itemcard lightmodetext"><div class="skill-icon lightmoderound lightmodeaboutcard"><i class="fa-solid fa-check iconfont"></i></div><div class="skilldetails"><p class="h1smalltext">SQL</p><p class="ptext">Intermediate</p></div></div><div class="skill-itemcard lightmodetext"><div class="skill-icon lightmoderound lightmodeaboutcard"><i class="fa-solid fa-check iconfont"></i></div><div class="skilldetails"><p class="h1smalltext">Laravel</p><p class="ptext">Beginner</p></div></div></div></div></div></div><div class="experiencediv"><h1 class="h1text lightmodetext"><span class="autotype"><span>PROFESSIONAL EXPERIENCE</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true">|</span></span></h1><p class="ptext lightmodetext">The path, milestones, and impact of my work.</p><div class="experienceparent"><div class="vertical_line background_primary_black"></div><div class="timeline_star lightmoderound"><i class="fa-solid fa-book-open iconfont"></i></div><div class="firstexperiencediv lightmodeaboutcard lightmodetext"><h1 class="h1smalltext">MASTER OF INFORMATION TECHNOLOGY</h1><div class="yearofexp"><p class="ptext">Royal Melbourne Institute of Technology, RMIT</p><p class="ptext">Currently Pursuing</p></div><p class="ptext">Master of Information Technology focusing on software development, data management, and systems design. Covering algorithms, databases, networking, security, cloud, and project management, with hands-on work in modern web stacks. Built capstone projects emphasizing clean architecture, testing, and real-world problem solving.</p></div><div class="timeline_star2 lightmoderound"><i class="fa-solid fa-star iconfont"></i></div><div class="secondexperiencediv lightmodeaboutcard lightmodetext"><h1 class="h1smalltext">FULL STACK DEVELOPER</h1><p class="ptext">FreeLancer</p><p class="ptext">Freelance full-stack developer delivering end-to-end web apps for small businesses. I ship responsive, accessible UIs with React, HTML/CSS and wire them to secure Django/Python APIs with SQL and Laravel when needed. I handle scoping, development, testing, deployment, and optimizing performance, SEO, and usability.</p><div class="experienceskilldiv"><a role="button" tabindex="0" class="buttonnormal  lightmodetwobutton">HTML</a><a role="button" tabindex="0" class="buttonnormal  lightmodetwobutton">CSS</a><a role="button" tabindex="0" class="buttonnormal  lightmodetwobutton">JS</a><a role="button" tabindex="0" class="buttonnormal  lightmodetwobutton">React js</a><a role="button" tabindex="0" class="buttonnormal  lightmodetwobutton">Django</a><a role="button" tabindex="0" class="buttonnormal  lightmodetwobutton">SQL</a><a role="button" tabindex="0" class="buttonnormal  lightmodetwobutton">Laravel</a></div></div><div class="timeline_star3 lightmoderound"><i class="fa-solid fa-briefcase iconfont"></i></div><div class="thirdexperiencediv lightmodeaboutcard lightmodetext"><h1 class="h1smalltext">PROGRAMMER TRAINEE</h1><div class="yearofexp"><p class="ptext">Brahmaa Infotek</p><p class="ptext">March 2023 - March 2024</p></div><p class="ptext">Programmer Trainee at Brahmaa Infotek, building responsive React UIs with HTML/CSS and reusable components. I also tested API data (status codes, JSON shape, edge cases in Postman) and integrated responses into the front end, handling loading/error states, data mapping, and UI validation.</p><div class="experienceskilldiv"><a role="button" tabindex="0" class="buttonnormal  lightmodetwobutton">HTML</a><a role="button" tabindex="0" class="buttonnormal  lightmodetwobutton">CSS</a><a role="button" tabindex="0" class="buttonnormal  lightmodetwobutton">React js</a><a role="button" tabindex="0" class="buttonnormal  lightmodetwobutton">Bootstrap</a><a role="button" tabindex="0" class="buttonnormal  lightmodetwobutton">SQL</a></div></div><div class="timeline_star4 lightmoderound"><i class="fa-solid fa-graduation-cap iconfont"></i></div><div class="fourthexperiencediv lightmodeaboutcard lightmodetext"><h1 class="h1smalltext">BACHELOR OF TECHNOLOGY IN COMPUTER SCIENCE</h1><div class="yearofexp"><p class="ptext">Saintgits College of Engineering</p><p class="ptext">2019 - 2023</p></div><p class="ptext">B.Tech in Computer Science with a strong foundation in data structures &amp; algorithms, OOP, databases, operating systems, and computer networks. Built team projects and a capstone using modern web technologies, applying clean architecture, testing, and version control.</p></div><div class="experiencedotone lightmoderound"></div><div class="experiencedottwo lightmoderound"></div></div></div><div class="projectdiv"><h1 class="h1text lightmodetext"><span class="autotype"><span>WHAT</span><span class="typed-cursor" aria-hidden="true">|</span></span></h1><p class="ptext lightmodetext">From concept to code: designs built, features shipped, results measured.</p><div class="react-multi-carousel-list carousel-container carouseldiv" dir="ltr"><ul class="react-multi-carousel-track " style="transition: none; overflow: unset; transform: translate3d(0px, 0px, 0px);"><li data-index="0" aria-hidden="false" class="react-multi-carousel-item react-multi-carousel-item--active carousel-item-pad" style="flex: 1 1 auto; position: relative; width: 420px;"><div class="card-div-carousel lightmodeaboutcard lightmodetext"><div class="card-div-images"><img alt="Image" src="./Portfolio_files/geelong.png" style="width: 100%; height: 100%; object-fit: cover;"><div class="card-div-para"><p class="ptext lightmodetext">Built a responsive web application for a Geelong church using React, HTML, and CSS to create a modern, component-driven UI. Integrated a Django API for dynamic content and secure form handling. Ensured reliability and accessibility through comprehensive cross-browser and cross-device manual testing.</p></div></div><div class="card-details"><h1 class="h1smalltext lightmodetext">Geelong Pentecostal Church</h1><a role="button" tabindex="0" class="buttonnormal  lightmodebutton">View Project</a></div></div></li><li data-index="1" aria-hidden="false" class="react-multi-carousel-item react-multi-carousel-item--active carousel-item-pad" style="flex: 1 1 auto; position: relative; width: 420px;"><div class="card-div-carousel lightmodeaboutcard lightmodetext"><div class="card-div-images"><img alt="Image" src="./Portfolio_files/portfolio_image.png" style="width: 100%; height: 100%; object-fit: cover;"><div class="card-div-para"><p class="ptext lightmodetext">Developed a professional and responsive portfolio website to showcase my projects and technical expertise as a front-end developer. The portfolio is built using modern web technologies, including HTML for semantic structure, CSS for sleek and responsive design, and React with TypeScript to deliver a dynamic, type-safe, and interactive user experience. This combination ensures a polished, accessible, and high-performance interface that effectively highlights my work.</p></div></div><div class="card-details"><h1 class="h1smalltext lightmodetext">Old Portfolio</h1><a role="button" tabindex="0" class="buttonnormal  lightmodebutton">View Project</a></div></div></li><li data-index="2" aria-hidden="false" class="react-multi-carousel-item react-multi-carousel-item--active carousel-item-pad" style="flex: 1 1 auto; position: relative; width: 420px;"><div class="card-div-carousel lightmodeaboutcard lightmodetext"><div class="card-div-images"><img alt="Image" src="./Portfolio_files/expense_tracker.png" style="width: 100%; height: 100%; object-fit: cover;"><div class="card-div-para"><p class="ptext lightmodetext">Created a robust Expense Tracker application using React, HTML, and CSS to deliver a user-friendly interface for managing finances. The design features a responsive layout with a dedicated section for adding transactions, tracking balance, and viewing transaction history.</p></div></div><div class="card-details"><h1 class="h1smalltext lightmodetext">Expense Tracker</h1><a role="button" tabindex="0" class="buttonnormal  lightmodebutton">View Project</a></div></div></li><li data-index="3" aria-hidden="true" class="react-multi-carousel-item  carousel-item-pad" style="flex: 1 1 auto; position: relative; width: 420px;"><div class="card-div-carousel lightmodeaboutcard lightmodetext"><div class="card-div-images"><img alt="Image" src="./Portfolio_files/cloth_App.png" style="width: 100%; height: 100%; object-fit: cover;"><div class="card-div-para"><p class="ptext lightmodetext">Designed and developed the front-end of an e-commerce platform, ShopCloth, using React, HTML, and CSS to create a stylish and responsive online clothing store. The interface features dynamic sections for new arrivals, top-selling items, and browsing by dress style, with a clean layout showcasing premium brands like Prada, Gucci, and Versace. Implemented an intuitive user experience with interactive elements, including product grids, customer reviews, and a subscription form, all tailored for a seamless shopping journey.</p></div></div><div class="card-details"><h1 class="h1smalltext lightmodetext">Clothing E-commerce</h1><a role="button" tabindex="0" class="buttonnormal  lightmodebutton">View Project</a></div></div></li><li data-index="4" aria-hidden="true" class="react-multi-carousel-item  carousel-item-pad" style="flex: 1 1 auto; position: relative; width: 420px;"><div class="card-div-carousel lightmodeaboutcard lightmodetext"><div class="card-div-images"><img alt="Image" src="./Portfolio_files/plant_project.jpeg" style="width: 100%; height: 100%; object-fit: cover;"><div class="card-div-para"><p class="ptext lightmodetext">Designed and developed the front-end of GreenMind, an engaging e-commerce platform for plant enthusiasts, using React, HTML, and CSS. The interface features a responsive layout with a prominent hero section, best-selling plant displays, and category browsing options, creating an immersive shopping experience. Incorporated interactive elements like a search bar, customer testimonials, and service highlights (e.g., free shipping, large assortment) to enhance usability.</p></div></div><div class="card-details"><h1 class="h1smalltext lightmodetext">Plant E-commerce</h1><a role="button" tabindex="0" class="buttonnormal  lightmodebutton">View Project</a></div></div></li><li data-index="5" aria-hidden="true" class="react-multi-carousel-item  carousel-item-pad" style="flex: 1 1 auto; position: relative; width: 420px;"><div class="card-div-carousel lightmodeaboutcard lightmodetext"><div class="card-div-images"><img alt="Image" src="./Portfolio_files/instagram.jpeg" style="width: 100%; height: 100%; object-fit: cover;"><div class="card-div-para"><p class="ptext lightmodetext">Embarked on my development journey by creating a responsive Instagram inspired landing page using HTML and CSS. The design replicates the app's login interface and showcases a mobile-friendly layout with social media elements. This project marks the beginning of my exploration into front-end development, focusing on clean design and user interface fundamentals.</p></div></div><div class="card-details"><h1 class="h1smalltext lightmodetext">Instagram Login</h1><a role="button" tabindex="0" class="buttonnormal  lightmodebutton">View Project</a></div></div></li><li data-index="6" aria-hidden="true" class="react-multi-carousel-item  carousel-item-pad" style="flex: 1 1 auto; position: relative; width: 420px;"><div class="card-div-carousel lightmodeaboutcard lightmodetext"><div class="card-div-images"><img alt="Image" src="./Portfolio_files/facebook.jpeg" style="width: 100%; height: 100%; object-fit: cover;"><div class="card-div-para"><p class="ptext lightmodetext">Embarked on my development journey by creating a responsive Instagram-inspired landing page using HTML and CSS. The design replicates the app's login interface and showcases a mobile-friendly layout with social media elements. This project marks the beginning of my exploration into front-end development, focusing on clean design and user interface fundamentals.</p></div></div><div class="card-details"><h1 class="h1smalltext lightmodetext">Facebook and instagram Login</h1><a role="button" tabindex="0" class="buttonnormal  lightmodebutton">View Project</a></div></div></li></ul><button aria-label="Go to next slide" class="react-multiple-carousel__arrow react-multiple-carousel__arrow--right " type="button"></button></div></div><div class="contactdiv"><h1 class="h1text lightmodetext"><span class="autotype"><span>HOW TO REAC</span><span class="typed-cursor" aria-hidden="true">|</span></span></h1><p class="ptext lightmodetext">Open to roles, collaborations, and consultations.</p><div class="contactmaindiv"><div class="whatsappdiv"><img alt="Whatsapp pic" class="whatsappimg" src="./Portfolio_files/whatsapplight.jpg"><div class="whatsappheaderdiv whatsapplightheader"><div class="whatsappprofileround"><img alt="Whatsapp Profile" src="./Portfolio_files/imagetwo_light.jpg"></div><div class="whatsappdetails"><p class="h1smalltext">Blessen Vinoy Mathew</p><p class="whatsapptypicaltext">Typically Replies within 24 hours</p></div></div><div class="whatsappheadercontentdiv"><p class="whatsapptypicaltext">Hi there! 👋🏼<br>I am interested in working with you. Please let me know how I can help you.</p></div></div><div class="contactusformdiv lightmodeaboutcard"></div></div></div></div></div></div>
+    <script type="module" src="./Portfolio_files/main.tsx"></script>
+  
+
+<style data-typed-js-cursor-css="true">
+        .typed-cursor{
+          opacity: 1;
+        }
+        .typed-cursor.typed-cursor--blink{
+          animation: typedjsBlink 0.7s infinite;
+          -webkit-animation: typedjsBlink 0.7s infinite;
+                  animation: typedjsBlink 0.7s infinite;
+        }
+        @keyframes typedjsBlink{
+          50% { opacity: 0.0; }
+        }
+        @-webkit-keyframes typedjsBlink{
+          0% { opacity: 1; }
+          50% { opacity: 0.0; }
+          100% { opacity: 1; }
+        }
+      </style></body></html>
