@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./contact.css";
 import type { HeaderProps } from "../../interface";
 import { AutoTypeContacts } from "../extras";
 
 const ContactComp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
-
+    const [iswhatsappOpen, setIswhatsappOpen] = useState(true);
     return(
 
         <>
@@ -12,8 +12,16 @@ const ContactComp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                 <h1 className={`h1text ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}><AutoTypeContacts/></h1>
                 <p className={`ptext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>Open to roles, collaborations, and consultations.</p>
                 <div className={`contactmaindiv`}>
-                    <div className={`whatsappdiv ${darkMode ? 'darkmodeaboutcard' : 'lightmodeaboutcard'}`} >
-                        
+                    <div className={`whatsappdiv ${darkMode ? 'darkmodeaboutcard' : 'lightmodeaboutcard'} ${iswhatsappOpen && darkMode ? 'whatsappOpendark whatappOpenCommon' : 'whatsappOpenlight whatappOpenCommon'}`} > 
+                        <div className={`whatsappheader ${darkMode ? 'whatsappheaderdark' : 'whatsappheaderlight'}`}>
+
+                        </div>
+                        <div className="whatsappcontent">
+                            <div className="whatsappptextcontent">
+                                <p className="ptext">Hi There 👋</p>
+                                <p className="ptext">How can i help you?</p>
+                            </div>
+                        </div>
                     </div>
                     <div className={`contactusformdiv ${darkMode ? 'darkmodeaboutcard' : 'lightmodeaboutcard'}`}>
 
