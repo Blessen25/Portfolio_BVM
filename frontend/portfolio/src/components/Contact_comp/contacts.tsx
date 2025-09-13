@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./contact.css";
 import type { HeaderProps } from "../../interface";
-import { AutoTypeContacts, ButtonComp } from "../extras";
+import { AutoTypeContacts, ButtonComp,  TimeHHmm } from "../extras";
 
 const ContactComp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
     const [iswhatsappOpen, setIswhatsappOpen] = useState(true);
@@ -20,6 +20,7 @@ const ContactComp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                             <div className="whatsappptextcontent">
                                 <p className="ptext">Hi There 👋</p>
                                 <p className="ptext">How can i help you?</p>
+                                <TimeHHmm />
                             </div>
                         </div>
                         <div className="whatsappbuttondiv">

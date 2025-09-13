@@ -1,7 +1,7 @@
-import React, { useEffect, useMemo, useRef } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import Typed from "typed.js";
 import "./extras.css";
-import type { aboutcardProps, buttonProps, HeaderProps, projectcardProps, Skill, skillcardProps } from "../interface";
+import type { aboutcardProps, buttonProps, HeaderProps, LiveClockProps, projectcardProps, Skill, skillcardProps } from "../interface";
 
 export const AutoType: React.FC = () => {
   const el = useRef<HTMLSpanElement | null>(null);
@@ -373,3 +373,36 @@ export const ProjectcardComponent: React.FC<projectcardProps> = ({darkMode, setD
     </>
   )
 }
+
+
+export const useMinuteNow = () => {
+  const [now, setNow] = React.useState(() => new Date());
+
+  React.useEffect(() => {
+    const update = () => setNow(new Date());
+
+    const msToNextMinute = 60000 - (Date.now() % 60000);
+
+    let intervalId: number | undefined;
+
+    const timeoutId = window.setTimeout(() => {
+      update();
+      intervalId = window.setInterval(update, 60000);
+    }, msToNextMinute);
+
+    return () => {
+      window.clearTimeout(timeoutId);
+      if (intervalId) window.clearInterval(intervalId);
+    };
+  }, []);
+
+  return now;
+};
+
+export const TimeHHmm: React.FC = () => {
+  const now = useMinuteNow();
+  const text = now
+    .toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit", hour12: true })
+    .toLowerCase();
+  return <p className="ptext">{text}</p>
+};

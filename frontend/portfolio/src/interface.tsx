@@ -31,6 +31,13 @@ export type Skill = {
     level : SkillLevel;
 };
 
+export type LiveClockProps = {
+
+    timeZone ?: string;
+    withSeconds ?: boolean;
+    hour12?: boolean;
+}
+
 interface skillcardProps {
 
     darkMode ?: boolean;
