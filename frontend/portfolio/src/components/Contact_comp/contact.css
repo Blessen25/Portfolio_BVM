@@ -86,3 +86,12 @@
     flex-direction: column;
     gap: 20px;
 }
+
+.whatsappbuttondiv {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 2px solid black;
+}
