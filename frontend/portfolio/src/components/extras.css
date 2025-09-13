@@ -189,6 +189,13 @@
     opacity: .1;
     transform: scale(1.1);
 }
+
+.timealign {
+
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+}
 @media screen and (max-width: 1199px) {
     
     .skillchilddiv {
