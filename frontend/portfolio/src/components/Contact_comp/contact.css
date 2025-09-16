@@ -59,8 +59,37 @@
     height: 100px;
     display: flex;
     align-items: center;
+    padding: 0px 20px;
+    gap: 20px;
 }
 
+.whatsappdp {
+
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.whatsappdp img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.whatsappdetails {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.whatsappdetails:last-child {
+
+    font-size: 12px;
+}
 
 .whatsappheaderlight {
 

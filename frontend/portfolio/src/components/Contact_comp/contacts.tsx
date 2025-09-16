@@ -14,7 +14,13 @@ const ContactComp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                 <div className={`contactmaindiv`}>
                     <div className={`whatsappdiv ${darkMode ? 'darkmodeaboutcard' : 'lightmodeaboutcard'} ${iswhatsappOpen && darkMode ? 'whatsappOpendark whatappOpenCommon' : 'whatsappOpenlight whatappOpenCommon'}`} > 
                         <div className={`whatsappheader whatsappheaderlight`}>
-
+                            <div className="whatsappdp">
+                                <img src="../public/assets/images/logo/imagetwo_light.jpg" alt="Whatsapp dp" />
+                            </div>
+                            <div className="whatsappdetails">
+                                <h1 className="h1smalltext">Blessen Vinoy Mathew</h1>
+                                <p>Typically replies within 24 hours</p>
+                            </div>
                         </div>
                         <div className="whatsappcontent">
                             <div className="whatsappptextcontent">
