@@ -103,6 +103,21 @@
     font-size: 24px;
   }
 
+.error {
+
+  font-size: 13px;
+}
+
+.darkmodeerror {
+  
+  color: white;
+}
+
+.lightmodeerror {
+
+  color: #FF2E2E;
+}
+
 @media screen and (max-width: 1399px) {
   
   .childcontainer {
@@ -176,6 +191,11 @@
     font-size: 21px !important;
   }
 
+  .error {
+
+    font-size: 11px;
+  }
+
 }
 
 @media screen and (max-width: 575px) {
@@ -209,6 +229,11 @@
   .iconfont {
 
     font-size: 18px !important;
+  }
+
+  .error {
+
+    font-size: 9px;
   }
   
 }

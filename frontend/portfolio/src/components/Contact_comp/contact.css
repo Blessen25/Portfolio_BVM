@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    transition: all .7s;
 }
 
 .contactmaindiv {
@@ -19,6 +20,9 @@
     width: 70%;
     border-radius: 5px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .whatsappdiv {
@@ -26,7 +30,6 @@
     width: 30%;
     border-radius: 5px;
     overflow: hidden;
-    height: 500px;
     position: relative;
 }
 
@@ -83,7 +86,7 @@
 
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
 }
 
 .whatsappdetails:last-child {
@@ -151,9 +154,98 @@
     box-shadow: inset 0px 70px 0px 0px rgba(0, 130, 106, 1);
 }
 
+.inputparentdiv {
+
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.inputchilddiv {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.contactemaildiv {
+
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.subjectdiv {
+
+    width: 100%;
+}
+
+.descriptiondiv {
+
+    width: 100%;
+}
+
+.contactformdetails {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.inputfield {
+
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    height: 40px;
+    padding: 15px 20px;
+    width: 100%;
+}
+
+.darkmodeinput {
+
+    box-shadow: rgba(255, 46, 46, 0.12) 0px 1px 3px 0px,rgba(255, 46, 46, 1) 0px 0px 0px 1px;
+    background-color: transparent;
+    color : #FF2E2E;
+}
+
+.darkmodeinput::placeholder {
+
+    color: #ff0000;
+}
+
+.lightmodeinput {
+
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background-color: transparent;
+    color : #0A0A0A;
+}
+
+.descriptionfield {
+
+    height: 100px;
+    resize: none;
+}
+
+.inputfield::placeholder {
+
+    font-size: 13px;
+}
+
+
+
+
 @media screen and (max-width: 767px) {
     
     .whatsappdetails:last-child {
+
+        font-size: 10px;
+    }
+
+    .inputfield::placeholder {
 
         font-size: 10px;
     }
@@ -166,4 +258,9 @@
 
         font-size: 8px;
     }    
+
+    .inputfield::placeholder {
+
+        font-size: 8px;
+    }
 }
