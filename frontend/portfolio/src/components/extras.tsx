@@ -404,5 +404,5 @@ export const TimeHHmm: React.FC = () => {
   const text = now
     .toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit", hour12: true })
     .toLowerCase();
-  return <p className="ptext timealign">{text}</p>
+  return <p className="timetext timealign">{text}</p>
 };
