@@ -208,8 +208,8 @@
 .darkmodeinput {
 
     box-shadow: rgba(255, 46, 46, 0.12) 0px 1px 3px 0px,rgba(255, 46, 46, 1) 0px 0px 0px 1px;
-    background-color: transparent;
-    color : #FF2E2E;
+    background-color: transparent !important;
+    color : #FF2E2E !important;
 }
 
 .darkmodeinput::placeholder {
@@ -220,8 +220,8 @@
 .lightmodeinput {
 
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    background-color: transparent;
-    color : #0A0A0A;
+    background-color: transparent !important;
+    color : #0A0A0A !important;
 }
 
 .descriptionfield {
@@ -235,7 +235,81 @@
     font-size: 13px;
 }
 
+.buttoncontact {
 
+    border: none;
+}
+
+
+.react-tel-input .form-control {
+
+    width: 100% !important;
+    height: 40px !important;
+    border: none !important;
+}
+
+.react-tel-input .flag-dropdown {
+
+    border: none !important;
+    outline: none !important;
+}
+
+.darkmodedropdown {
+
+    background-color: #FF2E2E !important;
+}
+
+.react-tel-input .flag-dropdown.open .darkmodedropdown .selected-flag {
+
+    background-color: #FF2E2E !important;
+}
+
+
+.lightmodedropdown {
+
+    background-color: transparent !important;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.react-tel-input .selected-flag:hover, .react-tel-input .selected-flag:focus {
+
+    background-color: transparent !important;
+}
+
+.darkmodeflagdropdown{
+
+    background-color: #0A0A0A !important;
+    color: #FF2E2E !important;
+    transition: all .7s;
+}
+
+.flag-dropdown.open.darkmodedropdown .selected-flag.open {
+
+    background-color: #0A0A0A !important;
+    color: #FF2E2E !important;
+    box-shadow: rgba(255, 46, 46, 0.12) 0px 1px 3px 0px,rgba(255, 46, 46, 1) 0px 0px 0px 1px;
+}
+
+.flag-dropdown.open.lightmodedropdown .selected-flag.open {
+
+    background-color: transparent !important;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+.react-tel-input .darkmodeflagdropdown .country.highlight,
+.react-tel-input .darkmodeflagdropdown .country:hover{
+
+    background-color: #ff0000 !important;
+    color:  #000 !important;
+}
+
+.react-tel-input .lightmodeflagdropdown .country.highlight,
+.react-tel-input .lightmodeflagdropdown .country:hover{
+
+    background-color: #0A0A0A !important;
+    color:  white !important;
+}
 
 
 @media screen and (max-width: 767px) {
