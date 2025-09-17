@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import Typed from "typed.js";
 import "./extras.css";
-import type { aboutcardProps, buttonProps, HeaderProps, LiveClockProps, projectcardProps, Skill, skillcardProps } from "../interface";
+import type { aboutcardProps, buttonProps, HeaderProps, LiveClockProps, projectcardProps, Skill, skillcardProps, TimeProps } from "../interface";
 
 export const AutoType: React.FC = () => {
   const el = useRef<HTMLSpanElement | null>(null);
@@ -399,10 +399,10 @@ export const useMinuteNow = () => {
   return now;
 };
 
-export const TimeHHmm: React.FC = () => {
+export const TimeHHmm: React.FC<TimeProps> = (Props) => {
   const now = useMinuteNow();
   const text = now
     .toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit", hour12: true })
     .toLowerCase();
-  return <p className="timetext timealign">{text}</p>
+  return <p className={`timetext timealign ${Props.className}`}>{text}</p>
 };

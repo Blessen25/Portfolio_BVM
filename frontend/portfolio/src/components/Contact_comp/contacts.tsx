@@ -21,6 +21,7 @@ const ContactComp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
    
     /* END OF VALIDATIONS */
     const [iswhatsappOpen, setIswhatsappOpen] = useState(true);
+    const [iswhatsappmidOpen, setIswhatsappmidOpen] = useState(false);
     const initialValues = {
 
         firstName:"",
@@ -104,6 +105,16 @@ const ContactComp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
 
             return errors;
     };
+
+    const HandleClick = () => {
+
+        setIswhatsappmidOpen(true)
+    }
+
+    const HandleCloseClick = () => {
+
+        setIswhatsappmidOpen(false)
+    }
     return(
 
         <>
@@ -189,10 +200,32 @@ const ContactComp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                 </div>
             </div>
 
-            <div className="whatsappoverlay"></div>
             <div className="whatsappsymbol">
-                    <i className="fa-brands fa-whatsapp"></i>
+                    <i className="fa-brands fa-whatsapp whatsappiconmid" onClick={HandleClick}></i>
             </div>
+            {iswhatsappmidOpen && (
+
+                <div className={`whatsappmiddiv ${darkMode ? 'darkmodewhatsappmidimg' : 'lightmodewhatsappmidimg'}`} >
+                    <div className="whatsappmidheader">
+                        <div className="whatsappmidheaderone">
+                            <p className="h1smalltext">Blessen Vinoy Mathew</p>
+                            <p className="whatsappmidtext">Typically replies within 24 hours</p>
+                        </div>
+                        <i className="fa-solid fa-xmark iconfont" onClick={HandleCloseClick}></i>
+                    </div>
+                    <div className="whatsappparamid">
+                        <div className="whatsappdetailsmid">
+                            <p className="whatsappmidtext">Hi there 👋</p>
+                            <br />
+                            <p className="whatsappmidtext">How can I help you?</p>
+                            <TimeHHmm className="whatsappmidtime"/>
+                        </div>
+                    </div>
+                    <div className="whatsappmidbuttondiv">
+                        <a href="#" target="_blank" className={`whatsappbutton buttonnormal whatsappbuttonlight`}><i className="fa-brands fa-whatsapp iconfont "></i>Chat on Whatsapp</a>
+                    </div>
+                </div>
+            )}
         </>
     )
 }

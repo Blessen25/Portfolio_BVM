@@ -59,6 +59,11 @@ interface projectcardProps {
     }
 }
 
+interface TimeProps {
 
-export type { HeaderProps, buttonProps, aboutcardProps, skillcardProps, projectcardProps };
+    className ?: string;
+}
+
+
+export type { HeaderProps, buttonProps, aboutcardProps, skillcardProps, projectcardProps, TimeProps };
 

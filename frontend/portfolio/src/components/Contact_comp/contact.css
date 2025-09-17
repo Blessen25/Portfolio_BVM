@@ -316,6 +316,16 @@
         display: none;
     }
 
+.whatsappmiddiv {
+
+    display: none;
+}
+
+.react-tel-input .country-list .country {
+
+    align-items: center !important;
+}
+
 @media screen and (max-width: 1399px) {
     
     .contactusformdiv {
@@ -366,14 +376,104 @@
         display: block;
         position: fixed;
         bottom: 30px;
-        right: 30px;
+        right: 25px;
     }
 
-    .fa-whatsapp {
+    .whatsappiconmid {
 
         font-size: 60px;
         color: #25d467;
     }
+
+    .whatsappmiddiv {
+
+        display: block;
+        width: 320px;   
+        height: 280px;
+        position: fixed;
+        z-index: 999;
+        bottom: 100px;
+        right: 25px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        animation: fadeInbottom .7s ease-in-out;
+    }
+    
+    .darkmodewhatsappmidimg {
+
+        background-image: url('../../../public/assets/images/projects/whatsappdark.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .lightmodewhatsappmidimg {
+
+        background-image: url('../../../public/assets/images/projects/whatsapplight.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .whatsappmidheader {
+
+        background-color: #00826a;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        padding: 0px 20px;
+        border-radius: 5px 5px 0px 0px;
+        color: black;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        
+    }
+
+    .whatsappmidheaderone {
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .whatsappparamid {
+
+        padding: 0px 20px;
+        position: relative;
+        width: 100%;
+    }
+
+    .whatsappdetailsmid {
+
+        background-color: white;
+        padding: 14px;
+        border-radius: 18px 18px 18px 5px;
+        gap: 20px;
+    }
+
+    .whatsappmidtime {
+
+        right: 30px;
+        font-size: 11px;
+    }
+
+    .whatsappmidbuttondiv {
+
+        align-items: center;
+        padding: 0px 20px;
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+    }
+
+    .whatsappmidtext {
+
+        font-size: 13px;
+    }
+
     
 }
 
@@ -389,6 +489,57 @@
 
         font-size: 10px;
     }
+
+    .whatsappmidtext {
+
+        font-size: 12px;
+    }
+
+    .whatsappmidtime {
+
+        font-size: 10px;
+    }
+
+    .whatsappmiddiv {
+
+        width: 300px;
+    }
+
+    .inputfield {
+
+        font-size: 10px;
+        height: 34px;
+        padding: 15px;
+    }
+
+    .react-tel-input .form-control {
+
+        height: 34px !important;
+        font-size: 10px !important;
+    }
+
+    .descriptionfield {
+
+        height: 80px;
+    }
+
+    .react-tel-input .country-list {
+
+        font-size: 10px !important;
+        width: 220px !important;
+        border-radius: 5px !important;
+        max-height: 160px !important;
+    }
+
+    .react-tel-input .country-list .country {
+
+        display: flex !important;
+    }
+
+    .react-tel-input .country-list .country.highlight {
+
+        display: flex !important;
+    }
 }
 
 
@@ -403,4 +554,111 @@
 
         font-size: 8px;
     }
+
+    .whatsappmidtext {
+
+        font-size: 10px;
+    }
+
+    .whatsappmidtime {
+
+        font-size: 9px;
+    }
+
+    .whatsappmiddiv  {
+
+        width: 240px;
+        height: 240px;
+        gap: 15px;
+    }
+
+    .whatsappmidheader {
+
+        padding: 0px 15px;
+        height: 70px;
+    }
+
+    .whatsappmidheader {
+
+        gap: 15px;
+    }
+
+    .whatsappmidbuttondiv  {
+
+        bottom: 15px;
+    }
+
+    .whatsappdetailsmid  {
+
+        padding: 12px;
+    }
+
+    .whatsappparamid {
+
+        padding: 0px 15px;
+    }
+
+    .whatsappmidheaderone {
+
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .whatsappiconmid {
+
+        font-size: 48px;
+    }
+
+    .contactusformdiv {
+
+        padding: 15px;
+    }
+
+    .contactdiv {
+
+        gap: 15px;
+    }
+
+    .inputchilddiv {
+
+        gap: 15px;
+    }
+
+    .inputfield {
+
+        height: 30px;
+        padding: 10px;
+        font-size: 8px;
+    }
+
+    .descriptionfield {
+
+        height: 70px;
+        padding: 10px;
+    }
+
+    .react-tel-input .form-control {
+
+        height: 30px !important;
+        font-size: 8px !important;
+        padding-left: 48px !important;
+    }
+
+    .react-tel-input .country-list {
+    
+        font-size: 8px !important;
+        width: 260px !important;
+    }
+
+    .inputparentdiv {
+
+        flex-wrap: wrap;
+    }
+
+    .contactusformdiv {
+
+        gap: 15px;
+    }
+
 }
