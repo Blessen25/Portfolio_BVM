@@ -17,7 +17,7 @@ const AboutComp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                     <AboutcardComponent darkMode={darkMode} setDarkMode={setDarkMode} className="fa-solid fa-server" h1text="Back-End & APIs" ptext="Reliable services that are easy to consume."/>
                     <AboutcardComponent darkMode={darkMode} setDarkMode={setDarkMode} className="fa-solid fa-database" h1text="Data & Persistence" ptext="Well-modeled data, clear queries, safe migrations."/>
                 </div>
-                <p className={`ptext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>I’m a full-stack developer with a passion for front-end craft. I design and build responsive, accessible interfaces using HTML, CSS, React and Bootstrap, and round them out with reliable back-end services in Django/Python and SQL. I love turning ideas into clean, performant, user-first web experiences.</p>
+                <p className={`ptext panywhere ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>I’m a full-stack developer with a passion for front-end craft. I design and build responsive, accessible interfaces using HTML, CSS, React and Bootstrap, and round them out with reliable back-end services in Django/Python and SQL. I love turning ideas into clean, performant, user-first web experiences.</p>
             </div>
         </>
     )

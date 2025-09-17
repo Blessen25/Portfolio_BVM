@@ -216,7 +216,7 @@
     
     .skill-gridcard {
 
-        grid-template-columns: repeat(4, minmax(190px,1fr));
+        grid-template-columns: repeat(3, minmax(190px,1fr));
     }
 }
 

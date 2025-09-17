@@ -23,7 +23,7 @@ const Experience_Comp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                             <p className='ptext'>Royal Melbourne Institute of Technology, RMIT</p>
                             <p className='ptext'>Currently Pursuing</p>
                         </div>
-                        <p className='ptext'>Master of Information Technology focusing on software development, data management, and systems design. Covering algorithms, databases, networking, security, cloud, and project management, with hands-on work in modern web stacks. Built capstone projects emphasizing clean architecture, testing, and real-world problem solving.</p>
+                        <p className='ptext panywhere'>Master of Information Technology focusing on software development, data management, and systems design. Covering algorithms, databases, networking, security, cloud, and project management, with hands-on work in modern web stacks. Built capstone projects emphasizing clean architecture, testing, and real-world problem solving.</p>
                     </div>
                     <div className={`timeline_star2 ${darkMode ? 'darkmoderound' : 'lightmoderound'}`}>
                         <i className="fa-solid fa-star iconfont"></i>
@@ -31,7 +31,7 @@ const Experience_Comp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                     <div className={`secondexperiencediv ${darkMode ? 'darkmodeaboutcard darkmodetext' : 'lightmodeaboutcard lightmodetext'}`}>
                         <h1 className='h1smalltext'>FULL STACK DEVELOPER</h1>
                         <p className='ptext'>FreeLancer</p>
-                        <p className='ptext'>Freelance full-stack developer delivering end-to-end web apps for small businesses. I ship responsive, accessible UIs with React, HTML/CSS and wire them to secure Django/Python APIs with SQL and Laravel when needed. I handle scoping, development, testing, deployment, and optimizing performance, SEO, and usability.</p>
+                        <p className='ptext panywhere'>Freelance full-stack developer delivering end-to-end web apps for small businesses. I ship responsive, accessible UIs with React, HTML/CSS and wire them to secure Django/Python APIs with SQL and Laravel when needed. I handle scoping, development, testing, deployment, and optimizing performance, SEO, and usability.</p>
                         <div className="experienceskilldiv">
                             <ButtonComp text="HTML" className={`${darkMode ? 'darkmodetwobutton' : 'lightmodetwobutton'}`}/>
                             <ButtonComp text="CSS" className={`${darkMode ? 'darkmodetwobutton' : 'lightmodetwobutton'}`}/>
@@ -51,7 +51,7 @@ const Experience_Comp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                             <p className='ptext'>Brahmaa Infotek</p>
                             <p className='ptext'>March 2023 - March 2024</p>
                         </div>
-                        <p className='ptext'>Programmer Trainee at Brahmaa Infotek, building responsive React UIs with HTML/CSS and reusable components. I also tested API data (status codes, JSON shape, edge cases in Postman) and integrated responses into the front end, handling loading/error states, data mapping, and UI validation.</p>
+                        <p className='ptext panywhere'>Programmer Trainee at Brahmaa Infotek, building responsive React UIs with HTML/CSS and reusable components. I also tested API data (status codes, JSON shape, edge cases in Postman) and integrated responses into the front end, handling loading/error states, data mapping, and UI validation.</p>
                         <div className="experienceskilldiv">
                             <ButtonComp text="HTML" className={`${darkMode ? 'darkmodetwobutton' : 'lightmodetwobutton'}`}/>
                             <ButtonComp text="CSS" className={`${darkMode ? 'darkmodetwobutton' : 'lightmodetwobutton'}`}/>
@@ -69,7 +69,7 @@ const Experience_Comp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                             <p className='ptext'>Saintgits College of Engineering</p>
                             <p className='ptext'>2019 - 2023</p>
                         </div>
-                        <p className='ptext'>B.Tech in Computer Science with a strong foundation in data structures & algorithms, OOP, databases, operating systems, and computer networks. Built team projects and a capstone using modern web technologies, applying clean architecture, testing, and version control.</p>
+                        <p className='ptext panywhere'>B.Tech in Computer Science with a strong foundation in data structures & algorithms, OOP, databases, operating systems, and computer networks. Built team projects and a capstone using modern web technologies, applying clean architecture, testing, and version control.</p>
                     </div>
                     <div className={`experiencedotone ${darkMode ? 'darkmoderound' : 'lightmoderound'}`}></div>
                     <div className={`experiencedottwo ${darkMode ? 'darkmoderound' : 'lightmoderound'}`}></div>
