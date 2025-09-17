@@ -311,6 +311,72 @@
     color:  white !important;
 }
 
+.whatsappsymbol {
+
+        display: none;
+    }
+
+@media screen and (max-width: 1399px) {
+    
+    .contactusformdiv {
+    
+        width: 66%;
+    }
+
+    .whatsappdiv {
+
+        width: 34%;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    
+    .contactusformdiv {
+    
+        width: 58%;
+    }
+
+    .whatsappdiv {
+
+        width: 41%;
+    }
+    
+}
+
+@media screen and (max-width: 991px) {
+    
+    .contactmaindiv {
+
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .contactusformdiv {
+    
+        width: 100%;
+    }
+
+    .whatsappdiv {
+
+        display: none;
+    }
+
+    .whatsappsymbol {
+
+        display: block;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+    }
+
+    .fa-whatsapp {
+
+        font-size: 60px;
+        color: #25d467;
+    }
+    
+}
+
 
 @media screen and (max-width: 767px) {
     
