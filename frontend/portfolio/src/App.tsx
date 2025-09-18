@@ -7,6 +7,7 @@ import { Skills } from "./screens/skill";
 import Project from "./screens/project";
 import Experience from "./screens/experience";
 import Contact from "./screens/contact";
+import Footer from "./screens/footer";
 
 const App = () => {
   
@@ -22,6 +23,7 @@ const App = () => {
         <Experience darkMode={darkmode} setDarkMode={setdarkmode}/>
         <Project darkMode={darkmode} setDarkMode={setdarkmode}/>
         <Contact darkMode={darkmode} setDarkMode={setdarkmode}/>
+        <Footer darkMode={darkmode} setDarkMode={setdarkmode}/>
       </div>
       </div>
     </>
