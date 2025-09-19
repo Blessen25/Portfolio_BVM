@@ -6,6 +6,22 @@
 .footerdiv {
 
     border: 2px solid black;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footerdivdetails {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+}
+
+.footertext {
+
+    font-size: 15px !important;
 }
 
 @media screen and (max-width: 991px) {
