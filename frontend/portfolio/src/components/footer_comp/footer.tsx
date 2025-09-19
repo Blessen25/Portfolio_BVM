@@ -31,7 +31,10 @@ const Footer_Comp: React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                     <div className="footerdivlinks">
                         <p className={`ptext footertext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`} style={{ textDecoration:'underline', fontWeight:'bold'}} >SOCIAL</p>
                         <div className="socialdiv">
-
+                            <a href="#" target="_blank" ><i className="fa-brands fa-github"></i></a>
+                            <a href="#" target="_blank" ><i className="fa-brands fa-linkedin"></i></a>
+                            <a href="#" target="_blank" ><i className="fa-brands fa-instagram"></i></a>
+                            <a href="#" target="_blank" ><i className="fa-brands fa-facebook"></i></a>
                         </div>
                     </div>
                 </div>
