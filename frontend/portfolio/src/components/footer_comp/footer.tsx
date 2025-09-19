@@ -22,6 +22,18 @@ const Footer_Comp: React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                         <a href="#" className={`ptext footerlinktext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>Projects</a>
                         <a href="#" className={`ptext footerlinktext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>Contact</a>
                     </div>
+                    <div className="footerdivlinks">
+                        <p className={`ptext footertext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`} style={{ textDecoration:'underline', fontWeight:'bold'}} >CONTACT</p>
+                        <a href="#" target="_blank" className={`ptext footerlinktext footercontact ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}><i className="fa-solid fa-envelope"></i>blessenvinoymathew25@gmail.com</a>
+                        <a href="#" target="_blank" className={`ptext footerlinktext footercontact ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}><i className="fa-solid fa-phone"></i>+61 416416738</a>
+                        <a href="#" target="_blank" className={`ptext footerlinktext footercontact ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}><i className="fa-solid fa-phone"></i>+91 9400260187</a>
+                    </div>
+                    <div className="footerdivlinks">
+                        <p className={`ptext footertext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`} style={{ textDecoration:'underline', fontWeight:'bold'}} >SOCIAL</p>
+                        <div className="socialdiv">
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
