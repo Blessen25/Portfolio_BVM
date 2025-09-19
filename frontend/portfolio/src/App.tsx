@@ -23,9 +23,9 @@ const App = () => {
         <Experience darkMode={darkmode} setDarkMode={setdarkmode}/>
         <Project darkMode={darkmode} setDarkMode={setdarkmode}/>
         <Contact darkMode={darkmode} setDarkMode={setdarkmode}/>
-        <Footer darkMode={darkmode} setDarkMode={setdarkmode}/>
       </div>
       </div>
+      <Footer darkMode={darkmode} setDarkMode={setdarkmode}/>
     </>
   )
 }
