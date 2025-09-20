@@ -179,7 +179,8 @@
 
 .socialiconsdark:hover {
 
-    color: #CC2A2A;
+    color: #FF2E2E;
+    opacity: .6;
 }
 
 .socialiconslight:hover {

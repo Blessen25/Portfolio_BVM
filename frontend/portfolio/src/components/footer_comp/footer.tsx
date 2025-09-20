@@ -16,11 +16,11 @@ const Footer_Comp: React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                     </div>
                     <div className="footerdivlinks">
                         <p className={`ptext footertext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`} style={{ textDecoration:'underline', fontWeight:'bold'}} >QUICK LINKS</p>
-                        <a href="#" className={`ptext footerlinktext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>Home</a>
-                        <a href="#" className={`ptext footerlinktext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>About</a>
-                        <a href="#" className={`ptext footerlinktext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>Skills</a>
-                        <a href="#" className={`ptext footerlinktext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>Projects</a>
-                        <a href="#" className={`ptext footerlinktext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>Contact</a>
+                        <a href="#" className={`ptext footerlinktext ${darkMode ? 'darkmodetext footerlinktextdark' : 'lightmodetext footerlinktextlight'}`}>Home</a>
+                        <a href="#" className={`ptext footerlinktext ${darkMode ? 'darkmodetext footerlinktextdark' : 'lightmodetext'}`}>About</a>
+                        <a href="#" className={`ptext footerlinktext ${darkMode ? 'darkmodetext footerlinktextdark' : 'lightmodetext'}`}>Skills</a>
+                        <a href="#" className={`ptext footerlinktext ${darkMode ? 'darkmodetext footerlinktextdark' : 'lightmodetext'}`}>Projects</a>
+                        <a href="#" className={`ptext footerlinktext ${darkMode ? 'darkmodetext footerlinktextdark' : 'lightmodetext'}`}>Contact</a>
                     </div>
                     <div className="footerdivlinks">
                         <p className={`ptext footertext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`} style={{ textDecoration:'underline', fontWeight:'bold'}} >CONTACT</p>

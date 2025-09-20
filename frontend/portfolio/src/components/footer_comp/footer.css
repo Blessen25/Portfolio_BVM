@@ -26,10 +26,26 @@
 .footerlinktext {
 
   font-size: 13px !important;
+  font-weight: 400;
   text-decoration: none;
   display: inline-block;   
   width: max-content;      
   padding: 0;             
+}
+
+.footerlinktextdark{
+
+    position: relative;
+}
+.footerlinktextdark:hover {
+
+   opacity: .6;
+}
+
+.footerlinktextlight:hover {
+
+   color: #0A0A0A;
+   opacity: .6;
 }
 
 .footercontact {

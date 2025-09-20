@@ -82,14 +82,16 @@
   position: absolute;
   width: 0%;
   height: 2px;
-  background-color: #CC2A2A;
+  background-color: #FF2E2E;
+  opacity: .6;
   left: 0px;
   bottom: -3px;
 } 
 
 .darkmodetextatag:hover {
 
-  color: #CC2A2A;
+  opacity: .6;
+
 }
 
 .lightmodetextatag:hover {
@@ -493,7 +495,8 @@
 
   .left-color-dark-hover {
 
-    color: #CC2A2A;
+    color: #FF2E2E;
+    opacity: .6;
   }
 
   .left-color-light {
