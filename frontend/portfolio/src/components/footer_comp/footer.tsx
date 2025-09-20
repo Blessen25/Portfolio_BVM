@@ -17,24 +17,24 @@ const Footer_Comp: React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                     <div className="footerdivlinks">
                         <p className={`ptext footertext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`} style={{ textDecoration:'underline', fontWeight:'bold'}} >QUICK LINKS</p>
                         <a href="#" className={`ptext footerlinktext ${darkMode ? 'darkmodetext footerlinktextdark' : 'lightmodetext footerlinktextlight'}`}>Home</a>
-                        <a href="#" className={`ptext footerlinktext ${darkMode ? 'darkmodetext footerlinktextdark' : 'lightmodetext'}`}>About</a>
-                        <a href="#" className={`ptext footerlinktext ${darkMode ? 'darkmodetext footerlinktextdark' : 'lightmodetext'}`}>Skills</a>
-                        <a href="#" className={`ptext footerlinktext ${darkMode ? 'darkmodetext footerlinktextdark' : 'lightmodetext'}`}>Projects</a>
-                        <a href="#" className={`ptext footerlinktext ${darkMode ? 'darkmodetext footerlinktextdark' : 'lightmodetext'}`}>Contact</a>
+                        <a href="#" className={`ptext footerlinktext ${darkMode ? 'darkmodetext footerlinktextdark' : 'lightmodetext footerlinktextlight'}`}>About</a>
+                        <a href="#" className={`ptext footerlinktext ${darkMode ? 'darkmodetext footerlinktextdark' : 'lightmodetext footerlinktextlight'}`}>Skills</a>
+                        <a href="#" className={`ptext footerlinktext ${darkMode ? 'darkmodetext footerlinktextdark' : 'lightmodetext footerlinktextlight'}`}>Projects</a>
+                        <a href="#" className={`ptext footerlinktext ${darkMode ? 'darkmodetext footerlinktextdark' : 'lightmodetext footerlinktextlight'}`}>Contact</a>
                     </div>
                     <div className="footerdivlinks">
                         <p className={`ptext footertext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`} style={{ textDecoration:'underline', fontWeight:'bold'}} >CONTACT</p>
-                        <a href="#" target="_blank" className={`ptext footerlinktext footercontact ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}><i className="fa-solid fa-envelope"></i>blessenvinoymathew25@gmail.com</a>
-                        <a href="#" target="_blank" className={`ptext footerlinktext footercontact ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}><i className="fa-solid fa-phone"></i>+61 416416738</a>
-                        <a href="#" target="_blank" className={`ptext footerlinktext footercontact ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}><i className="fa-solid fa-phone"></i>+91 9400260187</a>
+                        <a href="#" target="_blank" className={`ptext footerlinktext footercontact ${darkMode ? 'darkmodetext footerlinktextdark' : 'lightmodetext footerlinktextlight'}`}><i className="fa-solid fa-envelope"></i>blessenvinoymathew25@gmail.com</a>
+                        <a href="#" target="_blank" className={`ptext footerlinktext footercontact ${darkMode ? 'darkmodetext footerlinktextdark' : 'lightmodetext footerlinktextlight'}`}><i className="fa-solid fa-phone"></i>+61 416416738</a>
+                        <a href="#" target="_blank" className={`ptext footerlinktext footercontact ${darkMode ? 'darkmodetext footerlinktextdark' : 'lightmodetext footerlinktextlight'}`}><i className="fa-solid fa-phone"></i>+91 9400260187</a>
                     </div>
                     <div className="footerdivlinks">
                         <p className={`ptext footertext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`} style={{ textDecoration:'underline', fontWeight:'bold'}} >SOCIAL</p>
                         <div className="socialdiv">
-                            <a href="#" target="_blank" ><i className="fa-brands fa-github"></i></a>
-                            <a href="#" target="_blank" ><i className="fa-brands fa-linkedin"></i></a>
-                            <a href="#" target="_blank" ><i className="fa-brands fa-instagram"></i></a>
-                            <a href="#" target="_blank" ><i className="fa-brands fa-facebook"></i></a>
+                            <a href="#" target="_blank" ><i className="fa-brands fa-github socaillinkfooter"></i></a>
+                            <a href="#" target="_blank" ><i className="fa-brands fa-linkedin sociallinkfooter"></i></a>
+                            <a href="#" target="_blank" ><i className="fa-brands fa-instagram sociallinkfooter"></i></a>
+                            <a href="#" target="_blank" ><i className="fa-brands fa-facebook sociallinkfooter"></i></a>
                         </div>
                     </div>
                 </div>
