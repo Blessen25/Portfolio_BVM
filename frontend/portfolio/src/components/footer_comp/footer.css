@@ -178,6 +178,16 @@
 
         font-size: 12px !important;
     }
+
+    .footerlinktextdark {
+
+        font-size: 11px !important;
+    }
+
+    .sociallinkfooter {
+
+        font-size: 16px ;
+    }
 }
 
 
@@ -191,10 +201,39 @@
     .footerdivdetails {
 
         width: 100%;
+        gap: 15px;
     }
 
     .footerdivlinks {
     
         width: 100%;
+        gap: 15px;
     }
+    
+    .footertext {
+
+        font-size: 10px !important;
+    }
+
+    .footerlinktextdark {
+
+        font-size: 9px !important;
+    }
+
+    .socialdiv {
+
+        gap: 10px;
+    }
+
+    .sociallinkfooter {
+
+        font-size: 13px ;
+    }
+
+    .footerhrdiv {
+
+        gap: 15px;
+        padding: 0px 15px 15px 15px;
+    }
+
 }
