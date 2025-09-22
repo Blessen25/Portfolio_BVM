@@ -12,7 +12,7 @@ const Footer_Comp: React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                 <div className="childcontainer footerdiv">
                     <div className="footerdivdetails">
                         <h1 className={`h1mediumtext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>BLESSEN VINOY MATHEW</h1>
-                        <p className={`ptext footertext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam cum eius rem nesciunt quibusdam quo, unde repellat repellendus tempora odio quas, dolores illum velit, non earum minus molestias labore facilis!</p>
+                        <p className={`ptext footertext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>Full-stack developer focused on crafting fast, accessible, and reliable web applications. I specialize in modern front-end engineering and dependable back-end APIs, and I’m open to both freelance engagements and full-time roles.</p>
                     </div>
                     <div className="footerdivlinks">
                         <p className={`ptext footertext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`} style={{ textDecoration:'underline', fontWeight:'bold'}} >QUICK LINKS</p>
@@ -31,14 +31,22 @@ const Footer_Comp: React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                     <div className="footerdivlinks">
                         <p className={`ptext footertext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`} style={{ textDecoration:'underline', fontWeight:'bold'}} >SOCIAL</p>
                         <div className="socialdiv">
-                            <a href="#" target="_blank" ><i className="fa-brands fa-github socaillinkfooter"></i></a>
-                            <a href="#" target="_blank" ><i className="fa-brands fa-linkedin sociallinkfooter"></i></a>
-                            <a href="#" target="_blank" ><i className="fa-brands fa-instagram sociallinkfooter"></i></a>
-                            <a href="#" target="_blank" ><i className="fa-brands fa-facebook sociallinkfooter"></i></a>
+                            <a href="#" target="_blank" className={`${darkMode ? 'sociallinkfooterdark' : 'sociallinkfooterlight'}`}><i className="fa-brands fa-github sociallinkfooter"></i></a>
+                            <a href="#" target="_blank" className={`${darkMode ? 'sociallinkfooterdark' : 'sociallinkfooterlight'}`}><i className="fa-brands fa-linkedin sociallinkfooter"></i></a>
+                            <a href="#" target="_blank" className={`${darkMode ? 'sociallinkfooterdark' : 'sociallinkfooterlight'}`}><i className="fa-brands fa-instagram sociallinkfooter"></i></a>
+                            <a href="#" target="_blank" className={`${darkMode ? 'sociallinkfooterdark' : 'sociallinkfooterlight'}`}><i className="fa-brands fa-facebook sociallinkfooter"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
+            <div className= {`maincontainer footermaincontainer ${darkMode ? 'darkmode' : 'lightmode'}`}>
+                <div className="childcontainer footerhrdiv">
+                    <div className={`footerhr ${darkMode ? 'darkmodehr' : 'lightmodehr'}`}/>
+                    <p className={`ptext footertext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>Copyright © 2023 Blessen Vinoy Mathew</p>
+                </div>
+            </div>
+
+
         </>
     )
 }
