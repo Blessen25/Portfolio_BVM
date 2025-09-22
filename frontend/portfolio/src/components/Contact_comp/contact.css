@@ -4,6 +4,7 @@
     flex-direction: column;
     gap: 20px;
     transition: all .7s;
+    user-select: none;
 }
 
 .contactmaindiv {

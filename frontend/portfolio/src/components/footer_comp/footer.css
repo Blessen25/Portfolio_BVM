@@ -9,6 +9,7 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 100px;
+    user-select: none;
 }
 
 .footerdivdetails {
@@ -107,6 +108,7 @@
     flex-direction: column;
     gap: 20px;
     padding: 0px 20px 20px 20px;
+    user-select: none;
 }
 
 .darkmodehr {

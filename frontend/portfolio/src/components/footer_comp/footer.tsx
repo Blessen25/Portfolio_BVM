@@ -42,7 +42,7 @@ const Footer_Comp: React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
             <div className= {`maincontainer footermaincontainer ${darkMode ? 'darkmode' : 'lightmode'}`}>
                 <div className="childcontainer footerhrdiv">
                     <div className={`footerhr ${darkMode ? 'darkmodehr' : 'lightmodehr'}`}/>
-                    <p className={`ptext footertext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>Copyright © 2023 Blessen Vinoy Mathew</p>
+                    <p className={`ptext footertext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>Copyright © 2025 Blessen Vinoy Mathew</p>
                 </div>
             </div>
 
