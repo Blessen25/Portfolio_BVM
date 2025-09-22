@@ -20,7 +20,7 @@ const HomeComponent:React.FC<HeaderProps> = ({darkMode , setDarkMode}) => {
                     <h1 className={`h1text ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>Blessen Vinoy Mathew</h1>
                     <p className={`role-line ptext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>I’m a <AutoType /></p>
                     <div className="buttondiv">
-                        <ButtonComp text="Download CV" className={`${darkMode ? 'darkmodebutton' : 'lightmodebutton'}`}/>
+                        <ButtonComp text="Download CV" target="_blank" hrefroute="../assets/files/Blessen_Resume_IT.pdf" className={`${darkMode ? 'darkmodebutton' : 'lightmodebutton'}`}/>
                         <ButtonComp text="Contact Info" className={`${darkMode ? 'darkmodetwobutton' : 'lightmodetwobutton'}`}/>
                     </div>
                     <div className="socialdivhome">
