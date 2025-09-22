@@ -24,13 +24,13 @@ const HomeComponent:React.FC<HeaderProps> = ({darkMode , setDarkMode}) => {
                         <ButtonComp text="Contact Info" className={`${darkMode ? 'darkmodetwobutton' : 'lightmodetwobutton'}`}/>
                     </div>
                     <div className="socialdivhome">
-                        <a href="#">
+                        <a href="https://github.com/Blessen25" target="_blank">
                             <i className={`fa-brands fa-github iconfont ${darkMode ? 'socialiconsdark' : 'socialiconslight'}`}></i>
                         </a>
                         <a href="https://www.linkedin.com/in/blessen-vinoy-mathew-21881b1a4/" target="_blank">
                             <i className={`fa-brands fa-linkedin iconfont ${darkMode ? 'socialiconsdark' : 'socialiconslight'}`}></i>
                         </a>
-                        <a href="#">
+                        <a href="#" target="_blank">
                             <i className={`fa-brands fa-instagram iconfont ${darkMode ? 'socialiconsdark' : 'socialiconslight'}`}></i>
                         </a>
                     </div>
