@@ -11,7 +11,7 @@ import Footer from "./screens/footer";
 
 const App = () => {
   
-  const [darkmode, setdarkmode] = useState(true);
+  const [darkmode, setdarkmode] = useState(false);
   return (
     <>
       <Header darkMode = {darkmode} setDarkMode={setdarkmode}/>
