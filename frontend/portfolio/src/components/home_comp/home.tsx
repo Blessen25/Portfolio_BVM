@@ -30,7 +30,7 @@ const HomeComponent:React.FC<HeaderProps> = ({darkMode , setDarkMode}) => {
                         <a href="https://www.linkedin.com/in/blessen-vinoy-mathew-21881b1a4/" target="_blank">
                             <i className={`fa-brands fa-linkedin iconfont ${darkMode ? 'socialiconsdark' : 'socialiconslight'}`}></i>
                         </a>
-                        <a href="#" target="_blank">
+                        <a href="https://www.instagram.com/blessen_vinoy_/" target="_blank">
                             <i className={`fa-brands fa-instagram iconfont ${darkMode ? 'socialiconsdark' : 'socialiconslight'}`}></i>
                         </a>
                     </div>
