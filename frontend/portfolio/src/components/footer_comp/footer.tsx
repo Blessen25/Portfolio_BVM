@@ -24,9 +24,9 @@ const Footer_Comp: React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                     </div>
                     <div className="footerdivlinks">
                         <p className={`ptext footertext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`} style={{ textDecoration:'underline', fontWeight:'bold'}} >CONTACT</p>
-                        <a href="#" target="_blank" className={`ptext footerlinktext footercontact ${darkMode ? 'darkmodetext footerlinktextdark' : 'lightmodetext footerlinktextlight'}`}><i className="fa-solid fa-envelope"></i>blessenvinoymathew25@gmail.com</a>
-                        <a href="#" target="_blank" className={`ptext footerlinktext footercontact ${darkMode ? 'darkmodetext footerlinktextdark' : 'lightmodetext footerlinktextlight'}`}><i className="fa-solid fa-phone"></i>+61 416416738</a>
-                        <a href="#" target="_blank" className={`ptext footerlinktext footercontact ${darkMode ? 'darkmodetext footerlinktextdark' : 'lightmodetext footerlinktextlight'}`}><i className="fa-solid fa-phone"></i>+91 9400260187</a>
+                        <a href="mailto:blessenvinoymathew25@gmail.com" target="_blank" className={`ptext footerlinktext footercontact ${darkMode ? 'darkmodetext footerlinktextdark' : 'lightmodetext footerlinktextlight'}`}><i className="fa-solid fa-envelope"></i>blessenvinoymathew25@gmail.com</a>
+                        <a href="tel:+61416416738" target="_blank" className={`ptext footerlinktext footercontact ${darkMode ? 'darkmodetext footerlinktextdark' : 'lightmodetext footerlinktextlight'}`}><i className="fa-solid fa-phone"></i>+61 416416738</a>
+                        <a href="tel:+919400260187" target="_blank" className={`ptext footerlinktext footercontact ${darkMode ? 'darkmodetext footerlinktextdark' : 'lightmodetext footerlinktextlight'}`}><i className="fa-solid fa-phone"></i>+91 9400260187</a>
                     </div>
                     <div className="footerdivlinks">
                         <p className={`ptext footertext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`} style={{ textDecoration:'underline', fontWeight:'bold'}} >SOCIAL</p>
