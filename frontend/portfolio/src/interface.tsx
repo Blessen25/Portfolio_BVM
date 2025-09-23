@@ -56,6 +56,7 @@ interface projectcardProps {
         title ?: string;
         description ?: string;
         imageUrl ?: string;
+        url ?: string;
     }
 }
 

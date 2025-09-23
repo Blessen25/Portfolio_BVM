@@ -367,7 +367,7 @@ export const ProjectcardComponent: React.FC<projectcardProps> = ({darkMode, setD
           </div>
           <div className="card-details">
             <h1 className={`h1smalltext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>{cardarray?.title}</h1>
-            <ButtonComp text="View Project" className={`${darkMode ? 'darkmodebutton' : 'lightmodebutton'}`}/>
+            <ButtonComp hrefroute={`${cardarray?.url}`} target="_blank" text="View Project" className={`${darkMode ? 'darkmodebutton' : 'lightmodebutton'}`}/>
           </div>
       </div>
     </>
