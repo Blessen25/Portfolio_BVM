@@ -140,7 +140,7 @@ const ContactComp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                             </div>
                         </div>
                         <div className="whatsappbuttondiv">
-                                <a href="#" target="_blank" className={`whatsappbutton buttonnormal whatsappbuttonlight`}><i className="fa-brands fa-whatsapp iconfont "></i>Chat on Whatsapp</a>
+                                <a href="https://wa.me/61416416738" target="_blank" className={`whatsappbutton buttonnormal whatsappbuttonlight`}><i className="fa-brands fa-whatsapp iconfont "></i>Chat on Whatsapp</a>
                         </div>
                     </div>
                     <div className={`contactusformdiv ${darkMode ? 'darkmodeaboutcard' : 'lightmodeaboutcard'}`}>
@@ -222,7 +222,7 @@ const ContactComp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                         </div>
                     </div>
                     <div className="whatsappmidbuttondiv">
-                        <a href="#" target="_blank" className={`whatsappbutton buttonnormal whatsappbuttonlight`}><i className="fa-brands fa-whatsapp iconfont "></i>Chat on Whatsapp</a>
+                        <a href="https://wa.me/61416416738" target="_blank" className={`whatsappbutton buttonnormal whatsappbuttonlight`}><i className="fa-brands fa-whatsapp iconfont "></i>Chat on Whatsapp</a>
                     </div>
                 </div>
             )}
