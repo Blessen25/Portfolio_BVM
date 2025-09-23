@@ -173,6 +173,7 @@ const ContactComp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                                             inputClass={`${darkMode ? 'darkmodeinput' : 'lightmodeinput'}`}
                                             buttonClass={`${darkMode ? 'darkmodedropdown' : 'lightmodedropdown'}`}
                                             dropdownClass={`${darkMode ? 'darkmodeflagdropdown' : 'lightmodeflagdropdown'}`}
+                                            placeholder="+61 (99)9999999"
                                             />
                                         {dataErrors?.phone_number && <p className={`error ${darkMode ? 'darkmodeerror' : 'lightmodeerror'}`}>{dataErrors?.phone_number}</p>}
                                        </div>
