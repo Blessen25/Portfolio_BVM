@@ -32,49 +32,56 @@ const ProjectCardArray = [
         id : 1,
         title : "Geelong Pentecostal Church",
         description : "Built a responsive web application for a Geelong church using React, HTML, and CSS to create a modern, component-driven UI. Integrated a Django API for dynamic content and secure form handling. Ensured reliability and accessibility through comprehensive cross-browser and cross-device manual testing.",
-        imageUrl : "../assets/images/projects/geelong.png"
+        imageUrl : "../assets/images/projects/geelong.png",
+        url : "https://www.geelongpentecostalassembly.com.au/"
     },
     {
 
         id : 2,
         title : "Old Portfolio",
         description : "Developed a professional and responsive portfolio website to showcase my projects and technical expertise as a front-end developer. The portfolio is built using modern web technologies, including HTML for semantic structure, CSS for sleek and responsive design, and React with TypeScript to deliver a dynamic, type-safe, and interactive user experience. This combination ensures a polished, accessible, and high-performance interface that effectively highlights my work.",  
-        imageUrl : "../assets/images/projects/portfolio_image.png"
+        imageUrl : "../assets/images/projects/portfolio_image.png",
+        url : "https://blessenportfolio.vercel.app/"
     },
     {
 
         id : 3,
         title : "Expense Tracker",
         description : "Created a robust Expense Tracker application using React, HTML, and CSS to deliver a user-friendly interface for managing finances. The design features a responsive layout with a dedicated section for adding transactions, tracking balance, and viewing transaction history.",
-        imageUrl : "../assets/images/projects/expense_tracker.png"
+        imageUrl : "../assets/images/projects/expense_tracker.png",
+        url : "https://expense-tracker-bvm.vercel.app/"
     },
     {
 
         id : 4,
         title : "Clothing E-commerce",
         description : "Designed and developed the front-end of an e-commerce platform, ShopCloth, using React, HTML, and CSS to create a stylish and responsive online clothing store. The interface features dynamic sections for new arrivals, top-selling items, and browsing by dress style, with a clean layout showcasing premium brands like Prada, Gucci, and Versace. Implemented an intuitive user experience with interactive elements, including product grids, customer reviews, and a subscription form, all tailored for a seamless shopping journey.",
-        imageUrl : "../assets/images/projects/cloth_App.png"
+        imageUrl : "../assets/images/projects/cloth_App.png",
+        url : "https://clothappbvm.vercel.app/"
     },
     {
 
         id : 5,
         title : "Plant E-commerce",
         description : "Designed and developed the front-end of GreenMind, an engaging e-commerce platform for plant enthusiasts, using React, HTML, and CSS. The interface features a responsive layout with a prominent hero section, best-selling plant displays, and category browsing options, creating an immersive shopping experience. Incorporated interactive elements like a search bar, customer testimonials, and service highlights (e.g., free shipping, large assortment) to enhance usability.",
-        imageUrl : "../assets/images/projects/plant_project.jpeg"
+        imageUrl : "../assets/images/projects/plant_project.jpeg",
+        url: "https://www.linkedin.com/in/blessen-vinoy-mathew-21881b1a4/details/projects/1740909010326/single-media-viewer/?profileId=ACoAAC_RvHQBOYm_0VF1jLWp6igiIjPoc_C_9As"
     },
     {
 
         id : 6,
         title : "Instagram Login",
         description : "Embarked on my development journey by creating a responsive Instagram inspired landing page using HTML and CSS. The design replicates the app's login interface and showcases a mobile-friendly layout with social media elements. This project marks the beginning of my exploration into front-end development, focusing on clean design and user interface fundamentals.",
-        imageUrl : "../assets/images/projects/instagram.jpeg"
+        imageUrl : "../assets/images/projects/instagram.jpeg",
+        url: "https://www.linkedin.com/in/blessen-vinoy-mathew-21881b1a4/details/projects/1740908843206/single-media-viewer/?profileId=ACoAAC_RvHQBOYm_0VF1jLWp6igiIjPoc_C_9As"
     },
     {
 
         id : 7,
         title : "Facebook and instagram Login",
         description : "Embarked on my development journey by creating a responsive Instagram-inspired landing page using HTML and CSS. The design replicates the app's login interface and showcases a mobile-friendly layout with social media elements. This project marks the beginning of my exploration into front-end development, focusing on clean design and user interface fundamentals.",
-        imageUrl : "../assets/images/projects/facebook.jpeg"
+        imageUrl : "../assets/images/projects/facebook.jpeg",
+        url: "https://www.linkedin.com/in/blessen-vinoy-mathew-21881b1a4/details/projects/1740909324531/single-media-viewer/?profileId=ACoAAC_RvHQBOYm_0VF1jLWp6igiIjPoc_C_9As"
     }
 ]
 return (
