@@ -379,6 +379,7 @@
         bottom: 30px;
         right: 25px;
         z-index: 100;
+        user-select: none;
     }
 
     .whatsappiconmid {
@@ -401,6 +402,7 @@
         flex-direction: column;
         gap: 20px;
         align-items: center;
+        user-select: none;
         animation: fadeInbottom .7s ease-in-out;
     }
     
