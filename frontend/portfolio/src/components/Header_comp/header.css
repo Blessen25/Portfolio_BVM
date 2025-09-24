@@ -11,6 +11,7 @@
 .atagactive {
 
   opacity: .6 !important;
+  transition: all .7s;
 }
 
 .headerdirstdiv {

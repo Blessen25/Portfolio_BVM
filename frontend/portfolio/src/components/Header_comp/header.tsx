@@ -16,6 +16,15 @@ const HeaderComponent:React.FC<HeaderProps> = ({darkMode, setDarkMode, active, o
         setActivceSidebar(!activesidebar);
     }
 
+    const handleNavClick = (id: NavId) => {
+    
+        if (onNavClick) {
+            onNavClick(id);
+        
+        }
+    };
+
+
     const navItems: { id: NavId; label: string }[] = [
         
         { id: "home", label: "Home" },
@@ -65,7 +74,7 @@ const HeaderComponent:React.FC<HeaderProps> = ({darkMode, setDarkMode, active, o
                         {navItems.map(({ id, label }) =>
                         (
 
-                            <a key={id} href={`#${id}`} className={`${modeClass} ${active === id ? 'atagactive' : ''}`  }>{label}</a>
+                           <a key={id} href={`#${id}`} className={`${modeClass} ${active === id ? "atagactive" : ""}`} onClick={(e) => { e.preventDefault(); handleNavClick(id); }} aria-current={active === id ? "page" : undefined}>{label}</a>
                         ))}
                     </div>
                     <div className={`${darkMode ? 'togglebuttondark' : 'togglebuttonlight'} togglebutton`} onClick={() => {handletogglebutton();}}>
