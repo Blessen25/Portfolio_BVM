@@ -1,9 +1,29 @@
 import React from "react";
 import './footer.css';
 import type { HeaderProps } from "../../interface";
+import type { NavId } from "../../App";
 
-const Footer_Comp: React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
+const Footer_Comp: React.FC<HeaderProps> = ({darkMode, setDarkMode, active, onNavClick}) => {
 
+
+    const footermode = darkMode ? 'darkmodetext footerlinktextdark' : 'lightmodetext footerlinktextlight'
+    
+    const navItems: { id: NavId; label: string }[] = [
+            
+            { id: "home", label: "Home" },
+            { id: "about", label: "About" },
+            { id: "skills", label: "Skills" },
+            { id: "projects", label: "Projects" },
+            { id: "contact", label: "Contact" },
+        ];
+    
+    const handleNavClick = (id: NavId) => {
+
+        if (onNavClick) {
+
+            onNavClick(id);
+        }
+    }
     return(
         
         <>
@@ -16,11 +36,11 @@ const Footer_Comp: React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                     </div>
                     <div className="footerdivlinks">
                         <p className={`ptext footertext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`} style={{ textDecoration:'underline', fontWeight:'bold'}} >QUICK LINKS</p>
-                        <a href="#" className={`ptext footerlinktext ${darkMode ? 'darkmodetext footerlinktextdark' : 'lightmodetext footerlinktextlight'}`}>Home</a>
-                        <a href="#" className={`ptext footerlinktext ${darkMode ? 'darkmodetext footerlinktextdark' : 'lightmodetext footerlinktextlight'}`}>About</a>
-                        <a href="#" className={`ptext footerlinktext ${darkMode ? 'darkmodetext footerlinktextdark' : 'lightmodetext footerlinktextlight'}`}>Skills</a>
-                        <a href="#" className={`ptext footerlinktext ${darkMode ? 'darkmodetext footerlinktextdark' : 'lightmodetext footerlinktextlight'}`}>Projects</a>
-                        <a href="#" className={`ptext footerlinktext ${darkMode ? 'darkmodetext footerlinktextdark' : 'lightmodetext footerlinktextlight'}`}>Contact</a>
+                        {navItems.map(({ id, label }) => 
+                        (
+
+                            <a key={id} href="#" className={`ptext footerlinktext ${footermode} ${active === id ? 'atagactive' : ''}`} onClick={(e) => {e.preventDefault(); handleNavClick(id);}}>{label}</a>
+                        ))}
                     </div>
                     <div className="footerdivlinks">
                         <p className={`ptext footertext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`} style={{ textDecoration:'underline', fontWeight:'bold'}} >CONTACT</p>

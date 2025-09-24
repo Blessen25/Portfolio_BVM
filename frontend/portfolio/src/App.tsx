@@ -9,7 +9,7 @@ import Experience from "./screens/experience";
 import Contact from "./screens/contact";
 import Footer from "./screens/footer";
 
-export const SECTIONS = ["home","about","skills","experience","project","contact"];
+export const SECTIONS = ["home","about","skills","experience","projects","contact"];
 export type SectionId = typeof SECTIONS[number];
 
 export type NavId = "home" | "about" | "skills" | "projects" | "contact";
@@ -90,7 +90,7 @@ const App = () => {
           </section>
       </div>
       </div>
-      <Footer darkMode={darkmode} setDarkMode={setdarkmode}/>
+      <Footer darkMode={darkmode} setDarkMode={setdarkmode} active={active} onNavClick={handleNavClick}/>
     </>
   )
 }
