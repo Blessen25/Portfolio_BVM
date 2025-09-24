@@ -24,6 +24,14 @@ const HeaderComponent:React.FC<HeaderProps> = ({darkMode, setDarkMode, active, o
         }
     };
 
+    const handleNavClickSidebar = (id: NavId) => {
+    
+        if (onNavClick) {
+            onNavClick(id);
+            setActivceSidebar(!activesidebar);
+        }
+    };
+
 
     const navItems: { id: NavId; label: string }[] = [
         
@@ -34,8 +42,17 @@ const HeaderComponent:React.FC<HeaderProps> = ({darkMode, setDarkMode, active, o
         { id: "contact", label: "Contact" },
     ];
 
+    const navItemSidebar = [
 
-      const modeClass = darkMode ? "darkmodetextatag" : "lightmodetextatag";
+        { id: "home",    label: "Home",    icon: "fa-house" },
+        { id: "about",   label: "About",   icon: "fa-user" },
+        { id: "skills",  label: "Skills",  icon: "fa-id-badge" },
+        { id: "projects",label: "Projects",icon: "fa-folder-open" },
+        { id: "contact", label: "Contact", icon: "fa-envelope" }
+    ]
+
+
+    const modeClass = darkMode ? "darkmodetextatag" : "lightmodetextatag";
 
     return(
 
@@ -103,26 +120,11 @@ const HeaderComponent:React.FC<HeaderProps> = ({darkMode, setDarkMode, active, o
 
                 <div className="sidebaroverlay"></div>
                 <div className={`sidebardiv ${darkMode ? 'darkmode' : 'lightmode'}`}>
-                    <a href="#" className={`sidebaratag ${darkMode ? 'sidebaratagdark sidebaractivedark' : 'sidebarataglight sidebaractivelight'} `}>
-                        <i className="fa-regular fa-house sidebaricon iconfont"></i>
-                        <span className="sidebartext">Home</span>
-                    </a>
-                    <a href="#" className={`sidebaratag ${darkMode ? 'sidebaratagdark' : 'sidebarataglight'} `}>
-                        <i className="fa-regular fa-user sidebaricon iconfont"></i>
-                        <span className="sidebartext">About</span>
-                    </a>
-                    <a href="#" className={`sidebaratag ${darkMode ? 'sidebaratagdark' : 'sidebarataglight'} `}>
-                        <i className="fa-regular fa-id-badge sidebaricon iconfont"></i>
-                        <span className="sidebartext">Skills</span>
-                    </a>
-                    <a href="#" className={`sidebaratag ${darkMode ? 'sidebaratagdark' : 'sidebarataglight'} `}>
-                        <i className="fa-regular fa-folder-open sidebaricon iconfont"></i>
-                        <span className="sidebartext">Projects</span>
-                    </a>
-                    <a href="#" className={`sidebaratag ${darkMode ? 'sidebaratagdark' : 'sidebarataglight'} `}>
-                        <i className="fa-regular fa-envelope sidebaricon iconfont"></i>
-                        <span className="sidebartext">Contact</span>
-                    </a>
+
+                    {navItemSidebar.map(({ id, label, icon }) => (
+
+                        <a key={id} href={`#${id}`} onClick={(e) => { e.preventDefault(); handleNavClickSidebar(id); }} className={`sidebaratag ${darkMode ? "sidebaratagdark" : "sidebarataglight"} ${active === id? darkMode ? "sidebaractivedark" : "sidebaractivelight" : ""}`} aria-current={active === id ? "page" : undefined}><i className={`fa-regular ${icon} sidebaricon iconfont`}></i> <span className="sidebartext">{label}</span></a>
+                    ))}
                 </div>
             </>
         )}

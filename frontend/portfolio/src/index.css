@@ -172,6 +172,11 @@
 
     font-size: 22px;
   }
+
+  section {
+    
+    scroll-margin-top: 90px;
+  }
   
 }
 
@@ -245,6 +250,11 @@
   .error {
 
     font-size: 8px;
+  }
+  
+  section {
+    
+    scroll-margin-top: 90px;
   }
   
 }
