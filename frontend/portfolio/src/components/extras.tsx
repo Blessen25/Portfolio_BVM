@@ -406,3 +406,4 @@ export const TimeHHmm: React.FC<TimeProps> = (Props) => {
     .toLowerCase();
   return <p className={`timetext timealign ${Props.className}`}>{text}</p>
 };
+

@@ -8,6 +8,11 @@
   z-index: 999;
 }
 
+.atagactive {
+
+  opacity: .6 !important;
+}
+
 .headerdirstdiv {
 
   display: none;

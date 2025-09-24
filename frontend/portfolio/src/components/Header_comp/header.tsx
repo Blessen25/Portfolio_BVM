@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import './header.css';
 import type { HeaderProps } from "../../interface";
+import type { NavId } from "../../App";
 
 
-const HeaderComponent:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
+const HeaderComponent:React.FC<HeaderProps> = ({darkMode, setDarkMode, active, onNavClick}) => {
 
     const [activesidebar, setActivceSidebar] = useState(false);
     const handletogglebutton = () => {
@@ -14,6 +15,19 @@ const HeaderComponent:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
 
         setActivceSidebar(!activesidebar);
     }
+
+    const navItems: { id: NavId; label: string }[] = [
+        
+        { id: "home", label: "Home" },
+        { id: "about", label: "About" },
+        { id: "skills", label: "Skills" },
+        { id: "projects", label: "Projects" },
+        { id: "contact", label: "Contact" },
+    ];
+
+
+      const modeClass = darkMode ? "darkmodetextatag" : "lightmodetextatag";
+
     return(
 
         <>
@@ -48,11 +62,11 @@ const HeaderComponent:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                         )}
                     </a>
                     <div className="navlinks">
-                        <a href="#" className={`${darkMode ? 'darkmodetextatag' : 'lightmodetextatag'}`}>Home</a>
-                        <a href="#" className={`${darkMode ? 'darkmodetextatag' : 'lightmodetextatag'}`}>About</a>
-                        <a href="#" className={`${darkMode ? 'darkmodetextatag' : 'lightmodetextatag'}`}>Skills</a>
-                        <a href="#" className={`${darkMode ? 'darkmodetextatag' : 'lightmodetextatag'}`}>Projects</a>
-                        <a href="#" className={`${darkMode ? 'darkmodetextatag' : 'lightmodetextatag'}`}>Contact</a>
+                        {navItems.map(({ id, label }) =>
+                        (
+
+                            <a key={id} href={`#${id}`} className={`${modeClass} ${active === id ? 'atagactive' : ''}`  }>{label}</a>
+                        ))}
                     </div>
                     <div className={`${darkMode ? 'togglebuttondark' : 'togglebuttonlight'} togglebutton`} onClick={() => {handletogglebutton();}}>
                         <div className={`${darkMode ? 'togglerounddark' : 'toggleroundlight'} toggleround`}></div>

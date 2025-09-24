@@ -2,12 +2,12 @@ import React from "react";
 import { HeaderComponent } from "../components/Header_comp/header";
 import type { HeaderProps } from "../interface";
 
-const Header:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
+const Header:React.FC<HeaderProps> = ({darkMode, setDarkMode, active}) => {
 
     return( 
         <>
         
-            <HeaderComponent darkMode = {darkMode} setDarkMode = {setDarkMode}/>
+            <HeaderComponent darkMode = {darkMode} setDarkMode = {setDarkMode} active={active}/>
         </>
     )
 }

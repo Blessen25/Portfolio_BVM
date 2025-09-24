@@ -1,8 +1,11 @@
+import type { NavId } from "./App";
+
 interface HeaderProps {
 
     darkMode: boolean;
     setDarkMode: (darkMode: boolean) => void;
-
+    active ?: NavId;
+    onNavClick ?: (id: NavId) => void;
 }
 
 interface buttonProps {
