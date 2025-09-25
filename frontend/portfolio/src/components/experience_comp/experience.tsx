@@ -2,7 +2,7 @@ import type { HeaderProps } from '../../interface';
 import { AutoTypeCareer, ButtonComp } from '../extras';
 import './experience.css';
 
-const Experience_Comp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
+const Experience_Comp:React.FC<HeaderProps> = ({darkMode}) => {
     
 
     return(

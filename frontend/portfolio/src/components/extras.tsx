@@ -1,7 +1,7 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef } from "react";
 import Typed from "typed.js";
 import "./extras.css";
-import type { aboutcardProps, buttonProps, HeaderProps, LiveClockProps, projectcardProps, Skill, skillcardProps, TimeProps } from "../interface";
+import type { aboutcardProps, buttonProps, projectcardProps, skillcardProps, TimeProps } from "../interface";
 
 export const AutoType: React.FC = () => {
   const el = useRef<HTMLSpanElement | null>(null);
@@ -353,7 +353,7 @@ export const SkillscardComponent: React.FC<skillcardProps> = (Props) => {
   )
 }
 
-export const ProjectcardComponent: React.FC<projectcardProps> = ({darkMode, setDarkMode, cardarray}) => {
+export const ProjectcardComponent: React.FC<projectcardProps> = ({darkMode, cardarray}) => {
 
   return(
 
