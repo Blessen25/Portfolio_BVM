@@ -345,7 +345,6 @@
 .contactmodal {
 
     width: 500px;
-    background-color: white;
     z-index: 9999;
     border-radius: 5px;
     padding: 20px;
@@ -371,7 +370,6 @@
 
     width: 70px;
     height: 70px;
-    background-color: #FF2E2E;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -391,14 +389,10 @@
 
 .fa-xmark:hover {
 
-    color: #5e5e5e;    
+    opacity: .5;
     cursor: pointer;
 }
 
-.contacterrortext {
-
-    color: #FF2E2E;
-}
 
 .iconfontxmark {
 

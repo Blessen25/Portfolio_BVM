@@ -16,7 +16,7 @@ export type NavId = "home" | "about" | "skills" | "projects" | "contact";
 
 const App = () => {
   
-  const [darkmode, setdarkmode] = useState(true);
+  const [darkmode, setdarkmode] = useState(false);
   const [active, setActive] = useState<NavId>("home");
   const sectionRefs = useMemo(
   () =>
