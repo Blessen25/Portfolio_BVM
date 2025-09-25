@@ -42,7 +42,7 @@ const HeaderComponent:React.FC<HeaderProps> = ({darkMode, setDarkMode, active, o
         { id: "contact", label: "Contact" },
     ];
 
-    const navItemSidebar = [
+    const navItemSidebar:{ id: NavId; label: string; icon: string }[] = [
 
         { id: "home",    label: "Home",    icon: "fa-house" },
         { id: "about",   label: "About",   icon: "fa-user" },
