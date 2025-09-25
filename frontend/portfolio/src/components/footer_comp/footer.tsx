@@ -3,7 +3,7 @@ import './footer.css';
 import type { HeaderProps } from "../../interface";
 import type { NavId } from "../../App";
 
-const Footer_Comp: React.FC<HeaderProps> = ({darkMode, setDarkMode, active, onNavClick}) => {
+const Footer_Comp: React.FC<HeaderProps> = ({darkMode, active, onNavClick}) => {
 
 
     const footermode = darkMode ? 'darkmodetext footerlinktextdark' : 'lightmodetext footerlinktextlight'

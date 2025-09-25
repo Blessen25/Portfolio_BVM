@@ -4,7 +4,7 @@ import type { HeaderProps } from "../../interface";
 import { AutoType, ButtonComp } from "../extras";
 
 
-const HomeComponent:React.FC<HeaderProps> = ({darkMode , setDarkMode, onNavClick}) => {
+const HomeComponent:React.FC<HeaderProps> = ({darkMode}) => {
     
     return(
         <>
