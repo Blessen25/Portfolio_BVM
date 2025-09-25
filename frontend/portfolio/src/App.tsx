@@ -18,7 +18,6 @@ const App = () => {
   
   const [darkmode, setdarkmode] = useState(false);
   const [active, setActive] = useState<NavId>("home");
-  console.log("Active from app =",active)
   const sectionRefs = useMemo(
   () =>
     SECTIONS.reduce(
@@ -58,7 +57,6 @@ const App = () => {
     SECTIONS.forEach((id) => {
       const el = document.getElementById(id);
       if (el) observer.observe(el);
-      console.log("el =",el)
     });
 
     return () => observer.disconnect();

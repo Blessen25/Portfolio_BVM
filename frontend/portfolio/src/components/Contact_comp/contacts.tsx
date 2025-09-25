@@ -52,6 +52,7 @@ const ContactComp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
     const [ dataErrors, setDataErrors ] = useState<FormErrors>({});
     const [ isSubmit, setIsSubmit ] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
+    const [isContactsubmitted, setIsContactsubmitted] = useState(false);
 
     const handleChangeInput = (e:any) => {
 
@@ -66,6 +67,7 @@ const ContactComp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
         setDataErrors(errs);
         setIsSubmit(true);
         setIsSuccess(Object.keys(errs).length === 0);
+        console.log(setDataErrors);
     }
 
     useEffect(() => {
@@ -108,12 +110,17 @@ const ContactComp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
 
     const HandleClick = () => {
 
-        setIswhatsappmidOpen(true)
+        setIswhatsappmidOpen(true);
     }
 
     const HandleCloseClick = () => {
 
-        setIswhatsappmidOpen(false)
+        setIswhatsappmidOpen(false);
+    }
+
+    const HandleCloseClickmodal = () => {
+
+        setIsContactsubmitted(false);
     }
     return(
 
@@ -227,6 +234,26 @@ const ContactComp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                     </div>
                 </div>
             )}
+
+            {isContactsubmitted && (
+                <>
+                    <div className="contactoverlay">
+                        <div className="contactmodal">
+                            <div className="closesign" >
+                                <i className="fa-solid fa-xmark iconfont" onClick={HandleCloseClickmodal}></i>
+                            </div>
+                            <div className="errorrounddiv">
+                                <div className="errorround">
+                                    <i className="fa-solid fa-exclamation"></i>
+                                </div>
+                            </div>
+                            <p className="ptext contacterrortext">Sorry There have been a error while submitting the form can you please try it again later!!! or can you please send me a message on whatsapp</p>
+                            <ButtonComp text="Chat on Whatsapp" className="whatsappbuttonlight buttonnormal whatsappbutton" target="_blank" hrefroute="https://wa.me/61416416738" onClick={HandleClick}/>
+                        </div>
+                    </div>
+                </>
+            )}
+           
         </>
     )
 }
