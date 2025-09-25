@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 import type { HeaderProps } from "../../interface";
-import { AboutcardComponent, AutoTypeAbout, AutoTypeCareer } from "../extras";
+import { AboutcardComponent, AutoTypeAbout } from "../extras";
 
 const AboutComp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
 

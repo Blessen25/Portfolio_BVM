@@ -5,7 +5,7 @@ import { AutoTypeContacts, ButtonComp,  TimeHHmm } from "../extras";
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 
-const ContactComp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
+const ContactComp:React.FC<HeaderProps> = ({darkMode}) => {
    
     type FormValues = {
         firstName: string;
@@ -20,7 +20,8 @@ const ContactComp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
     type FormErrors = Partial<Record<keyof FormValues, string>>;
    
     /* END OF VALIDATIONS */
-    const [iswhatsappOpen, setIswhatsappOpen] = useState(true);
+    const [iswhatsappOpen] = useState(true);
+    
     const [iswhatsappmidOpen, setIswhatsappmidOpen] = useState(false);
     const initialValues = {
 
