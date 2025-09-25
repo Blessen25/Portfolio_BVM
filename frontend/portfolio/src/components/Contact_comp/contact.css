@@ -617,6 +617,11 @@
 
         display: flex !important;
     }
+
+    .contactmodal {
+
+        width: 500px;
+    }
 }
 
 
@@ -736,6 +741,24 @@
     .contactusformdiv {
 
         gap: 15px;
+    }
+
+    .contactmodal {
+
+        width: 250px;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .errorround {
+
+        width: 40px;
+        height: 40px;
+    }
+
+    .errorround .fa-exclamation {
+
+        font-size: 20px;
     }
 
 }

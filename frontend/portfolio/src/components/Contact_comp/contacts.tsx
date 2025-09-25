@@ -52,7 +52,7 @@ const ContactComp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
     const [ dataErrors, setDataErrors ] = useState<FormErrors>({});
     const [ isSubmit, setIsSubmit ] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
-    const [isContactsubmitted, setIsContactsubmitted] = useState(false);
+    const [isContactsubmitted, setIsContactsubmitted] = useState(true);
 
     const handleChangeInput = (e:any) => {
 
@@ -80,6 +80,7 @@ const ContactComp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
         if(isSuccess) {
 
             console.log("Submitting payload:", data);
+            setIsContactsubmitted(true);
         }
     },[isSuccess, data]);
     const validate = (values:any):FormErrors => {
@@ -120,6 +121,7 @@ const ContactComp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
     const HandleCloseClickmodal = () => {
 
         setIsContactsubmitted(false);
+        window.location.reload();
     }
     return(
 
