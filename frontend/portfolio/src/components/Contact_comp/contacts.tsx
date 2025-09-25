@@ -67,7 +67,6 @@ const ContactComp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
         setDataErrors(errs);
         setIsSubmit(true);
         setIsSuccess(Object.keys(errs).length === 0);
-        console.log(setDataErrors);
     }
 
     useEffect(() => {
