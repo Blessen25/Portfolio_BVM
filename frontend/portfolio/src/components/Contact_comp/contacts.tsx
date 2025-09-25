@@ -220,7 +220,7 @@ const ContactComp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
                             <p className="h1smalltext">Blessen Vinoy Mathew</p>
                             <p className="whatsappmidtext">Typically replies within 24 hours</p>
                         </div>
-                        <i className="fa-solid fa-xmark iconfont" onClick={HandleCloseClick}></i>
+                        <i className="fa-solid fa-xmark iconfontxmark" onClick={HandleCloseClick}></i>
                     </div>
                     <div className="whatsappparamid">
                         <div className="whatsappdetailsmid">
@@ -239,17 +239,17 @@ const ContactComp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
             {isContactsubmitted && (
                 <>
                     <div className="contactoverlay">
-                        <div className="contactmodal">
+                        <div className={`contactmodal ${darkMode ? 'darkmodeaboutcard' : 'lightmodeaboutcard'}`}>
                             <div className="closesign" >
-                                <i className="fa-solid fa-xmark iconfont" onClick={HandleCloseClickmodal}></i>
+                                <i className="fa-solid fa-xmark iconfontxmark" onClick={HandleCloseClickmodal}></i>
                             </div>
                             <div className="errorrounddiv">
                                 <div className="errorround">
                                     <i className="fa-solid fa-exclamation"></i>
                                 </div>
                             </div>
-                            <p className="ptext contacterrortext">Sorry There have been a error while submitting the form can you please try it again later!!! or can you please send me a message on whatsapp</p>
-                            <ButtonComp text="Chat on Whatsapp" className="whatsappbuttonlight buttonnormal whatsappbutton" target="_blank" hrefroute="https://wa.me/61416416738" onClick={HandleClick}/>
+                            <p className="ptext contacterrortext">Sorry There has been an error while submitting the form can you please try it again later!!! or can you please send me a message on whatsapp.</p>
+                            <ButtonComp text="Chat on Whatsapp" className="lightmodebutton" target="_blank" hrefroute="https://wa.me/61416416738" onClick={HandleClick}/>
                         </div>
                     </div>
                 </>

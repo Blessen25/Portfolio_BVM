@@ -400,6 +400,11 @@
     color: #FF2E2E;
 }
 
+.iconfontxmark {
+
+        font-size: 22px;
+}
+
 @media screen and (max-width: 1399px) {
     
     .contactusformdiv {
@@ -622,6 +627,11 @@
 
         width: 500px;
     }
+
+    .iconfontxmark {
+
+        font-size: 18px;
+    }
 }
 
 
@@ -759,6 +769,11 @@
     .errorround .fa-exclamation {
 
         font-size: 20px;
+    }
+
+    .iconfontxmark {
+
+        font-size: 15px;
     }
 
 }
