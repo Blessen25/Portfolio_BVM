@@ -4,7 +4,7 @@ import type { HeaderProps } from "../../interface";
 import { AutoType, ButtonComp } from "../extras";
 
 
-const HomeComponent:React.FC<HeaderProps> = ({darkMode , setDarkMode}) => {
+const HomeComponent:React.FC<HeaderProps> = ({darkMode , setDarkMode, onNavClick}) => {
     
     return(
         <>
@@ -21,7 +21,7 @@ const HomeComponent:React.FC<HeaderProps> = ({darkMode , setDarkMode}) => {
                     <p className={`role-line ptext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>I’m a <AutoType /></p>
                     <div className="buttondiv">
                         <ButtonComp text="Download CV" target="_blank" hrefroute="../assets/files/Blessen_Resume_IT.pdf" className={`${darkMode ? 'darkmodebutton' : 'lightmodebutton'}`}/>
-                        <ButtonComp text="Contact Info" className={`${darkMode ? 'darkmodetwobutton' : 'lightmodetwobutton'}`}/>
+                        <ButtonComp text="Contact Info" className={`${darkMode ? 'darkmodetwobutton' : 'lightmodetwobutton'}`} onClick={() => onNavClick}/>
                     </div>
                     <div className="socialdivhome">
                         <a href="https://github.com/Blessen25" target="_blank">

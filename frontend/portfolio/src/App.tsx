@@ -71,7 +71,7 @@ const App = () => {
       <div className={`maincontainer ${darkmode ? 'darkmode' : 'lightmode'}`}>
       <div className={`childcontainer`}>
          <section id="home" ref={sectionRefs.home} className="page-section">
-            <Home darkMode={darkmode} setDarkMode={setdarkmode} />
+            <Home darkMode={darkmode} setDarkMode={setdarkmode} onNavClick={() => handleNavClick("contact")}/>
           </section>
         <section id="about" ref={sectionRefs.about} className="page-section">
             <About darkMode={darkmode} setDarkMode={setdarkmode} />
