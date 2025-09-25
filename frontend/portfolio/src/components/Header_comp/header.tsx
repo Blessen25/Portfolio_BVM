@@ -62,7 +62,7 @@ const HeaderComponent:React.FC<HeaderProps> = ({darkMode, setDarkMode, active, o
                     <div className="headerdirstdiv">
                         <i className={`fa-solid fa-align-left iconfont ${darkMode? `${activesidebar ? 'left-color-dark-hover' : 'left-color-dark'}`
                                 : `${activesidebar ? 'left-color-light-hover' : 'left-color-light'}`}`} onClick={() => {handleSidebar();}}></i>
-                        <a href="#" className="imglogosecond">
+                        <a href="#home" className="imglogosecond">
                             {darkMode ? (
                                 <>
                                     <img src="../assets/images/logo/bvm_logo_dark_small.png" alt="Logo Image" />
@@ -76,7 +76,7 @@ const HeaderComponent:React.FC<HeaderProps> = ({darkMode, setDarkMode, active, o
                             
                         </a>
                     </div>
-                    <a href="#" className="imglogomain">
+                    <a href="#home" className="imglogomain">
                         {darkMode ? (
                             <>
                                 <img src="../assets/images/logo/bvm_logo_dark_large.png" alt="Logo Image" />
