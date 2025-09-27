@@ -127,7 +127,7 @@ const ContactComp:React.FC<HeaderProps> = ({darkMode}) => {
     return(
 
         <>
-            <div className="contactdiv">
+            <div className="contactdiv reveal">
                 <h1 className={`h1text ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}><AutoTypeContacts/></h1>
                 <p className={`ptext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>Open to roles, collaborations, and consultations.</p>
                 <div className={`contactmaindiv`}>

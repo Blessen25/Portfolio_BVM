@@ -68,19 +68,19 @@ const App = () => {
       <Header darkMode = {darkmode} setDarkMode={setdarkmode} onNavClick={handleNavClick} active={active}/>
       <div className={`maincontainer ${darkmode ? 'darkmode' : 'lightmode'}`}>
       <div className={`childcontainer`}>
-         <section id="home" ref={sectionRefs.home} className="page-section">
+         <section id="home" ref={sectionRefs.home} className="page-section reveal">
             <Home darkMode={darkmode} setDarkMode={setdarkmode} onNavClick={() => handleNavClick("contact")}/>
           </section>
-        <section id="about" ref={sectionRefs.about} className="page-section">
+        <section id="about" ref={sectionRefs.about} className="page-section reveal">
             <About darkMode={darkmode} setDarkMode={setdarkmode} />
           </section>
-        <section id="skills" ref={sectionRefs.skills} className="page-section">
+        <section id="skills" ref={sectionRefs.skills} className="page-section reveal">
             <Skills darkMode={darkmode} setDarkMode={setdarkmode} />
           </section>
-        <section id="experience" ref={sectionRefs.experience} className="page-section">
+        <section id="experience" ref={sectionRefs.experience} className="page-section reveal">
             <Experience darkMode={darkmode} setDarkMode={setdarkmode} />
           </section>
-        <section id="projects" ref={sectionRefs.projects} className="page-section">
+        <section id="projects" ref={sectionRefs.projects} className="page-section reveal">
             <Project darkMode={darkmode} setDarkMode={setdarkmode} />
           </section>
         <section id="contact" ref={sectionRefs.contact} className="page-section">

@@ -1,0 +1,38 @@
+.reveal {
+
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@media screen and (max-width: 991px) {
+    
+    .reveal {
+    
+        animation-range: entry 0% cover 35%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    
+    .reveal {
+    
+        animation-range: entry 0% cover 30%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    
+    .reveal {
+    
+        animation-range: entry 0% cover 26%;
+    }
+}
+
+@media screen and (max-height: 300px) {
+    
+    .reveal {
+
+        animation-range: entry 0% cover 14%;
+    }
+}
