@@ -65,11 +65,11 @@ const HeaderComponent:React.FC<HeaderProps> = ({darkMode, setDarkMode, active, o
                         <a href="#home" className="imglogosecond">
                             {darkMode ? (
                                 <>
-                                    <img src="../assets/images/logo/bvm_logo_dark_small.png" alt="Logo Image" />
+                                    <img src="../assets/images/logo/bvm_logo_dark_small.png" alt="Logo Image" loading="lazy"/>
                                 </>
                             ): (
                                 <>
-                                    <img src="../assets/images/logo/bvm_logo_light_small.png" alt="Logo Image" />
+                                    <img src="../assets/images/logo/bvm_logo_light_small.png" alt="Logo Image" loading="lazy"/>
                                 </>
                             )
                             }
@@ -79,11 +79,11 @@ const HeaderComponent:React.FC<HeaderProps> = ({darkMode, setDarkMode, active, o
                     <a href="#home" className="imglogomain">
                         {darkMode ? (
                             <>
-                                <img src="../assets/images/logo/bvm_logo_dark_large.png" alt="Logo Image" />
+                                <img src="../assets/images/logo/bvm_logo_dark_large.png" alt="Logo Image" loading="lazy"/>
                             </>
                         ) : (
                             <>
-                               <img src="../assets/images/logo/bvm_logo_light_large.png" alt="Logo Image" />
+                               <img src="../assets/images/logo/bvm_logo_light_large.png" alt="Logo Image" loading="lazy"/>
                             </>
                         )}
                     </a>

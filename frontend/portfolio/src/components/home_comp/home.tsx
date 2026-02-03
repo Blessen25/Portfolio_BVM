@@ -12,7 +12,7 @@ const HomeComponent:React.FC<HeaderProps> = ({darkMode}) => {
                 <div className="homeimageborder">
                     <div className={`border-spin ${darkMode ? 'border-spindark' : 'border-spinlight'}`}></div>
                     <div className="homemainimage">
-                        <img src={`${darkMode ? '../assets/images/logo/imagetwo_dark.jpg' : '../assets/images/logo/imagetwo_light.jpg' }`} alt="Profile Pic" />
+                        <img src={`${darkMode ? '../assets/images/logo/imagetwo_dark.jpg' : '../assets/images/logo/imagetwo_light.jpg' }`} alt="Profile Pic" loading="lazy"/>
                     </div>
                 </div>
                 <div className="homemaindetails">

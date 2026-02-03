@@ -360,7 +360,7 @@ export const ProjectcardComponent: React.FC<projectcardProps> = ({darkMode, card
     <>
       <div className={`card-div-carousel ${darkMode ? 'darkmodeaboutcard darkmodetext' : 'lightmodeaboutcard lightmodetext'}`}>
           <div className="card-div-images">
-                <img src={cardarray?.imageUrl} alt="Image" style={{width:'100%', height:'100%', objectFit:'cover'}}/>
+                <img src={cardarray?.imageUrl} alt="Image" style={{width:'100%', height:'100%', objectFit:'cover'}} loading="lazy"/>
               <div className="card-div-para">
                 <p className={`ptext ${darkMode ? 'darkmodetext' : 'lightmodetext'}`}>{cardarray?.description}</p>
               </div>
