@@ -40,7 +40,7 @@ const ProjectCardArray = [
         id : 2,
         title : "Old Portfolio",
         description : "Developed a professional and responsive portfolio website to showcase my projects and technical expertise as a front-end developer. The portfolio is built using modern web technologies, including HTML for semantic structure, CSS for sleek and responsive design, and React with TypeScript to deliver a dynamic, type-safe, and interactive user experience. This combination ensures a polished, accessible, and high-performance interface that effectively highlights my work.",  
-        imageUrl : "../assets/images/projects/portfolio_image.webp",
+        imageUrl : "../assets/images/projects/portfolio_image.png",
         url : "https://blessenportfolio.vercel.app/"
     },
     {
