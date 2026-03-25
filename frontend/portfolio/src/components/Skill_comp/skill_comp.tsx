@@ -9,9 +9,13 @@ const Skills_Comp:React.FC<HeaderProps> = ({darkMode, setDarkMode}) => {
 
     { name: 'HTML' , level: 'Advanced' },
     { name: 'CSS' , level: 'Advanced' },
+    { name: 'React' , level: 'Advanced' },
+
     { name: 'JavaScript' , level: 'Intermediate' },
     { name: 'TypeScript' , level: 'Intermediate' },
-    { name: 'React' , level: 'Intermediate' },
+    { name: 'Tailwind', level: 'Intermediate'},
+
+    { name: 'Next Js', level: 'Beginner'},
     { name: 'SCSS', level: 'Beginner'},
     { name: 'Bootstrap', level: 'Beginner'}
 
