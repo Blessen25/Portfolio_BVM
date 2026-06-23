@@ -101,8 +101,9 @@
 
 .buttondiv {
 
-    width: 320px;
+    /* width: 320px; */
     display: flex;
+    gap: 30px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -250,7 +251,8 @@
 
     .buttondiv {
 
-        width: 260px;
+        gap: 20px;
+        /* width: 260px; */
     }
 }
 
@@ -268,7 +270,8 @@
 
     .buttondiv {
 
-        width: 210px;
+        gap: 15px;
+        /* width: 210px; */
     }
 
     .homeimageborder {
